@@ -1,5 +1,6 @@
 db_files
 *.iml
+.settings
 .project
 .classpath
 .project.properties

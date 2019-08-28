@@ -416,7 +416,6 @@ public class IconCache {
                 iconAppSDK = 25;
                 }
             }
-            Log.w("islem", "icon app sdk is : " + iconAppSDK);
 
             li.createBadgedIconBitmap(iconDrawable, app.getUser(),iconAppSDK).applyTo(entry);
             li.recycle();
@@ -595,7 +594,6 @@ public class IconCache {
                         iconAppSDK = 25;
                         }
                     }
-                    Log.w("islem", "icon app sdk is : " + iconAppSDK);
 
                     li.createBadgedIconBitmap(iconDrawable, info.getUser(),iconAppSDK).applyTo(entry);
                     li.recycle();

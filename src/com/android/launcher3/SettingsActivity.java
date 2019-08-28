@@ -25,6 +25,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.FragmentManager;
+import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -32,7 +33,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.preference.ListPreference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
@@ -41,12 +44,16 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.ListView;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.util.Log;
 
 import com.android.launcher3.graphics.IconShapeOverride;
 import com.android.launcher3.notification.NotificationListener;
 import com.android.launcher3.util.ListViewHighlighter;
 import com.android.launcher3.util.SettingsObserver;
 import com.android.launcher3.views.ButtonPreference;
+import com.android.launcher3.util.LooperExecutor;
 
 import java.util.Objects;
 
@@ -65,6 +72,7 @@ public class SettingsActivity extends Activity {
     private static final String EXTRA_SHOW_FRAGMENT_ARGS = ":settings:show_fragment_args";
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     private static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
+    private static final long WAIT_BEFORE_RESTART = 250;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,6 +145,18 @@ public class SettingsActivity extends Activity {
                 // Initialize the UI once
                 rotationPref.setDefaultValue(getAllowRotationDefaultValue());
             }
+
+            final ListPreference iconSizes = (ListPreference) findPreference(Utilities.ICON_SIZE);
+            iconSizes.setSummary(iconSizes.getEntry());
+            iconSizes.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    int index = iconSizes.findIndexOfValue((String) newValue);
+                    iconSizes.setSummary(iconSizes.getEntries()[index]);
+                    restart(getActivity());
+                    return true;
+                }
+            });
+
         }
 
         @Override
@@ -296,5 +316,30 @@ public class SettingsActivity extends Activity {
                     .putExtra(EXTRA_SHOW_FRAGMENT_ARGS, showFragmentArgs);
             getActivity().startActivity(intent);
         }
+    }
+
+    public static void restart(final Context context) {
+        ProgressDialog.show(context, null, context.getString(R.string.state_loading), true, false);
+        new LooperExecutor(LauncherModel.getWorkerLooper()).execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(WAIT_BEFORE_RESTART);
+                } catch (Exception e) {
+                    Log.e("SettingsActivity", "Error waiting", e);
+                }
+
+                Intent intent = new Intent(Intent.ACTION_MAIN)
+                        .addCategory(Intent.CATEGORY_HOME)
+                        .setPackage(context.getPackageName())
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT | PendingIntent.FLAG_ONE_SHOT);
+                AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+                alarmManager.setExact(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime() + 50, pendingIntent);
+
+                android.os.Process.killProcess(android.os.Process.myPid());
+            }
+        });
     }
 }
