@@ -26,6 +26,7 @@
     <com.android.launcher3.views.ButtonPreference
         android:key="pref_icon_badging"
         android:title="@string/icon_badging_title"
+        android:icon="@drawable/notifications_dots"
         android:persistent="false"
         android:widgetLayout="@layout/notification_pref_warning" >
         <intent android:action="android.settings.NOTIFICATION_SETTINGS">
@@ -40,6 +41,7 @@
         android:key="pref_add_icon_to_home"
         android:title="@string/auto_add_shortcuts_label"
         android:summary="@string/auto_add_shortcuts_description"
+        android:icon="@drawable/add_icons"
         android:defaultValue="true"
         android:persistent="true" />
 
@@ -47,6 +49,7 @@
         android:key="pref_allowRotation"
         android:title="@string/allow_rotation_title"
         android:summary="@string/allow_rotation_desc"
+        android:icon="@drawable/homescreen_rotation"
         android:defaultValue="@bool/allow_rotation"
         android:persistent="true" />
 
@@ -57,6 +60,7 @@
         android:entries="@array/icon_shape_override_paths_names"
         android:entryValues="@array/icon_shape_override_paths_values"
         android:defaultValue=""
+        android:icon="@drawable/icon_shape"
         android:persistent="false" />
 
     <ListPreference
@@ -66,6 +70,58 @@
             android:entries="@array/icon_size_names"
             android:entryValues="@array/icon_size_values"
             android:defaultValue="average"
+            android:icon="@drawable/icon_shape"
             android:persistent="true" />
+
+
+	<PreferenceCategory android:title="@string/about_aosp_launcher">
+        <PreferenceScreen
+            android:key="about_screen"
+            android:icon="@drawable/app_info"
+            android:summary="@string/sum_about_app_aosp_launcher"
+            android:title="@string/about_aosp_launcher_us">
+			<Preference
+                android:key="@string/developer_info"
+                android:title="@string/developer_info"
+                android:summary="@string/developer_info_sum"
+                android:persistent="false">
+            </Preference>
+			<Preference
+                android:key="@string/app_base_title"
+                android:title="@string/app_base_title"
+                android:summary="@string/app_base_title_sum"
+                android:persistent="false">
+            </Preference>
+            <Preference
+                android:title="@string/thanks"
+                android:summary="@string/sum_thanks" >
+            </Preference>
+			<Preference
+                android:key="@string/about_aosp_launcher_version"
+                android:title="@string/about_aosp_launcher_version"
+                android:summary="@string/about_aosp_launcher_version_sum"
+                android:persistent="false">
+            </Preference>
+            <Preference
+                android:title="@string/date"
+                android:summary="@string/sum_date" >
+            </Preference>
+            <Preference
+                android:title="@string/github_title"
+                android:summary="@string/github_sum">
+                <intent android:action="android.intent.action.VIEW"
+                        android:data="https://github.com/islem19/AOSP-Pure-Launcher" />
+            </Preference>
+
+            <Preference
+                android:key="app_info"
+                android:title="@string/app_info_drop_target_label"
+                android:persistent="false">
+                <intent
+                    android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
+                    android:data="package:com.android.launcher3" />
+            </Preference>
+        </PreferenceScreen>
+    </PreferenceCategory>
 
 </PreferenceScreen>

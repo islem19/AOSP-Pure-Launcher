@@ -361,4 +361,24 @@
 
     <string name="state_loading">Loading</string>
 
+   <!-- About -->
+    <string name="about_aosp_launcher">About</string>
+    <string name="about_aosp_launcher_us">AOSP Pure Launcher</string>
+    <string name="about_aosp_launcher_version">Version</string>
+    <string name="about_aosp_launcher_version_sum">1.0</string>
+    <string name="thanks">Thanks for</string>
+    <string name="sum_thanks">- Amir Zaidi (Rootless Launcher)\n- Lawnchair Launcher\n </string>
+    <string name="date">Build date</string>
+    <string name="sum_date">27/08/19</string>
+    <string name="sum_about_app_aosp_launcher">About this app, version, information</string>
+    <string name="developer_info_sum">Abdelkader Sellami</string>
+    <string name="developer_info">Developer Info</string>
+    <string name="app_base_title">Based On</string>
+    <string name="app_base_title_sum">Based On Pure AOSP Launcher3</string>
+
+    <string name="custom_app_name">AOSP Pure Launcher</string>
+
+    <string name="github_title">Github</string>
+    <string name="github_sum">AOSP Pure Launcher Project Github</string>
+
 </resources>
