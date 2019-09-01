@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.launcher3.tapl;
+package dz.aosp.purelauncher.tapl;
 
 import android.support.test.uiautomator.By;
 import android.support.test.uiautomator.BySelector;

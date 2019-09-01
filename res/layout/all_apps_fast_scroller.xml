@@ -24,7 +24,7 @@
         android:layout_below="@+id/search_container_all_apps"
         android:layout_marginEnd="@dimen/fastscroll_popup_margin" />
 
-    <com.android.launcher3.views.RecyclerViewFastScroller
+    <dz.aosp.purelauncher.views.RecyclerViewFastScroller
         android:id="@+id/fast_scroller"
         android:layout_width="@dimen/fastscroll_width"
         android:layout_height="wrap_content"

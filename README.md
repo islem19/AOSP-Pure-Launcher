@@ -1,5 +1,15 @@
 # AOSP-Pure-Launcher
+
+<img src="https://github.com/islem19/AOSP-Pure-Launcher/blob/master/res/mipmap-xxhdpi/ic_launcher_android.png?raw=true" align="left" hspace="10" vspace="10"></a>
+
+<br>
+<br>
+<br>
 A pure Android Launcher Based on AOSP Launcher3
+<br>
+<br>
+<br>
+<br>
 
 ## 1.	FEATURES
 1.  Add support for Icon Pack

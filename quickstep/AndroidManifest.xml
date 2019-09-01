@@ -20,16 +20,16 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.android.launcher3" >
+    package="dz.aosp.purelauncher" >
 
     <uses-sdk android:targetSdkVersion="28" android:minSdkVersion="28"/>
     <uses-permission android:name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS" />
     <application
-        android:backupAgent="com.android.launcher3.LauncherBackupAgent"
+        android:backupAgent="dz.aosp.purelauncher.LauncherBackupAgent"
         android:fullBackupOnly="true"
         android:fullBackupContent="@xml/backupscheme"
         android:hardwareAccelerated="true"
-        android:icon="@drawable/ic_launcher_home"
+        android:icon="@mipmap/ic_launcher_android"
         android:label="@string/custom_app_name"
         android:theme="@style/AppTheme"
         android:largeHeap="@bool/config_largeHeap"
@@ -37,7 +37,7 @@
         android:supportsRtl="true" >
 
         <service
-            android:name="com.android.quickstep.TouchInteractionService"
+            android:name="dz.aosp.quickstep.TouchInteractionService"
             android:permission="android.permission.STATUS_BAR_SERVICE" >
             <intent-filter>
                 <action android:name="android.intent.action.QUICKSTEP_SERVICE" />
@@ -46,7 +46,7 @@
 
         <!-- STOPSHIP: Change exported to false once all the integration is complete.
         It is set to true so that the activity can be started from command line -->
-        <activity android:name="com.android.quickstep.RecentsActivity"
+        <activity android:name="dz.aosp.quickstep.RecentsActivity"
             android:exported="true"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
@@ -61,8 +61,8 @@
 
         <!-- Content provider to settings search -->
         <provider
-            android:name="com.android.quickstep.LauncherSearchIndexablesProvider"
-            android:authorities="com.android.launcher3"
+            android:name="dz.aosp.quickstep.LauncherSearchIndexablesProvider"
+            android:authorities="dz.aosp.purelauncher"
             android:grantUriPermissions="true"
             android:multiprocess="true"
             android:permission="android.permission.READ_SEARCH_INDEXABLES"
@@ -74,7 +74,7 @@
 
 
         <service
-            android:name="com.android.launcher3.uioverrides.dynamicui.WallpaperManagerCompatVL$ColorExtractionService"
+            android:name="dz.aosp.purelauncher.uioverrides.dynamicui.WallpaperManagerCompatVL$ColorExtractionService"
             tools:node="remove" />
 
     </application>

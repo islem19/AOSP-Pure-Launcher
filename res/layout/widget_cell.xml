@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.android.launcher3.widget.WidgetCell
+<dz.aosp.purelauncher.widget.WidgetCell
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -25,4 +25,4 @@
 
     <include layout="@layout/widget_cell_content"  />
 
-</com.android.launcher3.widget.WidgetCell>
+</dz.aosp.purelauncher.widget.WidgetCell>

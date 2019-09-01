@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.android.launcher3.graphics.ShadowDrawable
+<dz.aosp.purelauncher.graphics.ShadowDrawable
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:src="@drawable/ic_remove_no_shadow"
     android:elevation="@dimen/drop_target_shadow_elevation" />

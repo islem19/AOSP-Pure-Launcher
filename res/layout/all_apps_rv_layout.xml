@@ -14,7 +14,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<com.android.launcher3.allapps.AllAppsRecyclerView
+<dz.aosp.purelauncher.allapps.AllAppsRecyclerView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/apps_list_view"
     android:layout_width="match_parent"

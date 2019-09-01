@@ -12,7 +12,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.android.launcher3.LauncherRootView
+<dz.aosp.purelauncher.LauncherRootView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:id="@+id/launcher"
@@ -20,7 +20,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <com.android.launcher3.dragndrop.DragLayer
+    <dz.aosp.purelauncher.dragndrop.DragLayer
         android:id="@+id/drag_layer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,7 +30,7 @@
 
         <!-- The workspace contains 5 screens of cells -->
         <!-- DO NOT CHANGE THE ID -->
-        <com.android.launcher3.Workspace
+        <dz.aosp.purelauncher.Workspace
             android:id="@+id/workspace"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -45,7 +45,7 @@
 
         <!-- Keep these behind the workspace so that they are not visible when
          we go into AllApps -->
-        <com.android.launcher3.pageindicators.WorkspacePageIndicator
+        <dz.aosp.purelauncher.pageindicators.WorkspacePageIndicator
             android:id="@+id/page_indicator"
             android:layout_width="match_parent"
             android:layout_height="@dimen/vertical_drag_handle_size"
@@ -72,6 +72,6 @@
             layout="@layout/hotseat"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </com.android.launcher3.dragndrop.DragLayer>
+    </dz.aosp.purelauncher.dragndrop.DragLayer>
 
-</com.android.launcher3.LauncherRootView>
+</dz.aosp.purelauncher.LauncherRootView>

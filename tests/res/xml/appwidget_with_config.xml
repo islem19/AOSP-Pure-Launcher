@@ -5,7 +5,7 @@
     android:minHeight="110dp"
     android:updatePeriodMillis="86400000"
     android:initialLayout="@layout/test_layout_appwidget_blue"
-    android:configure="com.android.launcher3.testcomponent.WidgetConfigActivity"
+    android:configure="dz.aosp.purelauncher.testcomponent.WidgetConfigActivity"
     android:resizeMode="horizontal|vertical"
     android:widgetFeatures="reconfigurable"
     android:widgetCategory="home_screen">

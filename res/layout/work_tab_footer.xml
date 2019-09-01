@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.android.launcher3.views.WorkFooterContainer
+<dz.aosp.purelauncher.views.WorkFooterContainer
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         android:scaleType="fitXY"
         android:src="@drawable/all_apps_divider"/>
 
-    <com.android.launcher3.allapps.WorkModeSwitch
+    <dz.aosp.purelauncher.allapps.WorkModeSwitch
         android:id="@+id/work_mode_toggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -76,4 +76,4 @@
         android:textColor="?android:attr/textColorHint"
         android:textSize="13sp"/>
 
-</com.android.launcher3.views.WorkFooterContainer>
+</dz.aosp.purelauncher.views.WorkFooterContainer>

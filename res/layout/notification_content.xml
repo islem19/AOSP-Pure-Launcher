@@ -47,7 +47,7 @@
     </FrameLayout>
 
     <!-- Main view -->
-    <com.android.launcher3.notification.NotificationMainView
+    <dz.aosp.purelauncher.notification.NotificationMainView
         android:id="@+id/main_view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/notification_main_height"
@@ -94,7 +94,7 @@
             android:layout_marginBottom="7dp"
             android:layout_marginEnd="@dimen/notification_padding_end" />
 
-    </com.android.launcher3.notification.NotificationMainView>
+    </dz.aosp.purelauncher.notification.NotificationMainView>
 
     <!-- Divider -->
     <View
@@ -105,7 +105,7 @@
         android:background="?attr/popupColorTertiary" />
 
     <!-- Footer -->
-    <com.android.launcher3.notification.NotificationFooterLayout
+    <dz.aosp.purelauncher.notification.NotificationFooterLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="@dimen/notification_footer_height"
@@ -130,5 +130,5 @@
             android:layout_marginStart="@dimen/horizontal_ellipsis_offset"
             android:background="@drawable/horizontal_ellipsis" />
 
-    </com.android.launcher3.notification.NotificationFooterLayout>
+    </dz.aosp.purelauncher.notification.NotificationFooterLayout>
 </merge>

@@ -16,14 +16,14 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.android.launcher3.preferences.IconPackPreference
+    <dz.aosp.purelauncher.preferences.IconPackPreference
         android:key="pref_iconPackPackage"
         android:title="@string/icon_pack"
         android:summary="@string/icon_pack_summary"
         android:persistent="true" />
 
 
-    <com.android.launcher3.views.ButtonPreference
+    <dz.aosp.purelauncher.views.ButtonPreference
         android:key="pref_icon_badging"
         android:title="@string/icon_badging_title"
         android:icon="@drawable/notifications_dots"
@@ -35,7 +35,7 @@
                 android:name=":settings:fragment_args_key"
                 android:value="notification_badging" />
         </intent>
-    </com.android.launcher3.views.ButtonPreference>
+    </dz.aosp.purelauncher.views.ButtonPreference>
 
     <SwitchPreference
         android:key="pref_add_icon_to_home"
@@ -80,7 +80,7 @@
             android:icon="@drawable/app_info"
             android:summary="@string/sum_about_app_aosp_launcher"
             android:title="@string/about_aosp_launcher_us">
-			<Preference
+            <Preference
                 android:key="@string/developer_info"
                 android:title="@string/developer_info"
                 android:summary="@string/developer_info_sum"
@@ -119,7 +119,7 @@
                 android:persistent="false">
                 <intent
                     android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
-                    android:data="package:com.android.launcher3" />
+                    android:data="package:dz.aosp.purelauncher" />
             </Preference>
         </PreferenceScreen>
     </PreferenceCategory>

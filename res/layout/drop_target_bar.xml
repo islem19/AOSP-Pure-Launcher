@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.android.launcher3.DropTargetBar xmlns:android="http://schemas.android.com/apk/res/android"
+<dz.aosp.purelauncher.DropTargetBar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/dynamic_grid_drop_target_size"
     android:layout_gravity="center_horizontal|top"
@@ -23,7 +23,7 @@
     android:visibility="invisible">
 
     <!-- Delete target -->
-    <com.android.launcher3.DeleteDropTarget
+    <dz.aosp.purelauncher.DeleteDropTarget
         android:id="@+id/delete_target_text"
         style="@style/DropTargetButton"
         android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
         android:text="@string/remove_drop_target_label" />
 
     <!-- Uninstall target -->
-    <com.android.launcher3.SecondaryDropTarget
+    <dz.aosp.purelauncher.SecondaryDropTarget
         android:id="@+id/uninstall_target_text"
         style="@style/DropTargetButton"
         android:layout_width="wrap_content"
@@ -42,4 +42,4 @@
         android:gravity="center"
         android:text="@string/uninstall_drop_target_label" />
 
-</com.android.launcher3.DropTargetBar>
+</dz.aosp.purelauncher.DropTargetBar>

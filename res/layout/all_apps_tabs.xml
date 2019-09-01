@@ -14,7 +14,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<com.android.launcher3.allapps.AllAppsPagedView
+<dz.aosp.purelauncher.allapps.AllAppsPagedView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:id="@+id/all_apps_tabs_view_pager"
@@ -33,4 +33,4 @@
 
     <include layout="@layout/all_apps_rv_layout" />
 
-</com.android.launcher3.allapps.AllAppsPagedView>
+</dz.aosp.purelauncher.allapps.AllAppsPagedView>

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.launcher3.tapl;
+package dz.aosp.purelauncher.tapl;
 
 import android.graphics.Point;
 import android.support.annotation.NonNull;

@@ -14,4 +14,4 @@
      limitations under the License.
 -->
 
-<com.android.launcher3.views.DoubleShadowBubbleTextView style="@style/BaseIcon.Workspace" />
+<dz.aosp.purelauncher.views.DoubleShadowBubbleTextView style="@style/BaseIcon.Workspace" />

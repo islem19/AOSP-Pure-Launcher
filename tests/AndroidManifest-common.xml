@@ -16,13 +16,13 @@
 
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.launcher3.tests">
+    package="dz.aosp.purelauncher.tests">
 
     <application android:debuggable="true">
         <uses-library android:name="android.test.runner" />
 
         <receiver
-            android:name="com.android.launcher3.testcomponent.AppWidgetNoConfig"
+            android:name="dz.aosp.purelauncher.testcomponent.AppWidgetNoConfig"
             android:label="No Config">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -33,7 +33,7 @@
 
 
         <receiver
-            android:name="com.android.launcher3.testcomponent.AppWdigetHidden"
+            android:name="dz.aosp.purelauncher.testcomponent.AppWdigetHidden"
             android:label="Hidden widget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -43,7 +43,7 @@
         </receiver>
 
         <receiver
-            android:name="com.android.launcher3.testcomponent.AppWidgetWithConfig"
+            android:name="dz.aosp.purelauncher.testcomponent.AppWidgetWithConfig"
             android:label="With Config">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -53,13 +53,13 @@
         </receiver>
 
         <activity
-            android:name="com.android.launcher3.testcomponent.WidgetConfigActivity">
+            android:name="dz.aosp.purelauncher.testcomponent.WidgetConfigActivity">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.launcher3.testcomponent.RequestPinItemActivity"
+            android:name="dz.aosp.purelauncher.testcomponent.RequestPinItemActivity"
             android:label="Test Pin Item"
             android:icon="@drawable/test_drawable_pin_item">
             <intent-filter>

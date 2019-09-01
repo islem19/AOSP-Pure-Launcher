@@ -19,7 +19,7 @@
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.launcher3">
+    package="dz.aosp.purelauncher">
 
     <!--
     The manifest defines the common entries that should be present in any derivative of Launcher3.
@@ -45,11 +45,11 @@
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
 
     <application
-        android:backupAgent="com.android.launcher3.LauncherBackupAgent"
+        android:backupAgent="dz.aosp.purelauncher.LauncherBackupAgent"
         android:fullBackupOnly="true"
         android:fullBackupContent="@xml/backupscheme"
         android:hardwareAccelerated="true"
-        android:icon="@drawable/ic_launcher_home"
+        android:icon="@mipmap/ic_launcher_android"
         android:label="@string/custom_app_name"
         android:largeHeap="@bool/config_largeHeap"
         android:restoreAnyVersion="true"
@@ -57,7 +57,7 @@
 
         <!-- Intent received used to install shortcuts from other applications -->
         <receiver
-            android:name="com.android.launcher3.InstallShortcutReceiver"
+            android:name="dz.aosp.purelauncher.InstallShortcutReceiver"
             android:permission="com.android.launcher.permission.INSTALL_SHORTCUT"
             android:enabled="@bool/enable_install_shortcut_api" >
             <intent-filter>
@@ -67,27 +67,27 @@
 
         <!-- Intent received when a session is committed -->
         <receiver
-            android:name="com.android.launcher3.SessionCommitReceiver" >
+            android:name="dz.aosp.purelauncher.SessionCommitReceiver" >
             <intent-filter>
                 <action android:name="android.content.pm.action.SESSION_COMMITTED" />
             </intent-filter>
         </receiver>
 
         <!-- Intent received used to initialize a restored widget -->
-        <receiver android:name="com.android.launcher3.AppWidgetsRestoredReceiver" >
+        <receiver android:name="dz.aosp.purelauncher.AppWidgetsRestoredReceiver" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_HOST_RESTORED"/>
             </intent-filter>
         </receiver>
 
         <service
-            android:name="com.android.launcher3.uioverrides.dynamicui.WallpaperManagerCompatVL$ColorExtractionService"
+            android:name="dz.aosp.purelauncher.uioverrides.dynamicui.WallpaperManagerCompatVL$ColorExtractionService"
             android:exported="false"
             android:process=":wallpaper_chooser"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <service
-            android:name="com.android.launcher3.notification.NotificationListener"
+            android:name="dz.aosp.purelauncher.notification.NotificationListener"
             android:label="@string/icon_badging_service_title"
             android:enabled="@bool/notification_badging_enabled"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
@@ -99,7 +99,7 @@
         <meta-data android:name="android.nfc.disable_beam_default"
                        android:value="true" />
 
-        <activity android:name="com.android.launcher3.dragndrop.AddItemActivity"
+        <activity android:name="dz.aosp.purelauncher.dragndrop.AddItemActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.Alert"
             android:excludeFromRecents="true"
             android:autoRemoveFromRecents="true"
@@ -115,8 +115,8 @@
         worspace configuration to the dump's file descriptor by using launcher_dump.proto
         -->
         <meta-data
-            android:name="com.android.launcher3.launcher_dump_provider"
-            android:value="com.android.launcher3.LauncherProvider" />
+            android:name="dz.aosp.purelauncher.launcher_dump_provider"
+            android:value="dz.aosp.purelauncher.LauncherProvider" />
 
     </application>
 </manifest>

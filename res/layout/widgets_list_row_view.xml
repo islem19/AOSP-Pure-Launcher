@@ -25,7 +25,7 @@
 
     <!-- Section info -->
 
-    <com.android.launcher3.BubbleTextView
+    <dz.aosp.purelauncher.BubbleTextView
         android:id="@+id/section"
         android:layout_width="match_parent"
         android:layout_height="@dimen/widget_section_height"

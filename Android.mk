@@ -29,7 +29,7 @@ LOCAL_SDK_VERSION := current
 include $(BUILD_PREBUILT)
 
 #
-# Build rule for Launcher3 dependencies lib.
+# Build rule for AospPureLauncher dependencies lib.
 #
 include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
@@ -55,20 +55,20 @@ LOCAL_PROTO_JAVA_OUTPUT_PARAMS := enum_style=java
 
 LOCAL_SDK_VERSION := current
 LOCAL_MIN_SDK_VERSION := 21
-LOCAL_MODULE := Launcher3CommonDepsLib
+LOCAL_MODULE := AospPureLauncherCommonDepsLib
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MANIFEST_FILE := AndroidManifest-common.xml
 
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
 #
-# Build rule for Launcher3 app.
+# Build rule for AospPureLauncher app.
 #
 include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
+LOCAL_STATIC_ANDROID_LIBRARIES := AospPureLauncherCommonDepsLib
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, src) \
     $(call all-java-files-under, src_ui_overrides) \
@@ -78,23 +78,23 @@ LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_SDK_VERSION := current
 LOCAL_MIN_SDK_VERSION := 21
-LOCAL_PACKAGE_NAME := Launcher3
+LOCAL_PACKAGE_NAME := AospPureLauncher
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-common.xml
 
-LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3.*
+LOCAL_JACK_COVERAGE_INCLUDE_FILTER := dz.aosp.purelauncher.*
 
 include $(BUILD_PACKAGE)
 
 #
-# Build rule for Launcher3 Go app for Android Go devices.
+# Build rule for AospPureLauncher Go app for Android Go devices.
 #
 include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
 LOCAL_MODULE_TAGS := optional
-LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
+LOCAL_STATIC_ANDROID_LIBRARIES := AospPureLauncherCommonDepsLib
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, src) \
@@ -107,16 +107,16 @@ LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_SDK_VERSION := current
 LOCAL_MIN_SDK_VERSION := 21
-LOCAL_PACKAGE_NAME := Launcher3Go
+LOCAL_PACKAGE_NAME := AospPureLauncherGo
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 AospPureLauncher AospPureLauncherQuickStep
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := \
     $(LOCAL_PATH)/AndroidManifest.xml \
     $(LOCAL_PATH)/AndroidManifest-common.xml
 
 LOCAL_MANIFEST_FILE := go/AndroidManifest.xml
-LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3.*
+LOCAL_JACK_COVERAGE_INCLUDE_FILTER := dz.aosp.purelauncher.*
 include $(BUILD_PACKAGE)
 
 #
@@ -128,7 +128,7 @@ LOCAL_AAPT2_ONLY := true
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_STATIC_JAVA_LIBRARIES := libSharedSystemUI
-LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
+LOCAL_STATIC_ANDROID_LIBRARIES := AospPureLauncherCommonDepsLib
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, src) \
@@ -140,7 +140,7 @@ LOCAL_PROGUARD_ENABLED := disabled
 
 LOCAL_SDK_VERSION := system_current
 LOCAL_MIN_SDK_VERSION := 26
-LOCAL_MODULE := Launcher3QuickStepLib
+LOCAL_MODULE := AospPureLauncherQuickStepLib
 LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_MANIFEST_FILE := quickstep/AndroidManifest.xml
@@ -153,14 +153,14 @@ include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3QuickStepLib
+LOCAL_STATIC_ANDROID_LIBRARIES := AospPureLauncherQuickStepLib
 LOCAL_PROGUARD_ENABLED := disabled
 
 LOCAL_SDK_VERSION := system_current
 LOCAL_MIN_SDK_VERSION := 26
-LOCAL_PACKAGE_NAME := Launcher3QuickStep
+LOCAL_PACKAGE_NAME := AospPureLauncherQuickStep
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 AospPureLauncher
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/quickstep/res
 
@@ -169,20 +169,20 @@ LOCAL_FULL_LIBS_MANIFEST_FILES := \
     $(LOCAL_PATH)/AndroidManifest-common.xml
 
 LOCAL_MANIFEST_FILE := quickstep/AndroidManifest.xml
-LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3.*
+LOCAL_JACK_COVERAGE_INCLUDE_FILTER := dz.aosp.purelauncher.*
 
 include $(BUILD_PACKAGE)
 
 
 #
-# Build rule for Launcher3 Go app with quickstep for Android Go devices.
+# Build rule for AospPureLauncher Go app with quickstep for Android Go devices.
 #
 include $(CLEAR_VARS)
 LOCAL_USE_AAPT2 := true
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_STATIC_JAVA_LIBRARIES := libSharedSystemUI
-LOCAL_STATIC_ANDROID_LIBRARIES := Launcher3CommonDepsLib
+LOCAL_STATIC_ANDROID_LIBRARIES := AospPureLauncherCommonDepsLib
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, src) \
@@ -197,9 +197,9 @@ LOCAL_PROGUARD_ENABLED := disabled
 
 LOCAL_SDK_VERSION := system_current
 LOCAL_MIN_SDK_VERSION := 26
-LOCAL_PACKAGE_NAME := Launcher3QuickStepGo
+LOCAL_PACKAGE_NAME := AospPureLauncherQuickStepGo
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 AospPureLauncher AospPureLauncherQuickStep
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := \
     $(LOCAL_PATH)/go/AndroidManifest.xml \
@@ -207,7 +207,7 @@ LOCAL_FULL_LIBS_MANIFEST_FILES := \
     $(LOCAL_PATH)/AndroidManifest-common.xml
 
 LOCAL_MANIFEST_FILE := quickstep/AndroidManifest.xml
-LOCAL_JACK_COVERAGE_INCLUDE_FILTER := com.android.launcher3.*
+LOCAL_JACK_COVERAGE_INCLUDE_FILTER := dz.aosp.purelauncher.*
 include $(BUILD_PACKAGE)
 
 
