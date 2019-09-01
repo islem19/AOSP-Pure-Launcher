@@ -1,6 +1,6 @@
 # AOSP-Pure-Launcher
 
-<img src="https://github.com/islem19/AOSP-Pure-Launcher/blob/master/res/mipmap-xxhdpi/ic_launcher_android.png?raw=true" align="left" hspace="10" vspace="10"></a>
+<img src="https://github.com/islem19/AOSP-Pure-Launcher/blob/master/res/mipmap-xxhdpi/ic_launcher_android.png?raw=true" align="left" width="125" height="125" hspace="10" vspace="10"></a>
 
 <br>
 <br>
