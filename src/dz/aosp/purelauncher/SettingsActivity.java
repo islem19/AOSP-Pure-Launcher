@@ -72,9 +72,8 @@ public class SettingsActivity extends Activity {
     private static final String EXTRA_SHOW_FRAGMENT_ARGS = ":settings:show_fragment_args";
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     private static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
-    private static final long WAIT_BEFORE_RESTART = 250;
     private static final String KEY_FEED_INTEGRATION = "pref_feed_integration";
-
+    private static boolean mRestartNeeded;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +110,14 @@ public class SettingsActivity extends Activity {
 
             getPreferenceManager().setSharedPreferencesName(LauncherFiles.SHARED_PREFERENCES_KEY);
             addPreferencesFromResource(R.xml.launcher_preferences);
+
+            HomeKeyWatcher mHomeKeyListener = new HomeKeyWatcher(getActivity());
+            mHomeKeyListener.setOnHomePressedListener(() -> {
+                if (mRestartNeeded) {
+                    Utilities.restart(getActivity());
+                }
+            });
+            mHomeKeyListener.startWatch();
 
             ContentResolver resolver = getActivity().getContentResolver();
 
@@ -154,7 +161,7 @@ public class SettingsActivity extends Activity {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     int index = iconSizes.findIndexOfValue((String) newValue);
                     iconSizes.setSummary(iconSizes.getEntries()[index]);
-                    restart(getActivity());
+                    mRestartNeeded = true;
                     return true;
                 }
             });
@@ -165,7 +172,7 @@ public class SettingsActivity extends Activity {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     int index = gridColumns.findIndexOfValue((String) newValue);
                     gridColumns.setSummary(gridColumns.getEntries()[index]);
-                    restart(getActivity());
+                    mRestartNeeded = true;
                     return true;
                 }
             });
@@ -176,7 +183,7 @@ public class SettingsActivity extends Activity {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     int index = gridRows.findIndexOfValue((String) newValue);
                     gridRows.setSummary(gridRows.getEntries()[index]);
-                    restart(getActivity());
+                    mRestartNeeded = true;
                     return true;
                 }
             });
@@ -240,6 +247,9 @@ public class SettingsActivity extends Activity {
                 mIconBadgingObserver = null;
             }
             super.onDestroy();
+            if (mRestartNeeded) {
+                Utilities.restart(getActivity());
+            }
         }
 
         @TargetApi(Build.VERSION_CODES.O)
@@ -342,28 +352,5 @@ public class SettingsActivity extends Activity {
         }
     }
 
-    public static void restart(final Context context) {
-        ProgressDialog.show(context, null, context.getString(R.string.state_loading), true, false);
-        new LooperExecutor(LauncherModel.getWorkerLooper()).execute(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(WAIT_BEFORE_RESTART);
-                } catch (Exception e) {
-                    Log.e("SettingsActivity", "Error waiting", e);
-                }
 
-                Intent intent = new Intent(Intent.ACTION_MAIN)
-                        .addCategory(Intent.CATEGORY_HOME)
-                        .setPackage(context.getPackageName())
-                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
-                PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT | PendingIntent.FLAG_ONE_SHOT);
-                AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-                alarmManager.setExact(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime() + 50, pendingIntent);
-
-                android.os.Process.killProcess(android.os.Process.myPid());
-            }
-        });
-    }
 }
