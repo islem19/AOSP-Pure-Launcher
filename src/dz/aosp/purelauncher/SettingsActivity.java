@@ -73,6 +73,8 @@ public class SettingsActivity extends Activity {
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     private static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
     private static final long WAIT_BEFORE_RESTART = 250;
+    private static final String KEY_FEED_INTEGRATION = "pref_feed_integration";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,6 +154,28 @@ public class SettingsActivity extends Activity {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     int index = iconSizes.findIndexOfValue((String) newValue);
                     iconSizes.setSummary(iconSizes.getEntries()[index]);
+                    restart(getActivity());
+                    return true;
+                }
+            });
+
+            final ListPreference gridColumns = (ListPreference) findPreference(Utilities.GRID_COLUMNS);
+            gridColumns.setSummary(gridColumns.getEntry());
+            gridColumns.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    int index = gridColumns.findIndexOfValue((String) newValue);
+                    gridColumns.setSummary(gridColumns.getEntries()[index]);
+                    restart(getActivity());
+                    return true;
+                }
+            });
+
+            final ListPreference gridRows = (ListPreference) findPreference(Utilities.GRID_ROWS);
+            gridRows.setSummary(gridRows.getEntry());
+            gridRows.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    int index = gridRows.findIndexOfValue((String) newValue);
+                    gridRows.setSummary(gridRows.getEntries()[index]);
                     restart(getActivity());
                     return true;
                 }

@@ -70,12 +70,33 @@
             android:entries="@array/icon_size_names"
             android:entryValues="@array/icon_size_values"
             android:defaultValue="average"
-            android:icon="@drawable/icon_shape"
+            android:icon="@drawable/icon_size"
             android:persistent="true" />
 
+    <PreferenceScreen
+        android:title="@string/grid_col_row_title"
+        android:summary="@string/grid_col_row_summary"
+        android:icon="@drawable/grid_col_row">
+        <ListPreference
+            android:key="pref_grid_columns"
+            android:title="@string/number_of_columns_title"
+            android:summary="%s"
+            android:entries="@array/grid_names"
+            android:entryValues="@array/grid_values"
+            android:defaultValue="-1"
+            android:persistent="true" />
 
-	<PreferenceCategory android:title="@string/about_aosp_launcher">
-        <PreferenceScreen
+        <ListPreference
+            android:key="pref_grid_rows"
+            android:title="@string/number_of_rows_title"
+            android:summary="%s"
+            android:entries="@array/grid_names"
+            android:entryValues="@array/grid_values"
+            android:defaultValue="-1"
+            android:persistent="true" />
+    </PreferenceScreen>
+
+    <PreferenceScreen
             android:key="about_screen"
             android:icon="@drawable/app_info"
             android:summary="@string/sum_about_app_aosp_launcher"
@@ -121,7 +142,6 @@
                     android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
                     android:data="package:dz.aosp.purelauncher" />
             </Preference>
-        </PreferenceScreen>
-    </PreferenceCategory>
+    </PreferenceScreen>
 
 </PreferenceScreen>

@@ -32,4 +32,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <item>extralarge</item>
     </string-array>
 
+    <string-array name="grid_names">
+        <item>@string/num_default</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="grid_values">
+        <item>-1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
 </resources>
