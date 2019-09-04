@@ -389,4 +389,9 @@
     <string name="github_title">Github</string>
     <string name="github_sum">AOSP Pure Launcher Project Github</string>
 
+    <string name="theme_style_title">Theme style</string>
+    <string name="theme_style_auto">Wallpaper based</string>
+    <string name="theme_style_light">Light style</string>
+    <string name="theme_style_dark">Dark style</string>
+
 </resources>

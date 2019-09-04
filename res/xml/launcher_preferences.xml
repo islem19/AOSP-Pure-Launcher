@@ -54,6 +54,15 @@
         android:persistent="true" />
 
     <ListPreference
+        android:key="pref_theme_style"
+        android:title="@string/theme_style_title"
+        android:persistent="true"
+        android:entries="@array/theme_style_entries"
+        android:entryValues="@array/theme_style_values"
+        android:icon="@drawable/theme_picker"
+        android:defaultValue="0" />
+
+    <ListPreference
         android:key="pref_override_icon_shape"
         android:title="@string/icon_shape_override_label"
         android:summary="%s"

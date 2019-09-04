@@ -46,4 +46,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <item>5</item>
     </string-array>
 
+    <string-array name="theme_style_entries" translatable="false">
+        <item>@string/theme_style_auto</item>
+        <item>@string/theme_style_light</item>
+        <item>@string/theme_style_dark</item>
+    </string-array>
+
+    <string-array name="theme_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>

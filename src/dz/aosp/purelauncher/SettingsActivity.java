@@ -72,7 +72,7 @@ public class SettingsActivity extends Activity {
     private static final String EXTRA_SHOW_FRAGMENT_ARGS = ":settings:show_fragment_args";
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     private static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
-    private static final String KEY_FEED_INTEGRATION = "pref_feed_integration";
+    public static final String PREF_THEME_STYLE_KEY = "pref_theme_style";
     private static boolean mRestartNeeded;
 
     @Override
@@ -183,6 +183,19 @@ public class SettingsActivity extends Activity {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     int index = gridRows.findIndexOfValue((String) newValue);
                     gridRows.setSummary(gridRows.getEntries()[index]);
+                    mRestartNeeded = true;
+                    return true;
+                }
+            });
+
+            final ListPreference mThemeStyle = (ListPreference) findPreference(PREF_THEME_STYLE_KEY);
+            mThemeStyle.setSummary(mThemeStyle.getEntry());
+            mThemeStyle.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                @Override
+                public boolean onPreferenceChange(Preference preference, Object o) {
+                    String newValue = (String) o;
+                    int valueIndex = mThemeStyle.findIndexOfValue(newValue);
+                    mThemeStyle.setSummary(mThemeStyle.getEntries()[valueIndex]);
                     mRestartNeeded = true;
                     return true;
                 }

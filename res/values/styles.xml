@@ -28,6 +28,12 @@
     </style>
 
     <style name="BaseLauncherThemeWithCustomAttrs" parent="@style/BaseLauncherTheme">
+        <item name="android:textColorPrimary">#ff000000</item>
+        <item name="android:textColorSecondary">#ff000000</item>
+        <item name="android:textColorTertiary">#CC000000</item>
+        <item name="android:textColorHint">#A0000000</item>
+        <item name="android:colorControlHighlight">#A0000000</item>
+        <item name="android:colorPrimary">#fff</item>
         <item name="allAppsScrimColor">#EAFFFFFF</item>
         <item name="allAppsInterimScrimAlpha">46</item>
         <item name="allAppsNavBarScrimColor">#66FFFFFF</item>

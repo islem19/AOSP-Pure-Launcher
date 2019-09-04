@@ -278,6 +278,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         initDeviceProfile(app.getInvariantDeviceProfile());
 
         mSharedPrefs = Utilities.getPrefs(this);
+        mThemeStyle = Integer.parseInt(mSharedPrefs.getString(SettingsActivity.PREF_THEME_STYLE_KEY, "0"));
         mIconCache = app.getIconCache();
         mAccessibilityDelegate = new LauncherAccessibilityDelegate(this);
 
@@ -2442,6 +2443,14 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         if ("pref_iconPackPackage".equals(key) ) {
             mModel.clearIconCache();
             mModel.forceReload();
+        }
+
+        if (key.equals(SettingsActivity.PREF_THEME_STYLE_KEY)) {
+            final int themeStyle = Integer.parseInt(sharedPreferences.getString(SettingsActivity.PREF_THEME_STYLE_KEY, "0"));
+            if (themeStyle != mThemeStyle) {
+                mThemeStyle = themeStyle;
+                recreate();
+            }
         }
     }
 }
