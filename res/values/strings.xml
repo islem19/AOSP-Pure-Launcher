@@ -393,5 +393,7 @@
     <string name="theme_style_auto">Wallpaper based</string>
     <string name="theme_style_light">Light style</string>
     <string name="theme_style_dark">Dark style</string>
-
+    <!-- Swipe for notifications -->
+    <string name="statusbar_expand_title">Swipe for notifications</string>
+    <string name="statusbar_expand_summary">On the homescreen</string>
 </resources>

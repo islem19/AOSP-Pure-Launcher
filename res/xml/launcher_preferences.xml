@@ -53,6 +53,14 @@
         android:defaultValue="@bool/allow_rotation"
         android:persistent="true" />
 
+    <SwitchPreference
+        android:key="pref_expand_statusbar"
+        android:title="@string/statusbar_expand_title"
+        android:summary="@string/statusbar_expand_summary"
+        android:defaultValue="true"
+        android:icon="@drawable/swipe_gestures"
+        android:persistent="true" />
+
     <ListPreference
         android:key="pref_theme_style"
         android:title="@string/theme_style_title"
