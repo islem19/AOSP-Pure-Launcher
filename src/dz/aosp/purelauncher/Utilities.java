@@ -112,10 +112,13 @@ public final class Utilities {
     public static final int SINGLE_FRAME_MS = 16;
 
     public static final String ICON_SIZE = "pref_icon_size";
-    public static final String GRID_COLUMNS = "pref_grid_columns";
-    public static final String GRID_ROWS = "pref_grid_rows";
 
     private static final long WAIT_BEFORE_RESTART = 250;
+    private static final String GRID_VALUE_SEPARATOR = "x";
+    private static final int GRID_ROW_VALUE_DEFAULT = 4;
+    private static final int GRID_COLUMN_VALUE_DEFAULT = 5;
+
+
 
 
     /**
@@ -657,28 +660,6 @@ public final class Utilities {
         return offset;
     }
 
-    public static int getGridColumns(Context context, int fallback) {
-        return getIconCount(context, GRID_COLUMNS, fallback);
-    }
-
-    public static int getGridRows(Context context, int fallback) {
-        return getIconCount(context, GRID_ROWS, fallback);
-    }
-
-
-    private static int getIconCount(Context context, String preferenceName, int preferenceFallback) {
-        String saved = getPrefs(context).getString(preferenceName, "-1");
-        try {
-            int num = Integer.valueOf(saved);
-            if (num == -1) {
-                return preferenceFallback;
-            }
-            return num;
-        } catch (Exception e) {
-            return preferenceFallback;
-        }
-    }
-
     public static void restart(final Context context) {
         ProgressDialog.show(context, null, context.getString(R.string.state_loading), true, false);
         new LooperExecutor(LauncherModel.getWorkerLooper()).execute(new Runnable() {
@@ -702,5 +683,30 @@ public final class Utilities {
                 android.os.Process.killProcess(android.os.Process.myPid());
             }
         });
+    }
+
+    public static Pair<Integer, Integer> extractCustomGrid(String value) {
+        int columns = GRID_COLUMN_VALUE_DEFAULT;
+        int rows = GRID_ROW_VALUE_DEFAULT;
+        String[] values = value.split(GRID_VALUE_SEPARATOR);
+
+        if (values.length == 2) {
+            try {
+                columns = Integer.parseInt(values[0]);
+                rows = Integer.parseInt(values[1]);
+            } catch (NumberFormatException e) {
+                // Ignore and fallback to default
+                columns = GRID_COLUMN_VALUE_DEFAULT;
+                rows = GRID_ROW_VALUE_DEFAULT;
+            }
+        }
+
+        return new Pair<>(columns, rows);
+
+    }
+
+    public static String getGridValue(int columns, int rows) {
+        return String.format(Locale.ENGLISH, "%1$d%2$s%3$d", columns,
+                GRID_VALUE_SEPARATOR, rows);
     }
 }

@@ -361,13 +361,12 @@
 
     <string name="state_loading">Applying\u2026</string>
 
-    <!-- Grid -->
-    <string name="grid_col_row_title">Columns and rows</string>
-    <string name="grid_col_row_summary">Customize Grid Size of the Columns and Rows</string>
-    <string name="num_default">Default</string>
-    <string name="number_of_columns_title">Grid and app drawer columns</string>
-    <string name="number_of_rows_title">Grid and app drawer rows</string>
-    <string name="app_drawer_category_title">App drawer</string>
+    <!-- Grid size -->
+    <string name="grid_size_text">Grid size</string>
+    <string name="grid_size_rows">Rows</string>
+    <string name="grid_size_columns">Columns</string>
+    <string name="grid_size_custom_positive">Set</string>
+    <string name="grid_size_custom_message">Select custom columns and rows count</string>
 
    <!-- About -->
     <string name="about_aosp_launcher">About</string>
