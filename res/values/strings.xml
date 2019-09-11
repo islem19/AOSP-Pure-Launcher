@@ -395,4 +395,6 @@
     <!-- Swipe for notifications -->
     <string name="statusbar_expand_title">Swipe for notifications</string>
     <string name="statusbar_expand_summary">On the homescreen</string>
+
+    <string name="google_title">Google</string>
 </resources>

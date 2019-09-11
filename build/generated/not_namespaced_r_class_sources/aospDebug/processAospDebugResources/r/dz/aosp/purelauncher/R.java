@@ -43,7 +43,6 @@ public final class R {
      */
     public static final int allAppsScrimColor=0x7f040002;
     /**
-     * Alpha multiplier applied to the base color.
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int alpha=0x7f040003;
@@ -163,8 +162,6 @@ public final class R {
      */
     public static final int folderItems=0x7f040014;
     /**
-     * The reference to the font file to be used. This should be a file in the res/font folder
-     * and should therefore have an R reference value. E.g. @font/myfont
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -172,17 +169,11 @@ public final class R {
      */
     public static final int font=0x7f040015;
     /**
-     * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderAuthority=0x7f040016;
     /**
-     * The sets of hashes for the certificates the provider should be signed with. This is
-     * used to verify the identity of the provider, and is only required if the provider is not
-     * part of the system image. This value may point to one list or a list of lists, where each
-     * individual list represents one collection of signature hashes. Refer to your font provider's
-     * documentation for these values.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -190,34 +181,18 @@ public final class R {
      */
     public static final int fontProviderCerts=0x7f040017;
     /**
-     * The strategy to be used when fetching font data from a font provider in XML layouts.
-     * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
-     * choice of API between {@link
-     * androidx.core.content.res.ResourcesCompat#getFont(Context, int)} (blocking) and
-     * {@link
-     * androidx.core.content.res.ResourcesCompat#getFont(Context, int, FontCallback, Handler)}
-     * (async).
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>async</td><td>1</td><td>The async font fetch works as follows.
-     * First, check the local cache, then if the requeted font is not cached, trigger a
-     * request the font and continue with layout inflation. Once the font fetch succeeds, the
-     * target text view will be refreshed with the downloaded font data. The
-     * fontProviderFetchTimeout will be ignored if async loading is specified.</td></tr>
-     * <tr><td>blocking</td><td>0</td><td>The blocking font fetch works as follows.
-     * First, check the local cache, then if the requested font is not cached, request the
-     * font from the provider and wait until it is finished.  You can change the length of
-     * the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
-     * default typeface will be used instead.</td></tr>
+     * <tr><td>async</td><td>1</td><td></td></tr>
+     * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      */
     public static final int fontProviderFetchStrategy=0x7f040018;
     /**
-     * The length of the timeout during fetching.
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -225,29 +200,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>forever</td><td>ffffffff</td><td>A special value for the timeout. In this case, the blocking font fetching will not
-     * timeout and wait until a reply is received from the font provider.</td></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      */
     public static final int fontProviderFetchTimeout=0x7f040019;
     /**
-     * The package for the Font Provider to be used for the request. This is used to verify
-     * the identity of the provider.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderPackage=0x7f04001a;
     /**
-     * The query to be sent over to the provider. Refer to your font provider's documentation
-     * on the format of this string.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderQuery=0x7f04001b;
     /**
-     * The style of the given font file. This will be used when the font is being loaded into
-     * the font stack and will override any style information in the font's header tables. If
-     * unspecified, the value in the font's header tables will be used.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -260,20 +227,11 @@ public final class R {
      */
     public static final int fontStyle=0x7f04001c;
     /**
-     * The variation settings to be applied to the font. The string should be in the following
-     * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
-     * used, or the font used does not support variation settings, this attribute needs not be
-     * specified.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontVariationSettings=0x7f04001d;
     /**
-     * The weight of the given font file. This will be used when the font is being loaded into
-     * the font stack and will override any weight information in the font's header tables. Must
-     * be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
-     * common values are 400 for regular weight and 700 for bold weight. If unspecified, the value
-     * in the font's header tables will be used.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int fontWeight=0x7f04001e;
@@ -354,11 +312,6 @@ public final class R {
      */
     public static final int keyShadowOffset=0x7f040029;
     /**
-     * A reference to an array of integers representing the
-     * locations of horizontal keylines in dp from the starting edge.
-     * Child views can refer to these keylines for alignment using
-     * layout_keyline="index" where index is a 0-based index into
-     * this array.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -366,7 +319,6 @@ public final class R {
      */
     public static final int keylines=0x7f04002a;
     /**
-     * landscapeIconSize defaults to iconSize, if not specified
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int landscapeIconSize=0x7f04002b;
@@ -376,21 +328,11 @@ public final class R {
      */
     public static final int layoutHorizontal=0x7f04002c;
     /**
-     * Class name of the Layout Manager to be used.
-     * <p/>
-     * The class must extandroidx.recyclerview.widget.RecyclerViewView$LayoutManager
-     * and have either a default constructor or constructor with the signature
-     * (android.content.Context, android.util.AttributeSet, int, int).
-     * <p/>
-     * If the name starts with a '.', application package is prefixed.
-     * Else, if the name contains a '.', the classname is assumed to be a full class name.
-     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int layoutManager=0x7f04002d;
     /**
-     * The id of an anchor view that this view should position relative to.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -398,60 +340,49 @@ public final class R {
      */
     public static final int layout_anchor=0x7f04002e;
     /**
-     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
-     * within its parent's bounds.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
-     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the horizontal gravity: a left gravity will clip the right
-     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
-     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
-     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>center</td><td>11</td><td></td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
+     * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
+     * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>fill</td><td>77</td><td></td></tr>
+     * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
     public static final int layout_anchorGravity=0x7f04002f;
     /**
-     * The class name of a Behavior class defining special runtime behavior
-     * for this child view.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int layout_behavior=0x7f040030;
     /**
-     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
-     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
-     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
+     * <tr><td>all</td><td>77</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
     public static final int layout_dodgeInsetEdges=0x7f040031;
@@ -461,28 +392,23 @@ public final class R {
      */
     public static final int layout_ignoreInsets=0x7f040032;
     /**
-     * Specifies how this view insets the CoordinatorLayout and make some other views
-     * dodge it.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
     public static final int layout_insetEdge=0x7f040033;
     /**
-     * The index of a keyline this view should position relative to.
-     * android:layout_gravity will affect how the view aligns to the
-     * specified keyline.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int layout_keyline=0x7f040034;
@@ -508,12 +434,10 @@ public final class R {
      */
     public static final int numFolderColumns=0x7f040039;
     /**
-     * numFolderRows & numFolderColumns defaults to numRows & numColumns, if not specified
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int numFolderRows=0x7f04003a;
     /**
-     * numHotseatIcons defaults to numColumns, if not specified
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int numHotseatIcons=0x7f04003b;
@@ -535,7 +459,6 @@ public final class R {
      */
     public static final int packageName=0x7f04003f;
     /**
-     * The page indicator for this workspace
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -594,7 +517,6 @@ public final class R {
      */
     public static final int stackFromEnd=0x7f04004a;
     /**
-     * Drawable to display behind the status bar when the view is set to draw behind it.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -610,8 +532,6 @@ public final class R {
      */
     public static final int title=0x7f04004c;
     /**
-     * The index of the font in the tcc font file. If the font file referenced is not in the
-     * tcc format, this attribute needs not be specified.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int ttcIndex=0x7f04004d;
@@ -1278,103 +1198,104 @@ public final class R {
     public static final int gadget_setup_text=0x7f110049;
     public static final int github_sum=0x7f11004a;
     public static final int github_title=0x7f11004b;
-    public static final int grid_size_columns=0x7f11004c;
-    public static final int grid_size_custom_message=0x7f11004d;
-    public static final int grid_size_custom_positive=0x7f11004e;
-    public static final int grid_size_rows=0x7f11004f;
-    public static final int grid_size_text=0x7f110050;
-    public static final int home_screen=0x7f110051;
-    public static final int hotseat_out_of_space=0x7f110052;
-    public static final int iconPackPackageDefault=0x7f110053;
-    public static final int icon_badging_desc_off=0x7f110054;
-    public static final int icon_badging_desc_on=0x7f110055;
-    public static final int icon_badging_service_title=0x7f110056;
-    public static final int icon_badging_title=0x7f110057;
-    public static final int icon_pack=0x7f110058;
-    public static final int icon_pack_summary=0x7f110059;
-    public static final int icon_provider_class=0x7f11005a;
-    public static final int icon_shape_circle=0x7f11005b;
-    public static final int icon_shape_override_label=0x7f11005c;
-    public static final int icon_shape_override_label_location=0x7f11005d;
-    public static final int icon_shape_override_progress=0x7f11005e;
-    public static final int icon_shape_square=0x7f11005f;
-    public static final int icon_shape_squircle=0x7f110060;
-    public static final int icon_shape_system_default=0x7f110061;
-    public static final int icon_shape_teardrop=0x7f110062;
-    public static final int icon_size_average=0x7f110063;
-    public static final int icon_size_extra_large=0x7f110064;
-    public static final int icon_size_extra_small=0x7f110065;
-    public static final int icon_size_large=0x7f110066;
-    public static final int icon_size_small=0x7f110067;
-    public static final int icon_size_title=0x7f110068;
-    public static final int icons_category_title=0x7f110069;
-    public static final int install_drop_target_label=0x7f11006a;
-    public static final int instant_app_resolver_class=0x7f11006b;
-    public static final int item_added_to_workspace=0x7f11006c;
-    public static final int item_moved=0x7f11006d;
-    public static final int item_removed=0x7f11006e;
-    public static final int long_accessible_way_to_add=0x7f11006f;
-    public static final int long_accessible_way_to_add_shortcut=0x7f110070;
-    public static final int long_press_shortcut_to_add=0x7f110071;
-    public static final int long_press_widget_to_add=0x7f110072;
-    public static final int main_process_initializer_class=0x7f110073;
-    public static final int market_search_intent=0x7f110074;
-    public static final int move_to_empty_cell=0x7f110075;
-    public static final int move_to_hotseat_position=0x7f110076;
-    public static final int move_to_position=0x7f110077;
-    public static final int msg_disabled_by_admin=0x7f110078;
-    public static final int msg_missing_notification_access=0x7f110079;
-    public static final int msg_no_phone_permission=0x7f11007a;
-    public static final int notification_dismissed=0x7f11007b;
-    public static final int notifications_header=0x7f11007c;
-    public static final int out_of_space=0x7f11007d;
-    public static final int package_state_unknown=0x7f11007e;
-    public static final int permdesc_install_shortcut=0x7f11007f;
-    public static final int permdesc_read_settings=0x7f110080;
-    public static final int permdesc_write_settings=0x7f110081;
-    public static final int permlab_install_shortcut=0x7f110082;
-    public static final int permlab_read_settings=0x7f110083;
-    public static final int permlab_write_settings=0x7f110084;
-    public static final int place_automatically=0x7f110085;
-    public static final int remove_drop_target_label=0x7f110086;
-    public static final int safemode_shortcut_error=0x7f110087;
-    public static final int safemode_widget_error=0x7f110088;
-    public static final int settings_button_text=0x7f110089;
-    public static final int shortcut_not_available=0x7f11008a;
-    public static final int shortcutinfocompat_badgepkg_whitelist=0x7f11008b;
-    public static final int shortcuts_menu_with_notifications_description=0x7f11008d;
-    public static final int state_loading=0x7f11008e;
-    public static final int status_bar_notification_info_overflow=0x7f11008f;
-    public static final int statusbar_expand_summary=0x7f110090;
-    public static final int statusbar_expand_title=0x7f110091;
-    public static final int sum_about_app_aosp_launcher=0x7f110092;
-    public static final int sum_date=0x7f110093;
-    public static final int sum_thanks=0x7f110094;
-    public static final int thanks=0x7f110095;
-    public static final int theme_style_auto=0x7f110096;
-    public static final int theme_style_dark=0x7f110097;
-    public static final int theme_style_light=0x7f110098;
-    public static final int theme_style_title=0x7f110099;
-    public static final int title_change_settings=0x7f11009a;
-    public static final int title_missing_notification_access=0x7f11009b;
-    public static final int uninstall_drop_target_label=0x7f11009c;
-    public static final int uninstall_system_app_text=0x7f11009d;
-    public static final int user_event_dispatcher_class=0x7f11009e;
-    public static final int wallpaper_button_text=0x7f11009f;
-    public static final int wallpaper_picker_package=0x7f1100a0;
-    public static final int widget_accessible_dims_format=0x7f1100a1;
-    public static final int widget_button_text=0x7f1100a2;
-    public static final int widget_dims_format=0x7f1100a3;
-    public static final int widget_resized=0x7f1100a4;
-    public static final int widgets_bottom_sheet_title=0x7f1100a5;
-    public static final int widgets_list=0x7f1100a6;
-    public static final int widgets_list_closed=0x7f1100a7;
-    public static final int work_folder_name=0x7f1100a8;
-    public static final int work_mode_off_label=0x7f1100a9;
-    public static final int work_mode_on_label=0x7f1100aa;
-    public static final int work_profile_toggle_label=0x7f1100ab;
-    public static final int workspace_new_page=0x7f1100ac;
-    public static final int workspace_scroll_format=0x7f1100ad;
+    public static final int google_title=0x7f11004c;
+    public static final int grid_size_columns=0x7f11004d;
+    public static final int grid_size_custom_message=0x7f11004e;
+    public static final int grid_size_custom_positive=0x7f11004f;
+    public static final int grid_size_rows=0x7f110050;
+    public static final int grid_size_text=0x7f110051;
+    public static final int home_screen=0x7f110052;
+    public static final int hotseat_out_of_space=0x7f110053;
+    public static final int iconPackPackageDefault=0x7f110054;
+    public static final int icon_badging_desc_off=0x7f110055;
+    public static final int icon_badging_desc_on=0x7f110056;
+    public static final int icon_badging_service_title=0x7f110057;
+    public static final int icon_badging_title=0x7f110058;
+    public static final int icon_pack=0x7f110059;
+    public static final int icon_pack_summary=0x7f11005a;
+    public static final int icon_provider_class=0x7f11005b;
+    public static final int icon_shape_circle=0x7f11005c;
+    public static final int icon_shape_override_label=0x7f11005d;
+    public static final int icon_shape_override_label_location=0x7f11005e;
+    public static final int icon_shape_override_progress=0x7f11005f;
+    public static final int icon_shape_square=0x7f110060;
+    public static final int icon_shape_squircle=0x7f110061;
+    public static final int icon_shape_system_default=0x7f110062;
+    public static final int icon_shape_teardrop=0x7f110063;
+    public static final int icon_size_average=0x7f110064;
+    public static final int icon_size_extra_large=0x7f110065;
+    public static final int icon_size_extra_small=0x7f110066;
+    public static final int icon_size_large=0x7f110067;
+    public static final int icon_size_small=0x7f110068;
+    public static final int icon_size_title=0x7f110069;
+    public static final int icons_category_title=0x7f11006a;
+    public static final int install_drop_target_label=0x7f11006b;
+    public static final int instant_app_resolver_class=0x7f11006c;
+    public static final int item_added_to_workspace=0x7f11006d;
+    public static final int item_moved=0x7f11006e;
+    public static final int item_removed=0x7f11006f;
+    public static final int long_accessible_way_to_add=0x7f110070;
+    public static final int long_accessible_way_to_add_shortcut=0x7f110071;
+    public static final int long_press_shortcut_to_add=0x7f110072;
+    public static final int long_press_widget_to_add=0x7f110073;
+    public static final int main_process_initializer_class=0x7f110074;
+    public static final int market_search_intent=0x7f110075;
+    public static final int move_to_empty_cell=0x7f110076;
+    public static final int move_to_hotseat_position=0x7f110077;
+    public static final int move_to_position=0x7f110078;
+    public static final int msg_disabled_by_admin=0x7f110079;
+    public static final int msg_missing_notification_access=0x7f11007a;
+    public static final int msg_no_phone_permission=0x7f11007b;
+    public static final int notification_dismissed=0x7f11007c;
+    public static final int notifications_header=0x7f11007d;
+    public static final int out_of_space=0x7f11007e;
+    public static final int package_state_unknown=0x7f11007f;
+    public static final int permdesc_install_shortcut=0x7f110080;
+    public static final int permdesc_read_settings=0x7f110081;
+    public static final int permdesc_write_settings=0x7f110082;
+    public static final int permlab_install_shortcut=0x7f110083;
+    public static final int permlab_read_settings=0x7f110084;
+    public static final int permlab_write_settings=0x7f110085;
+    public static final int place_automatically=0x7f110086;
+    public static final int remove_drop_target_label=0x7f110087;
+    public static final int safemode_shortcut_error=0x7f110088;
+    public static final int safemode_widget_error=0x7f110089;
+    public static final int settings_button_text=0x7f11008a;
+    public static final int shortcut_not_available=0x7f11008b;
+    public static final int shortcutinfocompat_badgepkg_whitelist=0x7f11008c;
+    public static final int shortcuts_menu_with_notifications_description=0x7f11008e;
+    public static final int state_loading=0x7f11008f;
+    public static final int status_bar_notification_info_overflow=0x7f110090;
+    public static final int statusbar_expand_summary=0x7f110091;
+    public static final int statusbar_expand_title=0x7f110092;
+    public static final int sum_about_app_aosp_launcher=0x7f110093;
+    public static final int sum_date=0x7f110094;
+    public static final int sum_thanks=0x7f110095;
+    public static final int thanks=0x7f110096;
+    public static final int theme_style_auto=0x7f110097;
+    public static final int theme_style_dark=0x7f110098;
+    public static final int theme_style_light=0x7f110099;
+    public static final int theme_style_title=0x7f11009a;
+    public static final int title_change_settings=0x7f11009b;
+    public static final int title_missing_notification_access=0x7f11009c;
+    public static final int uninstall_drop_target_label=0x7f11009d;
+    public static final int uninstall_system_app_text=0x7f11009e;
+    public static final int user_event_dispatcher_class=0x7f11009f;
+    public static final int wallpaper_button_text=0x7f1100a0;
+    public static final int wallpaper_picker_package=0x7f1100a1;
+    public static final int widget_accessible_dims_format=0x7f1100a2;
+    public static final int widget_button_text=0x7f1100a3;
+    public static final int widget_dims_format=0x7f1100a4;
+    public static final int widget_resized=0x7f1100a5;
+    public static final int widgets_bottom_sheet_title=0x7f1100a6;
+    public static final int widgets_list=0x7f1100a7;
+    public static final int widgets_list_closed=0x7f1100a8;
+    public static final int work_folder_name=0x7f1100a9;
+    public static final int work_mode_off_label=0x7f1100aa;
+    public static final int work_mode_on_label=0x7f1100ab;
+    public static final int work_profile_toggle_label=0x7f1100ac;
+    public static final int workspace_new_page=0x7f1100ad;
+    public static final int workspace_scroll_format=0x7f1100ae;
   }
   public static final class style {
     public static final int AllAppsEmptySearchBackground=0x7f120000;
@@ -1530,7 +1451,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha dz.aosp.purelauncher:alpha}</code></td><td>Alpha multiplier applied to the base color.</td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha dz.aosp.purelauncher:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -1540,9 +1461,8 @@ public final class R {
       0x010101a5, 0x0101031f, 0x7f040003
     };
     /**
-     * <p>
-     * @attr description
-     * Base color for this state.
+     * <p>This symbol is the offset where the {@link android.R.attr#color}
+     * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -1561,9 +1481,8 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>
-     * @attr description
-     * Alpha multiplier applied to the base color.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#alpha}
+     * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -1577,9 +1496,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines dz.aosp.purelauncher:keylines}</code></td><td>A reference to an array of integers representing the
-     * locations of horizontal keylines in dp from the starting edge.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground dz.aosp.purelauncher:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines dz.aosp.purelauncher:keylines}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground dz.aosp.purelauncher:statusBarBackground}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -1588,13 +1506,8 @@ public final class R {
       0x7f04002a, 0x7f04004b
     };
     /**
-     * <p>
-     * @attr description
-     * A reference to an array of integers representing the
-     * locations of horizontal keylines in dp from the starting edge.
-     * Child views can refer to these keylines for alignment using
-     * layout_keyline="index" where index is a 0-based index into
-     * this array.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#keylines}
+     * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1605,9 +1518,8 @@ public final class R {
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>
-     * @attr description
-     * Drawable to display behind the status bar when the view is set to draw behind it.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#statusBarBackground}
+     * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1628,15 +1540,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor dz.aosp.purelauncher:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity dz.aosp.purelauncher:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
-     * within its parent's bounds.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior dz.aosp.purelauncher:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
-     * for this child view.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges dz.aosp.purelauncher:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge dz.aosp.purelauncher:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
-     * dodge it.</td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline dz.aosp.purelauncher:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor dz.aosp.purelauncher:layout_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity dz.aosp.purelauncher:layout_anchorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior dz.aosp.purelauncher:layout_behavior}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges dz.aosp.purelauncher:layout_dodgeInsetEdges}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge dz.aosp.purelauncher:layout_insetEdge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline dz.aosp.purelauncher:layout_keyline}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -1680,9 +1589,8 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>
-     * @attr description
-     * The id of an anchor view that this view should position relative to.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#layout_anchor}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1693,10 +1601,8 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>
-     * @attr description
-     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
-     * within its parent's bounds.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#layout_anchorGravity}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1704,36 +1610,28 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
-     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the horizontal gravity: a left gravity will clip the right
-     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
-     * the child clipped to its container's bounds.
-     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
-     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
-     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>center</td><td>11</td><td></td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
+     * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
+     * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>fill</td><td>77</td><td></td></tr>
+     * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
      * @attr name dz.aosp.purelauncher:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>
-     * @attr description
-     * The class name of a Behavior class defining special runtime behavior
-     * for this child view.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#layout_behavior}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -1742,9 +1640,8 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>
-     * @attr description
-     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#layout_dodgeInsetEdges}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1752,24 +1649,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
-     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
-     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
+     * <tr><td>all</td><td>77</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
      * @attr name dz.aosp.purelauncher:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>
-     * @attr description
-     * Specifies how this view insets the CoordinatorLayout and make some other views
-     * dodge it.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#layout_insetEdge}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1777,24 +1672,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
-     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
      * @attr name dz.aosp.purelauncher:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>
-     * @attr description
-     * The index of a keyline this view should position relative to.
-     * android:layout_gravity will affect how the view aligns to the
-     * specified keyline.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#layout_keyline}
+     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -2140,12 +2032,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority dz.aosp.purelauncher:fontProviderAuthority}</code></td><td>The authority of the Font Provider to be used for the request.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts dz.aosp.purelauncher:fontProviderCerts}</code></td><td>The sets of hashes for the certificates the provider should be signed with.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy dz.aosp.purelauncher:fontProviderFetchStrategy}</code></td><td>The strategy to be used when fetching font data from a font provider in XML layouts.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout dz.aosp.purelauncher:fontProviderFetchTimeout}</code></td><td>The length of the timeout during fetching.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage dz.aosp.purelauncher:fontProviderPackage}</code></td><td>The package for the Font Provider to be used for the request.</td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery dz.aosp.purelauncher:fontProviderQuery}</code></td><td>The query to be sent over to the provider.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority dz.aosp.purelauncher:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts dz.aosp.purelauncher:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy dz.aosp.purelauncher:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout dz.aosp.purelauncher:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage dz.aosp.purelauncher:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery dz.aosp.purelauncher:fontProviderQuery}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -2159,9 +2051,8 @@ public final class R {
       0x7f04001a, 0x7f04001b
     };
     /**
-     * <p>
-     * @attr description
-     * The authority of the Font Provider to be used for the request.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#fontProviderAuthority}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -2170,13 +2061,8 @@ public final class R {
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>
-     * @attr description
-     * The sets of hashes for the certificates the provider should be signed with. This is
-     * used to verify the identity of the provider, and is only required if the provider is not
-     * part of the system image. This value may point to one list or a list of lists, where each
-     * individual list represents one collection of signature hashes. Refer to your font provider's
-     * documentation for these values.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#fontProviderCerts}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2187,15 +2073,8 @@ public final class R {
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>
-     * @attr description
-     * The strategy to be used when fetching font data from a font provider in XML layouts.
-     * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
-     * choice of API between {@link
-     * androidx.core.content.res.ResourcesCompat#getFont(Context, int)} (blocking) and
-     * {@link
-     * androidx.core.content.res.ResourcesCompat#getFont(Context, int, FontCallback, Handler)}
-     * (async).
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#fontProviderFetchStrategy}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2203,25 +2082,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>async</td><td>1</td><td>The async font fetch works as follows.
-     * First, check the local cache, then if the requeted font is not cached, trigger a
-     * request the font and continue with layout inflation. Once the font fetch succeeds, the
-     * target text view will be refreshed with the downloaded font data. The
-     * fontProviderFetchTimeout will be ignored if async loading is specified.</td></tr>
-     * <tr><td>blocking</td><td>0</td><td>The blocking font fetch works as follows.
-     * First, check the local cache, then if the requested font is not cached, request the
-     * font from the provider and wait until it is finished.  You can change the length of
-     * the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
-     * default typeface will be used instead.</td></tr>
+     * <tr><td>async</td><td>1</td><td></td></tr>
+     * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      *
      * @attr name dz.aosp.purelauncher:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>
-     * @attr description
-     * The length of the timeout during fetching.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#fontProviderFetchTimeout}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
@@ -2230,18 +2100,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>forever</td><td>ffffffff</td><td>A special value for the timeout. In this case, the blocking font fetching will not
-     * timeout and wait until a reply is received from the font provider.</td></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
      * @attr name dz.aosp.purelauncher:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>
-     * @attr description
-     * The package for the Font Provider to be used for the request. This is used to verify
-     * the identity of the provider.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#fontProviderPackage}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -2250,10 +2117,8 @@ public final class R {
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>
-     * @attr description
-     * The query to be sent over to the provider. Refer to your font provider's documentation
-     * on the format of this string.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#fontProviderQuery}
+     * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -2273,11 +2138,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font dz.aosp.purelauncher:font}</code></td><td>The reference to the font file to be used.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle dz.aosp.purelauncher:fontStyle}</code></td><td>The style of the given font file.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings dz.aosp.purelauncher:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight dz.aosp.purelauncher:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex dz.aosp.purelauncher:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font dz.aosp.purelauncher:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle dz.aosp.purelauncher:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings dz.aosp.purelauncher:fontVariationSettings}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight dz.aosp.purelauncher:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex dz.aosp.purelauncher:ttcIndex}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -2317,9 +2182,8 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontWeight=1;
     /**
-     * <p>
-     * @attr description
-     * References to the framework attrs
+     * <p>This symbol is the offset where the {@link android.R.attr#fontStyle}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2354,10 +2218,8 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontVariationSettings=4;
     /**
-     * <p>
-     * @attr description
-     * The reference to the font file to be used. This should be a file in the res/font folder
-     * and should therefore have an R reference value. E.g. @font/myfont
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#font}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2368,11 +2230,8 @@ public final class R {
      */
     public static final int FontFamilyFont_font=5;
     /**
-     * <p>
-     * @attr description
-     * The style of the given font file. This will be used when the font is being loaded into
-     * the font stack and will override any style information in the font's header tables. If
-     * unspecified, the value in the font's header tables will be used.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#fontStyle}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2388,12 +2247,8 @@ public final class R {
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
-     * <p>
-     * @attr description
-     * The variation settings to be applied to the font. The string should be in the following
-     * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
-     * used, or the font used does not support variation settings, this attribute needs not be
-     * specified.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#fontVariationSettings}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -2402,13 +2257,8 @@ public final class R {
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
-     * <p>
-     * @attr description
-     * The weight of the given font file. This will be used when the font is being loaded into
-     * the font stack and will override any weight information in the font's header tables. Must
-     * be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
-     * common values are 400 for regular weight and 700 for bold weight. If unspecified, the value
-     * in the font's header tables will be used.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#fontWeight}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -2416,10 +2266,8 @@ public final class R {
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
-     * <p>
-     * @attr description
-     * The index of the font in the tcc font file. If the font file referenced is not in the
-     * tcc format, this attribute needs not be specified.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#ttcIndex}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -2465,9 +2313,8 @@ public final class R {
       0x01010510, 0x01010511, 0x01010512, 0x01010513
     };
     /**
-     * <p>
-     * @attr description
-     * Start color of the gradient.
+     * <p>This symbol is the offset where the {@link android.R.attr#startColor}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -2477,9 +2324,8 @@ public final class R {
      */
     public static final int GradientColor_android_startColor=0;
     /**
-     * <p>
-     * @attr description
-     * End color of the gradient.
+     * <p>This symbol is the offset where the {@link android.R.attr#endColor}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -2489,9 +2335,8 @@ public final class R {
      */
     public static final int GradientColor_android_endColor=1;
     /**
-     * <p>
-     * @attr description
-     * Type of gradient. The default type is linear.
+     * <p>This symbol is the offset where the {@link android.R.attr#type}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2508,9 +2353,8 @@ public final class R {
      */
     public static final int GradientColor_android_type=2;
     /**
-     * <p>
-     * @attr description
-     * X coordinate of the center of the gradient within the path.
+     * <p>This symbol is the offset where the {@link android.R.attr#centerX}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a fractional value, which is a floating point number appended with
@@ -2522,9 +2366,8 @@ public final class R {
      */
     public static final int GradientColor_android_centerX=3;
     /**
-     * <p>
-     * @attr description
-     * Y coordinate of the center of the gradient within the path.
+     * <p>This symbol is the offset where the {@link android.R.attr#centerY}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a fractional value, which is a floating point number appended with
@@ -2536,9 +2379,8 @@ public final class R {
      */
     public static final int GradientColor_android_centerY=4;
     /**
-     * <p>
-     * @attr description
-     * Radius of the gradient, used only with radial gradient.
+     * <p>This symbol is the offset where the {@link android.R.attr#gradientRadius}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -2555,9 +2397,8 @@ public final class R {
      */
     public static final int GradientColor_android_gradientRadius=5;
     /**
-     * <p>
-     * @attr description
-     * Defines the tile mode of the gradient. SweepGradient doesn't support tiling.
+     * <p>This symbol is the offset where the {@link android.R.attr#tileMode}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2575,9 +2416,8 @@ public final class R {
      */
     public static final int GradientColor_android_tileMode=6;
     /**
-     * <p>
-     * @attr description
-     * Optional center color.
+     * <p>This symbol is the offset where the {@link android.R.attr#centerColor}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -2587,10 +2427,8 @@ public final class R {
      */
     public static final int GradientColor_android_centerColor=7;
     /**
-     * <p>
-     * @attr description
-     * X coordinate of the start point origin of the gradient.
-     * Defined in same coordinates as the path itself
+     * <p>This symbol is the offset where the {@link android.R.attr#startX}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -2598,10 +2436,8 @@ public final class R {
      */
     public static final int GradientColor_android_startX=8;
     /**
-     * <p>
-     * @attr description
-     * Y coordinate of the start point of the gradient within the shape.
-     * Defined in same coordinates as the path itself
+     * <p>This symbol is the offset where the {@link android.R.attr#startY}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -2609,10 +2445,8 @@ public final class R {
      */
     public static final int GradientColor_android_startY=9;
     /**
-     * <p>
-     * @attr description
-     * X coordinate of the end point origin of the gradient.
-     * Defined in same coordinates as the path itself
+     * <p>This symbol is the offset where the {@link android.R.attr#endX}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -2620,10 +2454,8 @@ public final class R {
      */
     public static final int GradientColor_android_endX=10;
     /**
-     * <p>
-     * @attr description
-     * Y coordinate of the end point of the gradient within the shape.
-     * Defined in same coordinates as the path itself
+     * <p>This symbol is the offset where the {@link android.R.attr#endY}
+     * attribute's value can be found in the {@link #GradientColor} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -2647,9 +2479,8 @@ public final class R {
       0x010101a5, 0x01010514
     };
     /**
-     * <p>
-     * @attr description
-     * The current color for the offset inside the gradient.
+     * <p>This symbol is the offset where the {@link android.R.attr#color}
+     * attribute's value can be found in the {@link #GradientColorItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -2659,10 +2490,8 @@ public final class R {
      */
     public static final int GradientColorItem_android_color=0;
     /**
-     * <p>
-     * @attr description
-     * The offset (or ratio) of this current color item inside the gradient.
-     * The value is only meaningful when it is between 0 and 1.
+     * <p>This symbol is the offset where the {@link android.R.attr#offset}
+     * attribute's value can be found in the {@link #GradientColorItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -2744,14 +2573,14 @@ public final class R {
      * <tr><td><code>{@link #InvariantDeviceProfile_demoModeLayoutId dz.aosp.purelauncher:demoModeLayoutId}</code></td><td></td></tr>
      * <tr><td><code>{@link #InvariantDeviceProfile_iconSize dz.aosp.purelauncher:iconSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #InvariantDeviceProfile_iconTextSize dz.aosp.purelauncher:iconTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #InvariantDeviceProfile_landscapeIconSize dz.aosp.purelauncher:landscapeIconSize}</code></td><td>landscapeIconSize defaults to iconSize, if not specified</td></tr>
+     * <tr><td><code>{@link #InvariantDeviceProfile_landscapeIconSize dz.aosp.purelauncher:landscapeIconSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #InvariantDeviceProfile_minHeightDps dz.aosp.purelauncher:minHeightDps}</code></td><td></td></tr>
      * <tr><td><code>{@link #InvariantDeviceProfile_minWidthDps dz.aosp.purelauncher:minWidthDps}</code></td><td></td></tr>
      * <tr><td><code>{@link #InvariantDeviceProfile_name dz.aosp.purelauncher:name}</code></td><td></td></tr>
      * <tr><td><code>{@link #InvariantDeviceProfile_numColumns dz.aosp.purelauncher:numColumns}</code></td><td></td></tr>
      * <tr><td><code>{@link #InvariantDeviceProfile_numFolderColumns dz.aosp.purelauncher:numFolderColumns}</code></td><td></td></tr>
-     * <tr><td><code>{@link #InvariantDeviceProfile_numFolderRows dz.aosp.purelauncher:numFolderRows}</code></td><td>numFolderRows & numFolderColumns defaults to numRows & numColumns, if not specified</td></tr>
-     * <tr><td><code>{@link #InvariantDeviceProfile_numHotseatIcons dz.aosp.purelauncher:numHotseatIcons}</code></td><td>numHotseatIcons defaults to numColumns, if not specified</td></tr>
+     * <tr><td><code>{@link #InvariantDeviceProfile_numFolderRows dz.aosp.purelauncher:numFolderRows}</code></td><td></td></tr>
+     * <tr><td><code>{@link #InvariantDeviceProfile_numHotseatIcons dz.aosp.purelauncher:numHotseatIcons}</code></td><td></td></tr>
      * <tr><td><code>{@link #InvariantDeviceProfile_numRows dz.aosp.purelauncher:numRows}</code></td><td></td></tr>
      * </table>
      * @see #InvariantDeviceProfile_defaultLayoutId
@@ -2817,9 +2646,8 @@ public final class R {
      */
     public static final int InvariantDeviceProfile_iconTextSize=3;
     /**
-     * <p>
-     * @attr description
-     * landscapeIconSize defaults to iconSize, if not specified
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#landscapeIconSize}
+     * attribute's value can be found in the {@link #InvariantDeviceProfile} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -2873,9 +2701,8 @@ public final class R {
      */
     public static final int InvariantDeviceProfile_numFolderColumns=9;
     /**
-     * <p>
-     * @attr description
-     * numFolderRows & numFolderColumns defaults to numRows & numColumns, if not specified
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#numFolderRows}
+     * attribute's value can be found in the {@link #InvariantDeviceProfile} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -2883,9 +2710,8 @@ public final class R {
      */
     public static final int InvariantDeviceProfile_numFolderRows=10;
     /**
-     * <p>
-     * @attr description
-     * numHotseatIcons defaults to numColumns, if not specified
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#numHotseatIcons}
+     * attribute's value can be found in the {@link #InvariantDeviceProfile} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -2908,7 +2734,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PagedView_pageIndicator dz.aosp.purelauncher:pageIndicator}</code></td><td>The page indicator for this workspace</td></tr>
+     * <tr><td><code>{@link #PagedView_pageIndicator dz.aosp.purelauncher:pageIndicator}</code></td><td></td></tr>
      * </table>
      * @see #PagedView_pageIndicator
      */
@@ -2916,9 +2742,8 @@ public final class R {
       0x7f040040
     };
     /**
-     * <p>
-     * @attr description
-     * The page indicator for this workspace
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#pageIndicator}
+     * attribute's value can be found in the {@link #PagedView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2942,7 +2767,7 @@ public final class R {
      * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable dz.aosp.purelauncher:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable dz.aosp.purelauncher:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable dz.aosp.purelauncher:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager dz.aosp.purelauncher:layoutManager}</code></td><td>Class name of the Layout Manager to be used.</td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager dz.aosp.purelauncher:layoutManager}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_reverseLayout dz.aosp.purelauncher:reverseLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_spanCount dz.aosp.purelauncher:spanCount}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_stackFromEnd dz.aosp.purelauncher:stackFromEnd}</code></td><td></td></tr>
@@ -3058,17 +2883,8 @@ public final class R {
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
-     * <p>
-     * @attr description
-     * Class name of the Layout Manager to be used.
-     * <p/>
-     * The class must extandroidx.recyclerview.widget.RecyclerViewView$LayoutManager
-     * and have either a default constructor or constructor with the signature
-     * (android.content.Context, android.util.AttributeSet, int, int).
-     * <p/>
-     * If the name starts with a '.', application package is prefixed.
-     * Else, if the name contains a '.', the classname is assumed to be a full class name.
-     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
+     * <p>This symbol is the offset where the {@link dz.aosp.purelauncher.R.attr#layoutManager}
+     * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;

@@ -671,6 +671,7 @@ string gadget_error_text
 string gadget_setup_text
 string github_sum
 string github_title
+string google_title
 string grid_size_columns
 string grid_size_custom_message
 string grid_size_custom_positive
