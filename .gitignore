@@ -11,4 +11,5 @@ WallpaperPicker/.project.properties
 bin/
 .idea/
 local.properties
+build/
 
