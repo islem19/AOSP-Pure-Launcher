@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals formatted="false" msgid="7948068486082879291" name="badged_app_label">
+      <item quantity="other"><ns1:g id="APP_NAME_2">%1$s</ns1:g> មាន​ការ​ជូន​ដំណឹង <ns1:g id="NOTIFICATION_COUNT_3">%2$d</ns1:g></item>
+      <item quantity="one"><ns1:g id="APP_NAME_0">%1$s</ns1:g> មាន​ការ​ជូន​ដំណឹង <ns1:g id="NOTIFICATION_COUNT_1">%2$d</ns1:g></item>
+    </plurals>
+    <string msgid="7610119707847920412" name="abandoned_clean_this">"លុបចេញ"</string>
+    <string msgid="3990027586878167529" name="abandoned_promise_explanation">"មិន​បាន​ដំឡើង​កម្មវិធី​សម្រាប់​រូបតំណាង​នេះ។ អ្នក​អាច​លុប​វា ឬ​ស្វែងរក​កម្មវិធី និង​ដំឡើង​វា​ដោយ​ដៃ។"</string>
+    <string msgid="7096178467971716750" name="abandoned_promises_title">"មិន​បាន​ដំឡើង​កម្មវិធី​នេះ"</string>
+    <string msgid="891119232568284442" name="abandoned_search">"ស្វែងរក"</string>
+    <string msgid="5354563209433803643" name="accessibility_close_task">"បិទ"</string>
+    <string msgid="1444379410873162882" name="accessibility_desc_recent_apps">"ទិដ្ឋភាពរួម"</string>
+    <string msgid="4058661986695117371" name="accessibility_recent_apps">"កម្មវិធី​ថ្មីៗ"</string>
+    <string msgid="8902165848117513641" name="action_add_to_workspace">"បន្ថែមទៅអេក្រង់ដើម"</string>
+    <string msgid="282377193880900022" name="action_decrease_height">"បន្ថយកម្ពស់"</string>
+    <string msgid="1374549771083094654" name="action_decrease_width">"បន្ថយទទឹង"</string>
+    <string msgid="2864038805849372848" name="action_deep_shortcut">"ផ្លូវកាត់"</string>
+    <string msgid="5909461085055959187" name="action_dismiss_notification">"បដិសេធ"</string>
+    <string msgid="459390020612501122" name="action_increase_height">"បង្កើនកម្ពស់"</string>
+    <string msgid="8773715375078513326" name="action_increase_width">"បង្កើនទទឹង"</string>
+    <string msgid="4339390619886385032" name="action_move">"ផ្លាស់ទីធាតុ"</string>
+    <string msgid="2170188780612570250" name="action_move_here">"ផ្លាស់ធាតុមកទីនេះ"</string>
+    <string msgid="1603837886334246317" name="action_move_to_workspace">"ផ្លាស់ទៅអេក្រង់ដើម"</string>
+    <string msgid="1802976324781771067" name="action_resize">"ប្ដូរទំហំ"</string>
+    <string msgid="7456344436509528827" name="activity_not_available">"មិន​មាន​កម្មវិធី"</string>
+    <string msgid="8071924732094499514" name="activity_not_found">"មិន​បាន​ដំឡើង​កម្មវិធី។"</string>
+    <string msgid="5899764264480397019" name="add_item_request_drag_hint">"ចុច​ឲ្យជាប់​ដើម្បី​បញ្ចូលវា​ដោយផ្ទាល់"</string>
+    <string msgid="9040534766770853243" name="add_to_folder">"បន្ថែមទៅថតឯកសារ៖ <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="4534929978967147231" name="add_to_folder_with_app">"បន្ថែមទៅថតឯកសារដែលមានឈ្មោះ <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="4793259502305558003" name="added_to_folder">"បានបន្ថែមធាតុទៅថតឯកសារ"</string>
+    <string msgid="8130441508702294465" name="all_apps_button_label">"បញ្ជីកម្មវិធី"</string>
+    <string msgid="1315764287305224468" name="all_apps_button_personal_label">"បញ្ជី​កម្មវិធី​ផ្ទាល់ខ្លួន"</string>
+    <string msgid="7270707118948892488" name="all_apps_button_work_label">"បញ្ជី​កម្មវិធី​ការងារ"</string>
+    <string msgid="252062713717058851" name="all_apps_home_button_label">"ដើម"</string>
+    <string msgid="5813968043155271636" name="all_apps_loading_message">"កំពុងផ្ទុកកម្មវិធី…"</string>
+    <string msgid="3200346862396363786" name="all_apps_no_search_results">"រកមិនឃើញកម្មវិធី​ដែលត្រូវគ្នាជាមួយ \"<ns1:g id="QUERY">%1$s</ns1:g>\" ទេ"</string>
+    <string msgid="4190252696685155002" name="all_apps_personal_tab">"ផ្ទាល់ខ្លួន"</string>
+    <string msgid="1390553134053255246" name="all_apps_search_bar_hint">"ស្វែងរក​កម្មវិធី"</string>
+    <string msgid="1366263386197059176" name="all_apps_search_market_message">"ស្វែងរកកម្មវិធីច្រើនទៀត"</string>
+    <string msgid="4884822796154055118" name="all_apps_work_tab">"ការងារ"</string>
+    <string msgid="8662546029078692509" name="allow_rotation_desc">"នៅពេលដែលបង្វិលទូរស័ព្ទរបស់អ្នក"</string>
+    <string msgid="7728578836261442095" name="allow_rotation_title">"អនុញ្ញាតការបងិ្វលអេក្រង់ដើម"</string>
+    <string msgid="8336702962104482644" name="app_downloading_title">"កំពុងដោនឡូត <ns1:g id="NAME">%1$s</ns1:g> បានបញ្ចប់ <ns1:g id="PROGRESS">%2$s</ns1:g>"</string>
+    <string msgid="692894985365717661" name="app_info_drop_target_label">"ព័ត៌មាន​កម្មវិធី"</string>
+    <string msgid="649227358658669779" name="app_name">"Launcher3"</string>
+    <string msgid="7053938513995617849" name="app_waiting_download_title">"<ns1:g id="NAME">%1$s</ns1:g> កំពុងរង់ចាំការដំឡើង"</string>
+    <string msgid="7117251166066978730" name="auto_add_shortcuts_description">"សម្រាប់កម្មវិធីថ្មី"</string>
+    <string msgid="8222286205987725611" name="auto_add_shortcuts_label">"បញ្ចូល​រូបតំណាង​ទៅ​អេក្រង់​ដើម"</string>
+    <string msgid="2818107472360579152" name="bottom_work_tab_user_education_body">"កម្មវិធី​ការងារ​នីមួយៗ​មាន​ស្លាកមួយ និងត្រូវ​បានរក្សាទុក​យ៉ាងមានសុវត្ថិភាព​ដោយស្ថាប័ន​របស់អ្នក។ សូម​ផ្លាស់ទី​កម្មវិធី​ទៅកាន់​អេក្រង់​ដើម​របស់អ្នក​ ដើម្បី​ងាយស្រួល​ចូលប្រើជាងមុន។"</string>
+    <string msgid="4224492243977802135" name="bottom_work_tab_user_education_close_button">"បិទ"</string>
+    <string msgid="1098340939861869465" name="bottom_work_tab_user_education_closed">"បានបិទ"</string>
+    <string msgid="5785851780786322825" name="bottom_work_tab_user_education_title">"ស្វែង​រក​កម្មវិធី​ការងារ​នៅទីនេះ"</string>
+    <string msgid="4050141361160214248" name="create_folder_with">"បង្កើតថតឯកសារជាមួយ៖ <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="3747508247759093328" name="custom_actions">"សកម្មភាព​ផ្ទាល់ខ្លួន"</string>
+    <string msgid="7475544710230993317" name="default_scroll_format">"ទំព័រ %1$d នៃ %2$d"</string>
+    <string msgid="6673129024321402780" name="disabled_app_label">"បានបិទដំណើរការ <ns1:g id="APP_NAME">%1$s</ns1:g>"</string>
+    <string msgid="4100806530910930934" name="folder_closed">"បាន​បិទ​ថត"</string>
+    <string msgid="6409794597405184510" name="folder_created">"បានបង្កើតថតឯកសារ"</string>
+    <string msgid="6617836969016293992" name="folder_hint_text">"ថត​គ្មាន​ឈ្មោះ"</string>
+    <string msgid="7371454440695724752" name="folder_name"/>
+    <string msgid="6629239338071103179" name="folder_name_format">"ថត៖ <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="94695026776264709" name="folder_opened">"បាន​បើក​ថត <ns1:g id="WIDTH">%1$d</ns1:g> ដោយ <ns1:g id="HEIGHT">%2$d</ns1:g>"</string>
+    <string msgid="1794088362165669656" name="folder_renamed">"បាន​ប្ដូរ​ឈ្មោះ​ថត​ជា <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="4625795376335528256" name="folder_tap_to_close">"ប៉ះ ដើម្បីបិទថត"</string>
+    <string msgid="4017685068016979677" name="folder_tap_to_rename">"ប៉ះដើម្បីរក្សាទុកឈ្មោះដែលបានប្តូរ"</string>
+    <string msgid="6081085226050792095" name="gadget_error_text">"បញ្ហា​ក្នុង​ការ​ផ្ទុក​ធាតុ​​ក្រាហ្វិក"</string>
+    <string msgid="8274003207686040488" name="gadget_setup_text">"រៀបចំ"</string>
+    <string msgid="806512411299847073" name="home_screen">"អេក្រង់ដើម"</string>
+    <string msgid="7448809638125333693" name="hotseat_out_of_space">"គ្មាន​បន្ទប់​​ក្នុង​ថាស​និយម​ប្រើ"</string>
+    <string msgid="5503319969924580241" name="icon_badging_desc_off">"បិទ"</string>
+    <string msgid="2627952638544674079" name="icon_badging_desc_on">"បើក"</string>
+    <string msgid="2309733118428242174" name="icon_badging_service_title">"បង្ហាញ​ស្លាក​ជូនដំណឹង"</string>
+    <string msgid="874121399231955394" name="icon_badging_title">"ស្លាកជូនដំណឹង"</string>
+    <string msgid="6550072265930144217" name="icon_shape_circle">"រង្វង់"</string>
+    <string msgid="2977264953998281004" name="icon_shape_override_label">"ប្តូររូបរាងរូបតំណាង"</string>
+    <string msgid="3841607380657692863" name="icon_shape_override_label_location">"នៅ​លើ​អេក្រង់​ដើម"</string>
+    <string msgid="3461735694970239908" name="icon_shape_override_progress">"កំពុងអនុវត្ត​ការប្តូររូបរាងរូបតំណាង"</string>
+    <string msgid="633575066111622774" name="icon_shape_square">"ការ៉េ"</string>
+    <string msgid="5658049910802669495" name="icon_shape_squircle">"ការ៉េជ្រុងកោង"</string>
+    <string msgid="1709762974822753030" name="icon_shape_system_default">"ប្រើលំនាំដើមរបស់ប្រព័ន្ធ"</string>
+    <string msgid="4525869388200835463" name="icon_shape_teardrop">"តំណក់​ទឹកភ្នែក"</string>
+    <string msgid="2539096853673231757" name="install_drop_target_label">"ដំឡើង"</string>
+    <string msgid="4211073925752213539" name="item_added_to_workspace">"ធាតុដែលត្រូវបានបន្ថែមទៅអេក្រង់ដើម"</string>
+    <string msgid="4606538322571412879" name="item_moved">"បានផ្លាស់ទីធាតុ"</string>
+    <string msgid="851119963877842327" name="item_removed">"ធាតុដែលបានដកចេញ"</string>
+    <string msgid="4289502106628154155" name="long_accessible_way_to_add">"ប៉ះពីរដង ហើយចុចឲ្យជាប់ដើម្បីជ្រើសយកធាតុក្រាហ្វិក ឬប្រើសកម្មភាពផ្ទាល់ខ្លួន។"</string>
+    <string msgid="3327314059613154633" name="long_accessible_way_to_add_shortcut">"ចុច​ពីរ​ដង ហើយ​ចុច​ឱ្យ​ជាប់​ដើម្បី​ជ្រើសរើស​ផ្លូវកាត់​មួយ ឬ​ប្រើ​សកម្មភាព​ផ្ទាល់ខ្លួន។"</string>
+    <string msgid="4524750017792716791" name="long_press_shortcut_to_add">"ចុច​ឱ្យ​ជាប់​ដើម្បី​ជ្រើស​រើស​ផ្លូវកាត់​មួយ។"</string>
+    <string msgid="7699152356777458215" name="long_press_widget_to_add">"ប៉ះ &amp; សង្កត់ ដើម្បី​ជ្រើស​ធាតុ​ក្រាហ្វិក។"</string>
+    <string msgid="2833711483015685619" name="move_to_empty_cell">"ផ្លាស់ទីទៅជួរដេកទី <ns1:g id="NUMBER_0">%1$s</ns1:g> ជួរឈរទី <ns1:g id="NUMBER_1">%2$s</ns1:g>"</string>
+    <string msgid="6295412897075147808" name="move_to_hotseat_position">"ផ្លាស់ទីទៅការចូលចិត្តទីតាំងទី <ns1:g id="NUMBER">%1$s</ns1:g>"</string>
+    <string msgid="6750008980455459790" name="move_to_position">"ផ្លាស់ទីទៅទីតាំង <ns1:g id="NUMBER">%1$s</ns1:g>"</string>
+    <string msgid="6898038085516271325" name="msg_disabled_by_admin">"បានបិទដំណើរការដោយអ្នកគ្រប់គ្រងរបស់អ្នក"</string>
+    <string msgid="281113995110910548" name="msg_missing_notification_access">"ដើម្បីបង្ហាញស្លាកជូនដំណឹង សូមបើកការជូនដំណឹងកម្មវិធីសម្រាប់ <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="9208659281529857371" name="msg_no_phone_permission">"<ns1:g id="APP_NAME">%1$s</ns1:g> មិនត្រូវបានអនុញ្ញាតឲ្យធ្វើការហៅទូរស័ព្ទទេ"</string>
+    <string msgid="6002233469409822874" name="notification_dismissed">"បាន​បដិសេធ​ការជូនដំណឹង"</string>
+    <string msgid="1404149926117359025" name="notifications_header">"ការ​ជូនដំណឹង"</string>
+    <string msgid="4691004494942118364" name="out_of_space">"គ្មាន​បន្ទប់​នៅ​លើ​អេក្រង់​ដើម​នេះ​ទៀត​ទេ។"</string>
+    <string msgid="7592128424511031410" name="package_state_unknown">"មិន​ស្គាល់"</string>
+    <string msgid="923466509822011139" name="permdesc_install_shortcut">"អនុញ្ញាត​ឲ្យ​កម្មវិធី​បន្ថែម​ផ្លូវកាត់​ ដោយ​មិន​ចាំបាច់​​អំពើ​ពី​អ្នក​ប្រើ។"</string>
+    <string msgid="5833423719057558387" name="permdesc_read_settings">"អនុញ្ញាត​ឲ្យ​កម្មវិធី​អាន​ការ​កំណត់ និង​ផ្លូវកាត់​ក្នុង​អេក្រង់​ដើម។"</string>
+    <string msgid="5440712911516509985" name="permdesc_write_settings">"អនុញ្ញាត​ឲ្យ​កម្មវិធី​ប្ដូរ​ការ​កំណត់ និង​ផ្លូវ​កាត់​ក្នុង​អេក្រង់​ដើម។"</string>
+    <string msgid="5632423390354674437" name="permlab_install_shortcut">"ដំឡើង​ផ្លូវកាត់"</string>
+    <string msgid="1941457408239617576" name="permlab_read_settings">"អាន​ការ​កំណត់​ និង​ផ្លូវកាត់​​អេក្រង់​ដើម"</string>
+    <string msgid="3574213698004620587" name="permlab_write_settings">"សរសេរ​ការ​កំណត់ ​និង​ផ្លូវកាត់​​លើ​អេក្រង់​ដើម"</string>
+    <string msgid="8064208734425456485" name="place_automatically">"បញ្ចូល​ដោយ​ស្វ័យ​ប្រវត្តិ"</string>
+    <string msgid="7929860679018978258" name="recent_task_option_pin">"ដៅ"</string>
+    <string msgid="5353188922202653570" name="recent_task_option_split_screen">"មុខងារ​បំបែកអេក្រង់"</string>
+    <string msgid="5328176793634888831" name="recents_clear_all">"សម្អាត​ទាំងអស់"</string>
+    <string msgid="7040467240571714191" name="recents_empty_message">"មិនមានធាតុថ្មីៗទេ"</string>
+    <string msgid="7812859488053230776" name="remove_drop_target_label">"យកចេញ"</string>
+    <string msgid="9160126848219158407" name="safemode_shortcut_error">"បាន​បិទ​កម្មវិធី​ដែល​បាន​ទាញ​យក​ក្នុង​របៀប​សុវត្ថិភាព"</string>
+    <string msgid="4863470563535682004" name="safemode_widget_error">"បាន​បិទ​ធាតុ​ក្រាហ្វិក​ក្នុង​របៀប​សុវត្ថិភាព"</string>
+    <string msgid="8873672322605444408" name="settings_button_text">"ការកំណត់​ទំព័រដើម"</string>
+    <string msgid="2536503539825726397" name="shortcut_not_available">"ផ្លូវកាត់មិនអាចប្រើបានទេ"</string>
+    <string msgid="2676582286544232849" name="shortcuts_menu_with_notifications_description">"ផ្លូវកាត់ និង​ការជូនដំណឹង"</string>
+    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="1376365968844349552" name="title_change_settings">"ប្ដូរ​ការកំណត់"</string>
+    <string msgid="7503287056163941064" name="title_missing_notification_access">"តម្រូវ​ឲ្យមាន​សិទ្ធិចូល​ប្រើប្រាស់​ការជូនដំណឹង"</string>
+    <string msgid="4722034217958379417" name="uninstall_drop_target_label">"លុបការដំឡើង"</string>
+    <string msgid="4172046090762920660" name="uninstall_system_app_text">"នេះ​​​ជា​កម្មវិធី​ប្រព័ន្ធ មិន​អាច​លុប​បាន​ទេ។"</string>
+    <string msgid="8404103075899945851" name="wallpaper_button_text">"ផ្ទាំង​រូបភាព"</string>
+    <string msgid="3640149169885301790" name="widget_accessible_dims_format">"ទទឺង %1$d គុណនឹងកម្ពស់ %2$d"</string>
+    <string msgid="2880537293434387943" name="widget_button_text">"ធាតុ​ក្រាហ្វិក"</string>
+    <string msgid="2370757736025621599" name="widget_dims_format">"%1$d × %2$d"</string>
+    <string msgid="9130327887929620" name="widget_resized">"ធាតុក្រាហ្វិកដែលបានប្តូរទំហំទៅទទឹងប្រវែង <ns1:g id="NUMBER_0">%1$s</ns1:g> កម្ពស់ប្រវែង <ns1:g id="NUMBER_1">%2$s</ns1:g>"</string>
+    <string msgid="2904559530954183366" name="widgets_bottom_sheet_title">"ធាតុ​ក្រាហ្វិក <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="796804551140113767" name="widgets_list">"បញ្ជីធាតុ​ក្រាហ្វិក"</string>
+    <string msgid="6141506579418771922" name="widgets_list_closed">"បាន​បិទ​បញ្ជីធាតុ​ក្រាហ្វិក"</string>
+    <string msgid="3753320833950115786" name="work_folder_name">"ការងារ"</string>
+    <string msgid="3194894777601421047" name="work_mode_off_label">"ការជូនដំណឹង​ និងកម្មវិធី​ត្រូវបានបិទ"</string>
+    <string msgid="4781128097185272916" name="work_mode_on_label">"គ្រប់គ្រងដោយ​ស្ថាប័ន​របស់អ្នក"</string>
+    <string msgid="3081029915775481146" name="work_profile_toggle_label">"កម្រងព័ត៌មានការងារ"</string>
+    <string msgid="257366611030256142" name="workspace_new_page">"ទំព័រអេក្រង់ដើមថ្មី"</string>
+    <string msgid="8458889198184077399" name="workspace_scroll_format">"អេក្រង់​ដើម %1$d នៃ %2$d"</string>
+</resources>

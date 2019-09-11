@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="icon_shape_override_paths_names" translatable="false">
+        <!-- Option to not change the icon shape on home screen. [CHAR LIMIT=50] -->
+        <item>@string/icon_shape_system_default</item>
+        <item>@string/icon_shape_square</item>
+        <item>@string/icon_shape_squircle</item>
+        <item>@string/icon_shape_circle</item>
+        <item>@string/icon_shape_teardrop</item>
+    </string-array>
+    <string-array name="icon_shape_override_paths_values" translatable="false">
+        <item/>
+        <item>M50,0L100,0 100,100 0,100 0,0z</item>
+        <item>M50,0 C10,0 0,10 0,50 0,90 10,100 50,100 90,100 100,90 100,50 100,10 90,0 50,0 Z</item>
+        <item>M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0</item>
+        <item>M50,0A50,50,0,0 1 100,50 L100,85 A15,15,0,0 1 85,100 L50,100 A50,50,0,0 1 50,0z</item>
+    </string-array>
+    <string-array name="icon_size_names">
+        <item>@string/icon_size_extra_small</item>
+        <item>@string/icon_size_small</item>
+        <item>@string/icon_size_average</item>
+        <item>@string/icon_size_large</item>
+        <item>@string/icon_size_extra_large</item>
+    </string-array>
+    <string-array name="icon_size_values">
+        <item>extrasmall</item>
+        <item>small</item>
+        <item>average</item>
+        <item>large</item>
+        <item>extralarge</item>
+    </string-array>
+    <string-array name="theme_style_entries" translatable="false">
+        <item>@string/theme_style_auto</item>
+        <item>@string/theme_style_light</item>
+        <item>@string/theme_style_dark</item>
+    </string-array>
+    <string-array name="theme_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <attr format="integer" name="allAppsInterimScrimAlpha"/>
+    <attr format="color" name="allAppsNavBarScrimColor"/>
+    <attr format="color" name="allAppsScrimColor"/>
+    <attr format="reference" name="coordinatorLayoutStyle"/>
+    <attr format="boolean" name="isMainColorDark"/>
+    <attr format="boolean" name="isWorkspaceDarkText"/>
+    <attr format="color" name="popupColorPrimary"/>
+    <attr format="color" name="popupColorSecondary"/>
+    <attr format="color" name="popupColorTertiary"/>
+    <attr format="reference" name="widgetsTheme"/>
+    <attr format="color" name="workspaceAmbientShadowColor"/>
+    <attr format="color" name="workspaceKeyShadowColor"/>
+    <attr format="color" name="workspaceShadowColor"/>
+    <attr format="reference" name="workspaceStatusBarScrim"/>
+    <attr format="color" name="workspaceTextColor"/>
+    <bool name="allow_rotation">false</bool>
+    <bool name="config_largeHeap">false</bool>
+    <bool name="enable_install_shortcut_api">true</bool>
+    <bool name="hotseat_transpose_layout_with_orientation">true</bool>
+    <bool name="is_large_tablet">false</bool>
+    <bool name="is_tablet">false</bool>
+    <bool name="notification_badging_enabled">false</bool>
+    <color name="all_apps_bg_hand_fill">#E5E5E5</color>
+    <color name="all_apps_bg_hand_fill_dark">#9AA0A6</color>
+    <color name="default_shadow_color_no_alpha">#FF000000</color>
+    <color name="delete_target_hover_tint">#FFC1C1C1</color>
+    <color name="focused_background">#80c6c5c5</color>
+    <color name="icon_background">#E0E0E0</color>
+    <color name="legacy_icon_background">#FFFFFF</color>
+    <color name="notification_action_color_filter">#ffffffff</color>
+    <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="notification_icon_default_color">#757575</color>
+    <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="spring_loaded_highlighted_panel_border_color">#FFF</color>
+    <color name="spring_loaded_panel_color">#40FFFFFF</color>
+    <color name="uninstall_target_hover_tint">#FFF0592B</color>
+    <declare-styleable name="BubbleTextView">
+        <attr format="boolean" name="layoutHorizontal"/>
+        <attr format="dimension" name="iconSizeOverride"/>
+        <attr format="integer" name="iconDisplay">
+            <enum name="workspace" value="0"/>
+            <enum name="all_apps" value="1"/>
+            <enum name="folder" value="2"/>
+            <enum name="widget_section" value="3"/>
+            <enum name="shortcut_popup" value="4"/>
+        </attr>
+        <attr format="boolean" name="centerVertically"/>
+    </declare-styleable>
+    <declare-styleable name="CellLayout">
+        <attr format="integer" name="containerType">
+            <enum name="workspace" value="0"/>
+            <enum name="hotseat" value="1"/>
+            <enum name="folder" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ColorStateListItem">
+        <!-- Base color for this state. -->
+        <attr name="android:color"/>
+        <!-- Alpha multiplier applied to the base color. -->
+        <attr format="float" name="alpha"/>
+        <attr name="android:alpha"/>
+    </declare-styleable>
+    <declare-styleable name="CoordinatorLayout">
+        <!-- A reference to an array of integers representing the
+             locations of horizontal keylines in dp from the starting edge.
+             Child views can refer to these keylines for alignment using
+             layout_keyline="index" where index is a 0-based index into
+             this array. -->
+        <attr format="reference" name="keylines"/>
+        <!-- Drawable to display behind the status bar when the view is set to draw behind it. -->
+        <attr format="color|reference" name="statusBarBackground"/>
+    </declare-styleable>
+    <declare-styleable name="CoordinatorLayout_Layout">
+        <attr name="android:layout_gravity"/>
+        <!-- The class name of a Behavior class defining special runtime behavior
+             for this child view. -->
+        <attr format="string" name="layout_behavior"/>
+        <!-- The id of an anchor view that this view should position relative to. -->
+        <attr format="reference" name="layout_anchor"/>
+        <!-- The index of a keyline this view should position relative to.
+             android:layout_gravity will affect how the view aligns to the
+             specified keyline. -->
+        <attr format="integer" name="layout_keyline"/>
+
+        <!-- Specifies how an object should position relative to an anchor, on both the X and Y axes,
+             within its parent's bounds.  -->
+        <attr name="layout_anchorGravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30"/>
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50"/>
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03"/>
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05"/>
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10"/>
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70"/>
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01"/>
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07"/>
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11"/>
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77"/>
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the vertical gravity: a top gravity will clip the bottom
+                 edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            <flag name="clip_vertical" value="0x80"/>
+            <!-- Additional option that can be set to have the left and/or right edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the horizontal gravity: a left gravity will clip the right
+                 edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            <flag name="clip_horizontal" value="0x08"/>
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003"/>
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005"/>
+        </attr>
+
+        <!-- Specifies how this view insets the CoordinatorLayout and make some other views
+             dodge it. -->
+        <attr format="enum" name="layout_insetEdge">
+            <!-- Don't inset. -->
+            <enum name="none" value="0x0"/>
+            <!-- Inset the top edge. -->
+            <enum name="top" value="0x30"/>
+            <!-- Inset the bottom edge. -->
+            <enum name="bottom" value="0x50"/>
+            <!-- Inset the left edge. -->
+            <enum name="left" value="0x03"/>
+            <!-- Inset the right edge. -->
+            <enum name="right" value="0x05"/>
+            <!-- Inset the start edge. -->
+            <enum name="start" value="0x00800003"/>
+            <!-- Inset the end edge. -->
+            <enum name="end" value="0x00800005"/>
+        </attr>
+        <!-- Specifies how this view dodges the inset edges of the CoordinatorLayout. -->
+        <attr name="layout_dodgeInsetEdges">
+            <!-- Don't dodge any edges -->
+            <flag name="none" value="0x0"/>
+            <!-- Dodge the top inset edge. -->
+            <flag name="top" value="0x30"/>
+            <!-- Dodge the bottom inset edge. -->
+            <flag name="bottom" value="0x50"/>
+            <!-- Dodge the left inset edge. -->
+            <flag name="left" value="0x03"/>
+            <!-- Dodge the right inset edge. -->
+            <flag name="right" value="0x05"/>
+            <!-- Dodge the start inset edge. -->
+            <flag name="start" value="0x00800003"/>
+            <!-- Dodge the end inset edge. -->
+            <flag name="end" value="0x00800005"/>
+            <!-- Dodge all the inset edges. -->
+            <flag name="all" value="0x77"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CustomAppWidgetProviderInfo">
+        <attr format="integer" name="providerId"/>
+
+        <attr name="android:label"/>
+        <attr name="android:initialLayout"/>
+        <attr name="android:icon"/>
+        <attr name="android:previewImage"/>
+        <attr name="android:resizeMode"/>
+
+        <attr name="numRows"/>
+        <attr name="numColumns"/>
+        <attr format="integer" name="numMinRows"/>
+        <attr format="integer" name="numMinColumns"/>
+    </declare-styleable>
+    <declare-styleable name="Extra">
+        <attr format="string" name="key"/>
+        <attr format="string" name="value"/>
+    </declare-styleable>
+    <declare-styleable name="Favorite">
+        <attr format="string" name="className"/>
+        <attr format="string" name="packageName"/>
+        <attr format="string" name="container"/>
+        <attr format="string" name="screen"/>
+        <attr format="string" name="x"/>
+        <attr format="string" name="y"/>
+        <attr format="string" name="spanX"/>
+        <attr format="string" name="spanY"/>
+        <attr format="reference" name="icon"/>
+        <attr format="string" name="title"/>
+        <attr format="string" name="uri"/>
+    </declare-styleable>
+    <declare-styleable name="FontFamily">
+        <!-- The authority of the Font Provider to be used for the request. -->
+        <attr format="string" name="fontProviderAuthority"/>
+        <!-- The package for the Font Provider to be used for the request. This is used to verify
+        the identity of the provider. -->
+        <attr format="string" name="fontProviderPackage"/>
+        <!-- The query to be sent over to the provider. Refer to your font provider's documentation
+        on the format of this string. -->
+        <attr format="string" name="fontProviderQuery"/>
+        <!-- The sets of hashes for the certificates the provider should be signed with. This is
+        used to verify the identity of the provider, and is only required if the provider is not
+        part of the system image. This value may point to one list or a list of lists, where each
+        individual list represents one collection of signature hashes. Refer to your font provider's
+        documentation for these values. -->
+        <attr format="reference" name="fontProviderCerts"/>
+        <!-- The strategy to be used when fetching font data from a font provider in XML layouts.
+        This attribute is ignored when the resource is loaded from code, as it is equivalent to the
+        choice of API between {@link
+    androidx.core.content.res.ResourcesCompat#getFont(Context, int)} (blocking) and
+        {@link
+    androidx.core.content.res.ResourcesCompat#getFont(Context, int, FontCallback, Handler)}
+        (async). -->
+        <attr name="fontProviderFetchStrategy">
+            <!-- The blocking font fetch works as follows.
+              First, check the local cache, then if the requested font is not cached, request the
+              font from the provider and wait until it is finished.  You can change the length of
+              the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
+              default typeface will be used instead. -->
+            <enum name="blocking" value="0"/>
+            <!-- The async font fetch works as follows.
+              First, check the local cache, then if the requeted font is not cached, trigger a
+              request the font and continue with layout inflation. Once the font fetch succeeds, the
+              target text view will be refreshed with the downloaded font data. The
+              fontProviderFetchTimeout will be ignored if async loading is specified. -->
+            <enum name="async" value="1"/>
+        </attr>
+        <!-- The length of the timeout during fetching. -->
+        <attr format="integer" name="fontProviderFetchTimeout">
+            <!-- A special value for the timeout. In this case, the blocking font fetching will not
+              timeout and wait until a reply is received from the font provider. -->
+            <enum name="forever" value="-1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="FontFamilyFont">
+        <!-- The style of the given font file. This will be used when the font is being loaded into
+         the font stack and will override any style information in the font's header tables. If
+         unspecified, the value in the font's header tables will be used. -->
+        <attr name="fontStyle">
+            <enum name="normal" value="0"/>
+            <enum name="italic" value="1"/>
+        </attr>
+        <!-- The reference to the font file to be used. This should be a file in the res/font folder
+         and should therefore have an R reference value. E.g. @font/myfont -->
+        <attr format="reference" name="font"/>
+        <!-- The weight of the given font file. This will be used when the font is being loaded into
+         the font stack and will override any weight information in the font's header tables. Must
+         be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
+         common values are 400 for regular weight and 700 for bold weight. If unspecified, the value
+         in the font's header tables will be used. -->
+        <attr format="integer" name="fontWeight"/>
+        <!-- The variation settings to be applied to the font. The string should be in the following
+         format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
+         used, or the font used does not support variation settings, this attribute needs not be
+         specified. -->
+        <attr format="string" name="fontVariationSettings"/>
+        <!-- The index of the font in the tcc font file. If the font file referenced is not in the
+        tcc format, this attribute needs not be specified. -->
+        <attr format="integer" name="ttcIndex"/>
+        <!-- References to the framework attrs -->
+        <attr name="android:fontStyle"/>
+        <attr name="android:font"/>
+        <attr name="android:fontWeight"/>
+        <attr name="android:fontVariationSettings"/>
+        <attr name="android:ttcIndex"/>
+    </declare-styleable>
+    <declare-styleable name="GradientColor">
+        <!-- Start color of the gradient. -->
+        <attr name="android:startColor"/>
+        <!-- Optional center color. -->
+        <attr name="android:centerColor"/>
+        <!-- End color of the gradient. -->
+        <attr name="android:endColor"/>
+        <!-- Type of gradient. The default type is linear. -->
+        <attr name="android:type"/>
+
+        <!-- Only applied to RadialGradient-->
+        <!-- Radius of the gradient, used only with radial gradient. -->
+        <attr name="android:gradientRadius"/>
+
+        <!-- Only applied to SweepGradient / RadialGradient-->
+        <!-- X coordinate of the center of the gradient within the path. -->
+        <attr name="android:centerX"/>
+        <!-- Y coordinate of the center of the gradient within the path. -->
+        <attr name="android:centerY"/>
+
+        <!-- LinearGradient specific -->
+        <!-- X coordinate of the start point origin of the gradient.
+             Defined in same coordinates as the path itself -->
+        <attr name="android:startX"/>
+        <!-- Y coordinate of the start point of the gradient within the shape.
+             Defined in same coordinates as the path itself -->
+        <attr name="android:startY"/>
+        <!-- X coordinate of the end point origin of the gradient.
+             Defined in same coordinates as the path itself -->
+        <attr name="android:endX"/>
+        <!-- Y coordinate of the end point of the gradient within the shape.
+             Defined in same coordinates as the path itself -->
+        <attr name="android:endY"/>
+
+        <!-- Defines the tile mode of the gradient. SweepGradient doesn't support tiling. -->
+        <attr name="android:tileMode"/>
+    </declare-styleable>
+    <declare-styleable name="GradientColorItem">
+        <!-- The offset (or ratio) of this current color item inside the gradient.
+             The value is only meaningful when it is between 0 and 1. -->
+        <attr name="android:offset"/>
+        <!-- The current color for the offset inside the gradient. -->
+        <attr name="android:color"/>
+    </declare-styleable>
+    <declare-styleable name="Include">
+        <attr format="reference" name="workspace"/>
+        <attr format="reference" name="folderItems"/>
+    </declare-styleable>
+    <declare-styleable name="InsettableFrameLayout_Layout">
+        <attr format="boolean" name="layout_ignoreInsets"/>
+    </declare-styleable>
+    <declare-styleable name="InvariantDeviceProfile">
+        <attr format="string" name="name"/>
+        <attr format="float" name="minWidthDps"/>
+        <attr format="float" name="minHeightDps"/>
+
+        <attr format="integer" name="numRows"/>
+        <attr format="integer" name="numColumns"/>
+        <!-- numFolderRows & numFolderColumns defaults to numRows & numColumns, if not specified -->
+        <attr format="integer" name="numFolderRows"/>
+        <attr format="integer" name="numFolderColumns"/>
+        <!-- numHotseatIcons defaults to numColumns, if not specified -->
+        <attr format="integer" name="numHotseatIcons"/>
+
+        <attr format="float" name="iconSize"/>
+        <!-- landscapeIconSize defaults to iconSize, if not specified -->
+        <attr format="float" name="landscapeIconSize"/>
+        <attr format="float" name="iconTextSize"/>
+
+        <attr format="reference" name="defaultLayoutId"/>
+        <attr format="reference" name="demoModeLayoutId"/>
+    </declare-styleable>
+    <declare-styleable name="PagedView">
+        <!-- The page indicator for this workspace -->
+        <attr format="reference" name="pageIndicator"/>
+    </declare-styleable>
+    <declare-styleable name="RecyclerView">
+        <!-- Class name of the Layout Manager to be used.
+        <p/>
+        The class must extandroidx.recyclerview.widget.RecyclerViewView$LayoutManager
+        and have either a default constructor or constructor with the signature
+        (android.content.Context, android.util.AttributeSet, int, int).
+         <p/>
+         If the name starts with a '.', application package is prefixed.
+         Else, if the name contains a '.', the classname is assumed to be a full class name.
+         Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed. -->
+        <attr format="string" name="layoutManager"/>
+
+        <!-- ============================= -->
+        <!-- Attributes for Layout Manager -->
+        <!-- ============================= -->
+        <eat-comment/>
+
+        <attr name="android:orientation"/>
+        <attr name="android:descendantFocusability"/>
+        <attr format="integer" name="spanCount"/>
+        <attr format="boolean" name="reverseLayout"/>
+        <attr format="boolean" name="stackFromEnd"/>
+        <attr format="boolean" name="fastScrollEnabled"/>
+        <attr format="reference" name="fastScrollVerticalThumbDrawable"/>
+        <attr format="reference" name="fastScrollVerticalTrackDrawable"/>
+        <attr format="reference" name="fastScrollHorizontalThumbDrawable"/>
+        <attr format="reference" name="fastScrollHorizontalTrackDrawable"/>
+    </declare-styleable>
+    <declare-styleable name="RecyclerViewFastScroller">
+        <attr format="boolean" name="canThumbDetach"/>
+    </declare-styleable>
+    <declare-styleable name="ShadowDrawable">
+        <attr name="android:src"/>
+        <attr name="android:shadowColor"/>
+        <attr name="android:elevation"/>
+        <attr format="color" name="darkTintColor"/>
+    </declare-styleable>
+    <declare-styleable name="ShadowInfo">
+        <attr format="color" name="ambientShadowColor"/>
+        <attr format="dimension" name="ambientShadowBlur"/>
+        <attr format="color" name="keyShadowColor"/>
+        <attr format="dimension" name="keyShadowBlur"/>
+        <attr format="dimension" name="keyShadowOffset"/>
+    </declare-styleable>
+    <dimen name="all_apps_background_canvas_height">475dp</dimen>
+    <dimen name="all_apps_background_canvas_width">700dp</dimen>
+    <dimen name="all_apps_button_scale_down">0dp</dimen>
+    <dimen name="all_apps_divider_height">1dp</dimen>
+    <dimen name="all_apps_divider_margin_vertical">8dp</dimen>
+    <dimen name="all_apps_empty_search_bg_top_offset">144dp</dimen>
+    <dimen name="all_apps_empty_search_message_top_offset">40dp</dimen>
+    <dimen name="all_apps_header_max_elevation">3dp</dimen>
+    <dimen name="all_apps_header_scroll_to_elevation">16dp</dimen>
+    <dimen name="all_apps_header_shadow_height">6dp</dimen>
+    <dimen name="all_apps_header_tab_height">50dp</dimen>
+    <dimen name="all_apps_header_top_padding">36dp</dimen>
+    <dimen name="all_apps_scrim_blur">4dp</dimen>
+    <dimen name="all_apps_scrim_margin">8dp</dimen>
+    <dimen name="all_apps_scrim_radius">8dp</dimen>
+    <dimen name="all_apps_search_bar_bottom_padding">30dp</dimen>
+    <dimen name="all_apps_search_bar_field_height">48dp</dimen>
+    <dimen name="all_apps_tabs_indicator_height">2dp</dimen>
+    <dimen name="all_apps_tabs_side_padding">12dp</dimen>
+    <dimen name="all_apps_work_profile_tab_footer_bottom_padding">20dp</dimen>
+    <dimen name="all_apps_work_profile_tab_footer_top_padding">16dp</dimen>
+    <dimen name="bg_popup_item_condensed_height">48dp</dimen>
+    <dimen name="bg_popup_item_height">56dp</dimen>
+    <dimen name="bg_popup_item_width">220dp</dimen>
+    <dimen name="bg_round_rect_radius">8dp</dimen>
+    <dimen name="blur_size_click_shadow">4dp</dimen>
+    <dimen name="blur_size_medium_outline">2dp</dimen>
+    <dimen name="blur_size_thin_outline">1dp</dimen>
+    <dimen name="click_shadow_elevation">4dp</dimen>
+    <dimen name="click_shadow_high_shift">2dp</dimen>
+    <dimen name="closing_window_trans_y">115dp</dimen>
+    <dimen name="compat_button_inset_horizontal_material">4dp</dimen>
+    <dimen name="compat_button_inset_vertical_material">6dp</dimen>
+    <dimen name="compat_button_padding_horizontal_material">8dp</dimen>
+    <dimen name="compat_button_padding_vertical_material">4dp</dimen>
+    <dimen name="compat_control_corner_material">2dp</dimen>
+    <dimen name="compat_notification_large_icon_max_height">320dp</dimen>
+    <dimen name="compat_notification_large_icon_max_width">320dp</dimen>
+    <dimen name="content_trans_y">50dp</dimen>
+    <dimen name="deep_shortcut_drag_handle_size">16dp</dimen>
+    <dimen name="deep_shortcut_drawable_padding">8dp</dimen>
+    <dimen name="deep_shortcut_icon_size">36dp</dimen>
+    <dimen name="deep_shortcuts_divider_width">164dp</dimen>
+    <dimen name="deep_shortcuts_elevation">9dp</dimen>
+    <dimen name="deep_shortcuts_start_drag_threshold">16dp</dimen>
+    <dimen name="deep_shortcuts_text_padding_start">56dp</dimen>
+    <dimen name="drag_distanceThreshold">30dp</dimen>
+    <dimen name="drag_elevation">30dp</dimen>
+    <dimen name="drag_flingToDeleteMinVelocity">-1500dp</dimen>
+    <dimen name="drop_target_drag_padding">14dp</dimen>
+    <dimen name="drop_target_shadow_elevation">2dp</dimen>
+    <dimen name="drop_target_text_size">14sp</dimen>
+    <dimen name="drop_target_vertical_gap">20dp</dimen>
+    <dimen name="dynamic_grid_cell_layout_bottom_padding">0dp</dimen>
+    <dimen name="dynamic_grid_cell_layout_padding">5.5dp</dimen>
+    <dimen name="dynamic_grid_cell_padding_x">8dp</dimen>
+    <dimen name="dynamic_grid_drop_target_size">48dp</dimen>
+    <dimen name="dynamic_grid_edge_margin">8dp</dimen>
+    <dimen name="dynamic_grid_hotseat_bottom_non_tall_padding">0dp</dimen>
+    <dimen name="dynamic_grid_hotseat_bottom_padding">2dp</dimen>
+    <dimen name="dynamic_grid_hotseat_side_padding">0dp</dimen>
+    <dimen name="dynamic_grid_hotseat_size">80dp</dimen>
+    <dimen name="dynamic_grid_hotseat_top_padding">8dp</dimen>
+    <dimen name="dynamic_grid_icon_drawable_padding">8dp</dimen>
+    <dimen name="dynamic_grid_min_spring_loaded_space">8dp</dimen>
+    <dimen name="dynamic_grid_page_indicator_line_height">1dp</dimen>
+    <dimen name="dynamic_grid_workspace_page_spacing">8dp</dimen>
+    <dimen name="dynamic_grid_workspace_top_padding">8dp</dimen>
+    <dimen name="fastscroll_default_thickness">8dp</dimen>
+    <dimen name="fastscroll_end_margin">-26dp</dimen>
+    <dimen name="fastscroll_margin">0dp</dimen>
+    <dimen name="fastscroll_minimum_range">50dp</dimen>
+    <dimen name="fastscroll_popup_height">62dp</dimen>
+    <dimen name="fastscroll_popup_margin">19dp</dimen>
+    <dimen name="fastscroll_popup_padding">13dp</dimen>
+    <dimen name="fastscroll_popup_text_size">32dp</dimen>
+    <dimen name="fastscroll_popup_width">75dp</dimen>
+    <dimen name="fastscroll_thumb_height">52dp</dimen>
+    <dimen name="fastscroll_thumb_padding">1dp</dimen>
+    <dimen name="fastscroll_thumb_touch_inset">-24dp</dimen>
+    <dimen name="fastscroll_track_max_width">8dp</dimen>
+    <dimen name="fastscroll_track_min_width">6dp</dimen>
+    <dimen name="fastscroll_width">58dp</dimen>
+    <dimen name="folder_cell_x_padding">9dp</dimen>
+    <dimen name="folder_cell_y_padding">6dp</dimen>
+    <dimen name="folder_child_text_size">13sp</dimen>
+    <dimen name="folder_label_padding_bottom">12dp</dimen>
+    <dimen name="folder_label_padding_top">4dp</dimen>
+    <dimen name="folder_label_text_size">14sp</dimen>
+    <dimen name="horizontal_ellipsis_offset">19dp</dimen>
+    <dimen name="horizontal_ellipsis_size">18dp</dimen>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <dimen name="landscape_task_card_horz_space">200dp</dimen>
+    <dimen name="multi_window_task_card_horz_space">100dp</dimen>
+    <dimen name="multi_window_task_divider_size">10dp</dimen>
+    <dimen name="notification_action_icon_size">32dp</dimen>
+    <dimen name="notification_action_text_size">13sp</dimen>
+    <dimen name="notification_big_circle_margin">12dp</dimen>
+    <dimen name="notification_content_margin_start">8dp</dimen>
+    <dimen name="notification_empty_footer_height">6dp</dimen>
+    <dimen name="notification_footer_height">32dp</dimen>
+    <dimen name="notification_footer_icon_row_padding">15dp</dimen>
+    <dimen name="notification_footer_icon_size">18dp</dimen>
+    <dimen name="notification_header_count_text_size">12sp</dimen>
+    <dimen name="notification_header_height">36dp</dimen>
+    <dimen name="notification_header_text_size">13sp</dimen>
+    <dimen name="notification_icon_size">24dp</dimen>
+    <dimen name="notification_large_icon_height">64dp</dimen>
+    <dimen name="notification_large_icon_width">64dp</dimen>
+    <dimen name="notification_main_column_padding_top">10dp</dimen>
+    <dimen name="notification_main_height">84dp</dimen>
+    <dimen name="notification_main_text_padding_end">52dp</dimen>
+    <dimen name="notification_main_text_size">14sp</dimen>
+    <dimen name="notification_main_title_size">16sp</dimen>
+    <dimen name="notification_media_narrow_margin">@dimen/notification_content_margin_start</dimen>
+    <dimen name="notification_padding_end">12dp</dimen>
+    <dimen name="notification_padding_start">16dp</dimen>
+    <dimen name="notification_right_icon_size">16dp</dimen>
+    <dimen name="notification_right_side_padding_top">2dp</dimen>
+    <dimen name="notification_small_icon_background_padding">3dp</dimen>
+    <dimen name="notification_small_icon_size_as_large">24dp</dimen>
+    <dimen name="notification_subtext_size">13sp</dimen>
+    <dimen name="notification_top_pad">10dp</dimen>
+    <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="options_menu_icon_size">24dp</dimen>
+    <dimen name="options_menu_thumb_size">32dp</dimen>
+    <dimen name="page_indicator_dot_size">8dp</dimen>
+    <dimen name="pending_widget_elevation">2dp</dimen>
+    <dimen name="pending_widget_min_padding">8dp</dimen>
+    <dimen name="popup_arrow_corner_radius">2dp</dimen>
+    <dimen name="popup_arrow_height">8dp</dimen>
+    <dimen name="popup_arrow_horizontal_center_end">24dp</dimen>
+    <dimen name="popup_arrow_horizontal_center_start">28dp</dimen>
+    <dimen name="popup_arrow_vertical_offset">-2dp</dimen>
+    <dimen name="popup_arrow_width">10dp</dimen>
+    <dimen name="popup_item_divider_height">0.5dp</dimen>
+    <dimen name="popup_padding_end">16dp</dimen>
+    <dimen name="popup_padding_start">10dp</dimen>
+    <dimen name="popup_vertical_padding">4dp</dimen>
+    <dimen name="portrait_task_card_horz_space">136dp</dimen>
+    <dimen name="pre_drag_view_scale">6dp</dimen>
+    <dimen name="profile_badge_margin">5dp</dimen>
+    <dimen name="profile_badge_minimum_top">2dp</dimen>
+    <dimen name="profile_badge_size">24dp</dimen>
+    <dimen name="quickscrub_adjacent_visible_width">20dp</dimen>
+    <dimen name="quickstep_fling_min_velocity">250dp</dimen>
+    <dimen name="quickstep_fling_threshold_velocity">500dp</dimen>
+    <dimen name="recents_clear_all_deadzone_vertical_margin">70dp</dimen>
+    <dimen name="recents_empty_message_text_padding">16dp</dimen>
+    <dimen name="recents_empty_message_text_size">16sp</dimen>
+    <dimen name="recents_fast_fling_velocity">600dp</dimen>
+    <dimen name="recents_page_spacing">10dp</dimen>
+    <dimen name="resize_frame_background_padding">24dp</dimen>
+    <dimen name="shelf_surface_offset">24dp</dimen>
+    <dimen name="shelf_surface_radius">16dp</dimen>
+    <dimen name="shortcut_preview_padding_left">0dp</dimen>
+    <dimen name="shortcut_preview_padding_right">0dp</dimen>
+    <dimen name="shortcut_preview_padding_top">0dp</dimen>
+    <dimen name="spring_loaded_panel_border">1dp</dimen>
+    <dimen name="subtitle_corner_radius">2dp</dimen>
+    <dimen name="subtitle_outline_width">2dp</dimen>
+    <dimen name="subtitle_shadow_offset">2dp</dimen>
+    <dimen name="subtitle_shadow_radius">2dp</dimen>
+    <dimen name="swipe_helper_falsing_threshold">70dp</dimen>
+    <dimen name="system_shortcut_header_height">40dp</dimen>
+    <dimen name="system_shortcut_header_icon_padding">12dp</dimen>
+    <dimen name="system_shortcut_header_icon_touch_size">48dp</dimen>
+    <dimen name="system_shortcut_icon_size">24dp</dimen>
+    <dimen name="system_shortcut_margin_start">16dp</dimen>
+    <dimen name="task_card_menu_horizontal_padding">0dp</dimen>
+    <dimen name="task_card_menu_option_vertical_padding">8dp</dimen>
+    <dimen name="task_card_menu_shadow_height">3dp</dimen>
+    <dimen name="task_card_vert_space">40dp</dimen>
+    <dimen name="task_corner_radius">2dp</dimen>
+    <dimen name="task_thumbnail_half_top_margin">12dp</dimen>
+    <dimen name="task_thumbnail_icon_size">48dp</dimen>
+    <dimen name="task_thumbnail_top_margin">24dp</dimen>
+    <dimen name="vertical_drag_handle_overlap_workspace">0dp</dimen>
+    <dimen name="vertical_drag_handle_size">24dp</dimen>
+    <dimen name="widget_handle_margin">13dp</dimen>
+    <dimen name="widget_preview_cell_divider_width">0.5dp</dimen>
+    <dimen name="widget_preview_corner_radius">2dp</dimen>
+    <dimen name="widget_preview_key_shadow_distance">1dp</dimen>
+    <dimen name="widget_preview_label_horizontal_padding">16dp</dimen>
+    <dimen name="widget_preview_label_vertical_padding">8dp</dimen>
+    <dimen name="widget_preview_shadow_blur">0.5dp</dimen>
+    <dimen name="widget_preview_shortcut_padding">8dp</dimen>
+    <dimen name="widget_row_divider">2dp</dimen>
+    <dimen name="widget_row_padding">8dp</dimen>
+    <dimen name="widget_section_height">56dp</dimen>
+    <dimen name="widget_section_horizontal_padding">16dp</dimen>
+    <dimen name="widget_section_icon_size">40dp</dimen>
+    <dimen name="widget_section_indent">0dp</dimen>
+    <dimen name="widget_section_vertical_padding">8dp</dimen>
+    <dimen name="workspace_trans_y">50dp</dimen>
+    <drawable name="ic_remove_shadow">@drawable/ic_remove_no_shadow</drawable>
+    <drawable name="ic_setup_shadow">@drawable/ic_setting</drawable>
+    <drawable name="ic_uninstall_shadow">@drawable/ic_uninstall_no_shadow</drawable>
+    <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <item name="action_add_to_workspace" type="id"/>
+    <item name="action_deep_shortcuts" type="id"/>
+    <item name="action_dismiss_notification" type="id"/>
+    <item name="action_move" type="id"/>
+    <item name="action_move_screen_backwards" type="id"/>
+    <item name="action_move_screen_forwards" type="id"/>
+    <item name="action_move_to_workspace" type="id"/>
+    <item name="action_reconfigure" type="id"/>
+    <item name="action_remove" type="id"/>
+    <item name="action_resize" type="id"/>
+    <item name="action_shortcuts_and_notifications" type="id"/>
+    <item name="action_uninstall" type="id"/>
+    <item name="cell_layout_jail_id" type="id"/>
+    <item name="drag_event_parity" type="id"/>
+    <item name="item_touch_helper_previous_elevation" type="id"/>
+    <item name="line1" type="id"/>
+    <item name="line3" type="id"/>
+    <item name="overview_panel" type="id"/>
+    <item name="qsb_widget" type="id"/>
+    <item name="search_container_all_apps" type="id"/>
+    <item name="search_container_hotseat" type="id"/>
+    <item name="search_container_workspace" type="id"/>
+    <item name="spring_animation_tag" type="id"/>
+    <item name="tag_transition_group" type="id"/>
+    <item name="tag_unhandled_key_event_manager" type="id"/>
+    <item name="tag_unhandled_key_listeners" type="id"/>
+    <item name="text" type="id"/>
+    <item name="text2" type="id"/>
+    <item name="title" type="id"/>
+    <item name="view_highlighted" type="id"/>
+    <item name="view_scrim" type="id"/>
+    <item name="view_unhighlight_background" type="id"/>
+    <item name="workspace_page_container" type="id"/>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="config_caretAnimationDuration">200</integer>
+    <integer name="config_dragOutlineFadeTime">900</integer>
+    <integer name="config_dragOutlineMaxAlpha">128</integer>
+    <integer name="config_dropAnimMaxDist">800</integer>
+    <integer name="config_dropAnimMaxDuration">500</integer>
+    <integer name="config_dropAnimMinDuration">100</integer>
+    <integer name="config_folderDelay">30</integer>
+    <integer name="config_materialFolderExpandDuration">200</integer>
+    <integer name="config_popupArrowOpenDuration">80</integer>
+    <integer name="config_popupOpenCloseDuration">150</integer>
+    <integer name="config_recentsMaxIconCacheSize">12</integer>
+    <integer name="config_recentsMaxThumbnailCacheSize">6</integer>
+    <integer name="config_removeNotificationViewDuration">300</integer>
+    <integer name="config_searchHintAnimationDuration">50</integer>
+    <integer name="config_workspaceSpringLoadShrinkPercentage">90</integer>
+    <integer name="extracted_color_gradient_alpha">153</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+    <plurals name="badged_app_label">
+        <item quantity="one"><ns1:g example="Messenger" id="app_name">%1$s</ns1:g>, has <ns1:g example="1" id="notification_count">%2$d</ns1:g> notification</item>
+        <item quantity="other"><ns1:g example="Messenger" id="app_name">%1$s</ns1:g>, has <ns1:g example="3" id="notification_count">%2$d</ns1:g> notifications</item>
+    </plurals>
+    <string name="abandoned_clean_this">Remove</string>
+    <string name="abandoned_promise_explanation">The app for this icon isn\'t installed.
+        You can remove it, or search for the app and install it manually.
+    </string>
+    <string name="abandoned_promises_title">This app is not installed</string>
+    <string name="abandoned_search">Search</string>
+    <string name="about_aosp_launcher">About</string>
+    <string name="about_aosp_launcher_us">AOSP Pure Launcher</string>
+    <string name="about_aosp_launcher_version">Version</string>
+    <string name="about_aosp_launcher_version_sum">1.0</string>
+    <string name="accessibility_close_task">Close</string>
+    <string name="accessibility_desc_recent_apps">Overview</string>
+    <string name="accessibility_recent_apps">Recent apps</string>
+    <string name="action_add_to_workspace">Add to Home screen</string>
+    <string name="action_decrease_height">Decrease height</string>
+    <string name="action_decrease_width">Decrease width</string>
+    <string name="action_deep_shortcut">Shortcuts</string>
+    <string name="action_dismiss_notification">Dismiss</string>
+    <string name="action_increase_height">Increase height</string>
+    <string name="action_increase_width">Increase width</string>
+    <string name="action_move">Move item</string>
+    <string name="action_move_here">Move item here</string>
+    <string name="action_move_to_workspace">Move to Home screen</string>
+    <string name="action_resize">Resize</string>
+    <string name="activity_not_available">App isn\'t available</string>
+    <string name="activity_not_found">App isn\'t installed.</string>
+    <string name="add_item_request_drag_hint">Touch &amp; hold to place manually</string>
+    <string name="add_to_folder">Add to folder: <ns1:g example="Games" id="name">%1$s</ns1:g></string>
+    <string name="add_to_folder_with_app">Add to folder with <ns1:g example="Messenger" id="name">%1$s</ns1:g></string>
+    <string name="added_to_folder">Item added to folder</string>
+    <string name="all_apps_button_label">Apps list</string>
+    <string name="all_apps_button_personal_label">Personal apps list</string>
+    <string name="all_apps_button_work_label">Work apps list</string>
+    <string name="all_apps_home_button_label">Home</string>
+    <string name="all_apps_loading_message">Loading apps…</string>
+    <string name="all_apps_no_search_results">No apps found matching \"<ns1:g example="Android" id="query">%1$s</ns1:g>\"</string>
+    <string name="all_apps_personal_tab">Personal</string>
+    <string name="all_apps_search_bar_hint">Search apps</string>
+    <string name="all_apps_search_market_message">Search for more apps</string>
+    <string name="all_apps_work_tab">Work</string>
+    <string name="allow_rotation_desc">When phone is rotated</string>
+    <string name="allow_rotation_title">Allow Home screen rotation</string>
+    <string name="app_base_title">Based On</string>
+    <string name="app_base_title_sum">Based On Pure AOSP Launcher3</string>
+    <string name="app_downloading_title"><ns1:g example="Messenger" id="name">%1$s</ns1:g> downloading, <ns1:g example="30%" id="progress">%2$s</ns1:g> complete</string>
+    <string name="app_filter_class" translatable="false"/>
+    <string name="app_info_drop_target_label">App info</string>
+    <string name="app_name">Launcher3</string>
+    <string name="app_transition_manager_class" translatable="false">dz.aosp.purelauncher.LauncherAppTransitionManagerImpl</string>
+    <string name="app_waiting_download_title"><ns1:g example="Messenger" id="name">%1$s</ns1:g> waiting to install</string>
+    <string name="auto_add_shortcuts_description">For new apps</string>
+    <string name="auto_add_shortcuts_label">Add icon to Home screen</string>
+    <string name="bottom_work_tab_user_education_body">Each work app has a badge and is kept secure by your organization. Move apps to your Home screen for easier access.</string>
+    <string name="bottom_work_tab_user_education_close_button">Close</string>
+    <string name="bottom_work_tab_user_education_closed">Closed</string>
+    <string name="bottom_work_tab_user_education_title">Find work apps here</string>
+    <string name="color_extraction_impl_class" translatable="false"/>
+    <string name="create_folder_with">Create folder with: <ns1:g example="Game" id="name">%1$s</ns1:g></string>
+    <string name="custom_actions">Custom actions</string>
+    <string name="custom_app_name">AOSP Pure Launcher</string>
+    <string name="date">Build date</string>
+    <string name="default_scroll_format">Page %1$d of %2$d</string>
+    <string name="delete_package_intent" translatable="false">#Intent;action=android.intent.action.DELETE;launchFlags=0x10800000;end</string>
+    <string name="derived_app_name" translatable="false">Quickstep</string>
+    <string name="developer_info">Developer Info</string>
+    <string name="developer_info_sum">Abdelkader Sellami</string>
+    <string name="disabled_app_label">Disabled <ns1:g example="Messenger" id="app_name">%1$s</ns1:g></string>
+    <string name="drawable_factory_class" translatable="false"/>
+    <string name="folder_closed">Folder closed</string>
+    <string name="folder_created">Folder created</string>
+    <string name="folder_hint_text">Unnamed Folder</string>
+    <string name="folder_name"/>
+    <string name="folder_name_format">Folder: <ns1:g example="Games" id="name">%1$s</ns1:g></string>
+    <string name="folder_opened">Folder opened, <ns1:g example="5" id="width">%1$d</ns1:g> by <ns1:g example="3" id="height">%2$d</ns1:g></string>
+    <string name="folder_renamed">Folder renamed to <ns1:g example="Games" id="name">%1$s</ns1:g></string>
+    <string name="folder_tap_to_close">Tap to close folder</string>
+    <string name="folder_tap_to_rename">Tap to save rename</string>
+    <string name="gadget_error_text">Problem loading widget</string>
+    <string name="gadget_setup_text">Setup</string>
+    <string name="github_sum">AOSP Pure Launcher Project Github</string>
+    <string name="github_title">Github</string>
+    <string name="grid_size_columns">Columns</string>
+    <string name="grid_size_custom_message">Select custom columns and rows count</string>
+    <string name="grid_size_custom_positive">Set</string>
+    <string name="grid_size_rows">Rows</string>
+    <string name="grid_size_text">Grid size</string>
+    <string name="home_screen">Home screen</string>
+    <string name="hotseat_out_of_space">No more room in the Favorites tray</string>
+    <string name="iconPackPackageDefault" translatable="false">""</string>
+    <string name="icon_badging_desc_off">Off</string>
+    <string name="icon_badging_desc_on">On</string>
+    <string name="icon_badging_service_title">Show notification dots</string>
+    <string name="icon_badging_title">Notification dots</string>
+    <string name="icon_pack">Icon pack</string>
+    <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="icon_provider_class" translatable="false"/>
+    <string name="icon_shape_circle">Circle</string>
+    <string name="icon_shape_override_label">Change icon shape</string>
+    <string name="icon_shape_override_label_location">on Home screen</string>
+    <string name="icon_shape_override_progress">Applying icon shape changes</string>
+    <string name="icon_shape_square">Square</string>
+    <string name="icon_shape_squircle">Squircle</string>
+    <string name="icon_shape_system_default">Use system default</string>
+    <string name="icon_shape_teardrop">Teardrop</string>
+    <string name="icon_size_average">Default</string>
+    <string name="icon_size_extra_large">Extra large</string>
+    <string name="icon_size_extra_small">Tiny</string>
+    <string name="icon_size_large">Large</string>
+    <string name="icon_size_small">Small</string>
+    <string name="icon_size_title">Icon size</string>
+    <string name="icons_category_title">Icons</string>
+    <string name="install_drop_target_label">Install</string>
+    <string name="instant_app_resolver_class" translatable="false">dz.aosp.quickstep.InstantAppResolverImpl</string>
+    <string name="item_added_to_workspace">Item added to home screen</string>
+    <string name="item_moved">Item moved</string>
+    <string name="item_removed">Item removed</string>
+    <string name="long_accessible_way_to_add">Double-tap &amp; hold to pick up a widget or use custom actions.</string>
+    <string name="long_accessible_way_to_add_shortcut">Double-tap &amp; hold to pick up a shortcut or use custom actions.</string>
+    <string name="long_press_shortcut_to_add">Touch &amp; hold to pick up a shortcut.</string>
+    <string name="long_press_widget_to_add">Touch &amp; hold to pick up a widget.</string>
+    <string name="main_process_initializer_class" translatable="false">dz.aosp.quickstep.QuickstepProcessInitializer</string>
+    <string name="market_search_intent" translatable="false">market://search?c=apps</string>
+    <string name="move_to_empty_cell">Move to row <ns1:g example="1" id="number">%1$s</ns1:g> column <ns1:g example="1" id="number">%2$s</ns1:g></string>
+    <string name="move_to_hotseat_position">Move to favorites position <ns1:g example="1" id="number">%1$s</ns1:g></string>
+    <string name="move_to_position">Move to position <ns1:g example="1" id="number">%1$s</ns1:g></string>
+    <string name="msg_disabled_by_admin">Disabled by your admin</string>
+    <string name="msg_missing_notification_access">To show Notification Dots, turn on app notifications for <ns1:g example="My App" id="name">%1$s</ns1:g></string>
+    <string name="msg_no_phone_permission"><ns1:g example="Launcher3" id="app_name">%1$s</ns1:g> is not allowed to make phone calls</string>
+    <string name="notification_dismissed">Notification dismissed</string>
+    <string name="notifications_header">Notifications</string>
+    <string name="out_of_space">No more room on this Home screen.</string>
+    <string name="overview_callbacks_class" translatable="false"/>
+    <string name="package_state_unknown">Unknown</string>
+    <string name="permdesc_install_shortcut">Allows an app to add
+        shortcuts without user intervention.</string>
+    <string name="permdesc_read_settings">Allows the app to read the settings and
+        shortcuts in Home.</string>
+    <string name="permdesc_write_settings">Allows the app to change the settings and
+        shortcuts in Home.</string>
+    <string name="permlab_install_shortcut">install shortcuts</string>
+    <string name="permlab_read_settings">read Home settings and shortcuts</string>
+    <string name="permlab_write_settings">write Home settings and shortcuts</string>
+    <string name="place_automatically">Add automatically</string>
+    <string name="recent_task_option_pin">Pin</string>
+    <string name="recent_task_option_split_screen">Split screen</string>
+    <string name="recents_clear_all">Clear all</string>
+    <string name="recents_empty_message">No recent items</string>
+    <string name="remove_drop_target_label">Remove</string>
+    <string name="safemode_shortcut_error">Downloaded app disabled in Safe mode</string>
+    <string name="safemode_widget_error">Widgets disabled in Safe mode</string>
+    <string name="settings_button_text">Home settings</string>
+    <string name="shortcut_not_available">Shortcut isn\'t available</string>
+    <string name="shortcutinfocompat_badgepkg_whitelist" translatable="false"/>
+    <string name="shortcuts_menu_with_notifications_description">Shortcuts and notifications
+    </string>
+    <string name="state_loading">Applying\u2026</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="statusbar_expand_summary">On the homescreen</string>
+    <string name="statusbar_expand_title">Swipe for notifications</string>
+    <string name="sum_about_app_aosp_launcher">About this app, version, information</string>
+    <string name="sum_date">27/08/19</string>
+    <string name="sum_thanks">- Amir Zaidi (Rootless Launcher)\n- Lawnchair Launcher\n </string>
+    <string name="task_overlay_factory_class" translatable="false"/>
+    <string name="thanks">Thanks for</string>
+    <string name="theme_style_auto">Wallpaper based</string>
+    <string name="theme_style_dark">Dark style</string>
+    <string name="theme_style_light">Light style</string>
+    <string name="theme_style_title">Theme style</string>
+    <string name="title_change_settings">Change settings</string>
+    <string name="title_missing_notification_access">Notification access needed</string>
+    <string name="uninstall_drop_target_label">Uninstall</string>
+    <string name="uninstall_system_app_text">This is a system app and can\'t be uninstalled.</string>
+    <string name="user_event_dispatcher_class" translatable="false">dz.aosp.quickstep.logging.UserEventDispatcherExtension</string>
+    <string name="wallpaper_button_text">Wallpapers</string>
+    <string name="wallpaper_picker_package" translatable="false"/>
+    <string name="widget_accessible_dims_format">%1$d wide by %2$d high</string>
+    <string name="widget_button_text">Widgets</string>
+    <string name="widget_dims_format">%1$d \u00d7 %2$d</string>
+    <string name="widget_resized">Widget resized to width <ns1:g example="2" id="number">%1$s</ns1:g> height <ns1:g example="1" id="number">%2$s</ns1:g></string>
+    <string name="widgets_bottom_sheet_title"><ns1:g example="Messenger" id="name">%1$s</ns1:g> widgets</string>
+    <string name="widgets_list">Widgets list</string>
+    <string name="widgets_list_closed">Widgets list closed</string>
+    <string name="work_folder_name">Work</string>
+    <string name="work_mode_off_label">Notifications and apps are off</string>
+    <string name="work_mode_on_label">Managed by your organization</string>
+    <string name="work_profile_toggle_label">Work profile</string>
+    <string name="workspace_new_page">New home screen page</string>
+    <string name="workspace_scroll_format">Home screen %1$d of %2$d</string>
+    <style name="AllAppsEmptySearchBackground">
+        <item name="android:colorPrimary">#E0E0E0</item>
+        <item name="android:colorControlHighlight">#BDBDBD</item>
+        <item name="android:colorForeground">@color/all_apps_bg_hand_fill</item>
+    </style>
+    <style name="AllAppsEmptySearchBackground.Dark">
+        <item name="android:colorPrimary">#9AA0A6</item>
+        <item name="android:colorControlHighlight">#DFE1E5</item>
+        <item name="android:colorForeground">@color/all_apps_bg_hand_fill_dark</item>
+    </style>
+    <style name="AppTheme" parent="@style/LauncherTheme"/>
+    <style name="AppTheme.Dark" parent="@style/LauncherTheme.Dark"/>
+    <style name="AppTheme.Dark.DarkText" parent="@style/LauncherTheme.Dark.DarkText"/>
+    <style name="AppTheme.DarkText" parent="@style/LauncherTheme.DarkText"/>
+    <style name="BaseIcon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:defaultFocusHighlightEnabled">false</item>
+
+        <!-- No shadows in the base theme -->
+        <item name="android:shadowRadius">0</item>
+    </style>
+    <style name="BaseIcon.Workspace">
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:shadowColor">?attr/workspaceShadowColor</item>
+        <item name="ambientShadowColor">?attr/workspaceAmbientShadowColor</item>
+        <item name="ambientShadowBlur">2.5dp</item>
+        <item name="keyShadowColor">?attr/workspaceKeyShadowColor</item>
+        <item name="keyShadowBlur">1dp</item>
+        <item name="keyShadowOffset">.5dp</item>
+    </style>
+    <style name="BaseLauncherTheme" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorEdgeEffect">#FF757575</item>
+    </style>
+    <style name="BaseLauncherThemeWithCustomAttrs" parent="@style/BaseLauncherTheme">
+        <item name="android:textColorPrimary">#ff000000</item>
+        <item name="android:textColorSecondary">#ff000000</item>
+        <item name="android:textColorTertiary">#CC000000</item>
+        <item name="android:textColorHint">#A0000000</item>
+        <item name="android:colorControlHighlight">#A0000000</item>
+        <item name="android:colorPrimary">#fff</item>
+        <item name="allAppsScrimColor">#EAFFFFFF</item>
+        <item name="allAppsInterimScrimAlpha">46</item>
+        <item name="allAppsNavBarScrimColor">#66FFFFFF</item>
+        <item name="popupColorPrimary">#FFF</item>
+        <item name="popupColorSecondary">#F5F5F5</item> <!-- Gray 100 -->
+        <item name="popupColorTertiary">#E0E0E0</item> <!-- Gray 300 -->
+        <item name="isMainColorDark">false</item>
+        <item name="isWorkspaceDarkText">false</item>
+        <item name="workspaceTextColor">@android:color/white</item>
+        <item name="workspaceShadowColor">#B0000000</item>
+        <item name="workspaceAmbientShadowColor">#33000000</item>
+        <item name="workspaceKeyShadowColor">#44000000</item>
+        <item name="workspaceStatusBarScrim">@drawable/workspace_bg</item>
+        <item name="widgetsTheme">@style/WidgetContainerTheme</item>
+    </style>
+    <style name="DropTargetButton" parent="DropTargetButtonBase"/>
+    <style name="DropTargetButtonBase">
+        <item name="android:drawablePadding">7.5dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textColor">?attr/workspaceTextColor</item>
+        <item name="android:textSize">@dimen/drop_target_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:shadowColor">?attr/workspaceShadowColor</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">4.0</item>
+    </style>
+    <style name="FastScrollerPopup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/fastscroll_popup_width</item>
+        <item name="android:layout_height">@dimen/fastscroll_popup_height</item>
+        <item name="android:textSize">@dimen/fastscroll_popup_text_size</item>
+        <item name="android:paddingEnd">@dimen/fastscroll_popup_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:alpha">0</item>
+        <item name="android:elevation">3dp</item>
+        <item name="android:saveEnabled">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+    <style name="HomeScreenElementTheme">
+        <item name="android:colorEdgeEffect">?attr/workspaceTextColor</item>
+        <item name="android:textColorPrimary">?attr/workspaceTextColor</item>
+        <item name="android:textColorSecondary">?attr/workspaceTextColor</item>
+    </style>
+    <style name="LauncherTheme" parent="@style/BaseLauncherThemeWithCustomAttrs"/>
+    <style name="LauncherTheme.Dark" parent="@style/LauncherTheme">
+        <item name="android:textColorPrimary">#FFFFFFFF</item>
+        <item name="android:textColorSecondary">#FFFFFFFF</item>
+        <item name="android:textColorTertiary">#CCFFFFFF</item>
+        <item name="android:textColorHint">#A0FFFFFF</item>
+        <item name="android:colorControlHighlight">#A0FFFFFF</item>
+        <item name="android:colorPrimary">#FF212121</item>
+        <item name="allAppsScrimColor">#EA212121</item>
+        <item name="allAppsInterimScrimAlpha">102</item>
+        <item name="allAppsNavBarScrimColor">#80000000</item>
+        <item name="popupColorPrimary">?android:attr/colorPrimary</item>
+        <item name="popupColorSecondary">#424242</item> <!-- Gray 800 -->
+        <item name="popupColorTertiary">#757575</item> <!-- Gray 600 -->
+        <item name="widgetsTheme">@style/WidgetContainerTheme.Dark</item>
+        <item name="isMainColorDark">true</item>
+    </style>
+    <style name="LauncherTheme.Dark.DarkText" parent="@style/LauncherTheme.Dark">
+        <item name="allAppsInterimScrimAlpha">25</item>
+        <item name="workspaceTextColor">#FF212121</item>
+        <item name="workspaceShadowColor">@android:color/transparent</item>
+        <item name="workspaceAmbientShadowColor">@android:color/transparent</item>
+        <item name="workspaceKeyShadowColor">@android:color/transparent</item>
+        <item name="isWorkspaceDarkText">true</item>
+        <item name="workspaceStatusBarScrim">@null</item>
+    </style>
+    <style name="LauncherTheme.DarkText" parent="@style/LauncherTheme">
+        <item name="workspaceTextColor">#FF212121</item>
+        <item name="allAppsInterimScrimAlpha">128</item>
+        <item name="workspaceShadowColor">@android:color/transparent</item>
+        <item name="workspaceAmbientShadowColor">@android:color/transparent</item>
+        <item name="workspaceKeyShadowColor">@android:color/transparent</item>
+        <item name="isWorkspaceDarkText">true</item>
+        <item name="workspaceStatusBarScrim">@null</item>
+    </style>
+    <style name="PopupItem">
+        <item name="android:colorControlHighlight">?attr/popupColorTertiary</item>
+    </style>
+    <style name="TaskMenu">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="TaskMenu.Option">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
+    <style name="TextAppearance.Compat.Notification.Info">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Info.Media"/>
+    <style name="TextAppearance.Compat.Notification.Line2" parent="TextAppearance.Compat.Notification.Info"/>
+    <style name="TextAppearance.Compat.Notification.Line2.Media" parent="TextAppearance.Compat.Notification.Info.Media"/>
+    <style name="TextAppearance.Compat.Notification.Media"/>
+    <style name="TextAppearance.Compat.Notification.Time">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Time.Media"/>
+    <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+    <style name="TextAppearance.Compat.Notification.Title.Media"/>
+    <style name="TextTitle">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="Widget.Compat.NotificationActionContainer" parent=""/>
+    <style name="Widget.Compat.NotificationActionText" parent=""/>
+    <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
+        <item name="statusBarBackground">#000000</item>
+    </style>
+    <style name="WidgetContainerTheme" parent="@android:style/Theme.DeviceDefault.Settings">
+        <item name="android:colorEdgeEffect">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textColorPrimary">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorSecondary">?android:attr/textColorSecondaryInverse</item>
+    </style>
+    <style name="WidgetContainerTheme.Dark"/>
+</resources>

@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/build/intermediates/incremental/mergeL3goDebugResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/res/values-land/dimens.xml",
+                    "from": {
+                        "startLines": "30,29,35,34,27,22,23,24,21,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1194,1131,1401,1345,1065,869,924,980,815,710",
+                        "endColumns": "71,62,64,55,64,54,55,57,53,78",
+                        "endOffsets": "1261,1189,1461,1396,1125,919,975,1033,864,784"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,127,190,255,311,376,431,487,545,599",
+                        "endColumns": "71,62,64,55,64,54,55,57,53,78",
+                        "endOffsets": "122,185,250,306,371,426,482,540,594,673"
+                    }
+                }
+            ]
+        }
+    ]
+}

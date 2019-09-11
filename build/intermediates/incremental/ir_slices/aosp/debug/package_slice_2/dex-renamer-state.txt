@@ -1,0 +1,4 @@
+#Tue Sep 03 13:10:09 GMT 2019
+base.0=/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/build/intermediates/transforms/dexMerger/aosp/debug/2
+path.0=classes.dex
+renamed.0=classes.dex

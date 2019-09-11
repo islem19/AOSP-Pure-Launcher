@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Wed Sep 11 07:49:31 GMT 2019
+1.base=/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/build/intermediates/transforms/dexMerger/l3go/debug/0
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=classes.dex
+0.set=DEX
+0.base=/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/build/intermediates/transforms/dexMerger/l3go/debug/1
+1.path=classes.dex

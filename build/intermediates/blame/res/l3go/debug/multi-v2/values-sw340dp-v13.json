@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/build/intermediates/incremental/mergeL3goDebugResources/merged.dir/values-sw340dp-v13/values-sw340dp-v13.xml",
+            "map": [
+                {
+                    "source": "/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/res/values-sw340dp/dimens.xml",
+                    "from": {
+                        "startLines": "20,21",
+                        "startColumns": "4,4",
+                        "startOffsets": "756,812",
+                        "endColumns": "55,52",
+                        "endOffsets": "807,860"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,111",
+                        "endColumns": "55,52",
+                        "endOffsets": "106,159"
+                    }
+                }
+            ]
+        }
+    ]
+}

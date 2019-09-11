@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dynamic_grid_cell_layout_bottom_padding">5.5dp</dimen>
+    <dimen name="dynamic_grid_cell_layout_padding">0dp</dimen>
+    <dimen name="dynamic_grid_hotseat_side_padding">16dp</dimen>
+    <dimen name="dynamic_grid_hotseat_size">0dp</dimen>
+    <dimen name="dynamic_grid_icon_drawable_padding">4dp</dimen>
+    <dimen name="fastscroll_popup_height">48dp</dimen>
+    <dimen name="fastscroll_popup_padding">10dp</dimen>
+    <dimen name="fastscroll_popup_text_size">24dp</dimen>
+    <dimen name="fastscroll_popup_width">58dp</dimen>
+    <item format="fraction" name="container_margin" type="fraction">12%</item>
+</resources>

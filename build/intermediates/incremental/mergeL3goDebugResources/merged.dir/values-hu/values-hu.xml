@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals formatted="false" msgid="7948068486082879291" name="badged_app_label">
+      <item quantity="other">A(z) <ns1:g id="APP_NAME_2">%1$s</ns1:g> <ns1:g id="NOTIFICATION_COUNT_3">%2$d</ns1:g> értesítéssel rendelkezik</item>
+      <item quantity="one">A(z) <ns1:g id="APP_NAME_0">%1$s</ns1:g> <ns1:g id="NOTIFICATION_COUNT_1">%2$d</ns1:g> értesítéssel rendelkezik</item>
+    </plurals>
+    <string msgid="7610119707847920412" name="abandoned_clean_this">"Eltávolítás"</string>
+    <string msgid="3990027586878167529" name="abandoned_promise_explanation">"Az ikonhoz tartozó alkalmazás nincs telepítve. Törölheti az ikont, vagy az alkalmazás megkeresése után manuálisan telepítheti azt."</string>
+    <string msgid="7096178467971716750" name="abandoned_promises_title">"Az alkalmazás nincs telepítve"</string>
+    <string msgid="891119232568284442" name="abandoned_search">"Keresés"</string>
+    <string msgid="8902165848117513641" name="action_add_to_workspace">"Hozzáadás a kezdőképernyőhöz"</string>
+    <string msgid="282377193880900022" name="action_decrease_height">"Magasság csökkentése"</string>
+    <string msgid="1374549771083094654" name="action_decrease_width">"Szélesség csökkentése"</string>
+    <string msgid="2864038805849372848" name="action_deep_shortcut">"Gyorsparancsok"</string>
+    <string msgid="5909461085055959187" name="action_dismiss_notification">"Elvetés"</string>
+    <string msgid="459390020612501122" name="action_increase_height">"Magasság növelése"</string>
+    <string msgid="8773715375078513326" name="action_increase_width">"Szélesség növelése"</string>
+    <string msgid="4339390619886385032" name="action_move">"Elem mozgatása"</string>
+    <string msgid="2170188780612570250" name="action_move_here">"Elem áthelyezése ide"</string>
+    <string msgid="1603837886334246317" name="action_move_to_workspace">"Áthelyezés a kezdőképernyőre"</string>
+    <string msgid="1802976324781771067" name="action_resize">"Átméretezés"</string>
+    <string msgid="7456344436509528827" name="activity_not_available">"Az alkalmazás nem érhető el"</string>
+    <string msgid="8071924732094499514" name="activity_not_found">"Az alkalmazás nincs telepítve."</string>
+    <string msgid="5899764264480397019" name="add_item_request_drag_hint">"Tartsa lenyomva a manuális hozzáadáshoz"</string>
+    <string msgid="9040534766770853243" name="add_to_folder">"Hozzáadás a(z) <ns1:g id="NAME">%1$s</ns1:g> mappához"</string>
+    <string msgid="4534929978967147231" name="add_to_folder_with_app">"Hozzáadás a mappához a következővel: <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="4793259502305558003" name="added_to_folder">"Elem hozzáadva a mappához"</string>
+    <string msgid="8130441508702294465" name="all_apps_button_label">"Alkalmazások listája"</string>
+    <string msgid="1315764287305224468" name="all_apps_button_personal_label">"Személyes alkalmazások listája"</string>
+    <string msgid="7270707118948892488" name="all_apps_button_work_label">"Munkahelyi alkalmazások listája"</string>
+    <string msgid="252062713717058851" name="all_apps_home_button_label">"Főoldal"</string>
+    <string msgid="5813968043155271636" name="all_apps_loading_message">"Alkalmazások betöltése…"</string>
+    <string msgid="3200346862396363786" name="all_apps_no_search_results">"Nem található alkalmazás a(z) „<ns1:g id="QUERY">%1$s</ns1:g>” lekérdezésre"</string>
+    <string msgid="4190252696685155002" name="all_apps_personal_tab">"Személyes"</string>
+    <string msgid="1390553134053255246" name="all_apps_search_bar_hint">"Alkalmazások keresése"</string>
+    <string msgid="1366263386197059176" name="all_apps_search_market_message">"További alkalmazások keresése"</string>
+    <string msgid="4884822796154055118" name="all_apps_work_tab">"Munkahelyi"</string>
+    <string msgid="8662546029078692509" name="allow_rotation_desc">"A telefon elforgatásakor"</string>
+    <string msgid="7728578836261442095" name="allow_rotation_title">"A kezdőképernyő elforgatásának engedélyezése"</string>
+    <string msgid="8336702962104482644" name="app_downloading_title">"A(z) <ns1:g id="NAME">%1$s</ns1:g> letöltése, <ns1:g id="PROGRESS">%2$s</ns1:g> kész"</string>
+    <string msgid="692894985365717661" name="app_info_drop_target_label">"Alkalmazásinformáció"</string>
+    <string msgid="649227358658669779" name="app_name">"Launcher3"</string>
+    <string msgid="7053938513995617849" name="app_waiting_download_title">"A(z) <ns1:g id="NAME">%1$s</ns1:g> telepítésre vár"</string>
+    <string msgid="7117251166066978730" name="auto_add_shortcuts_description">"Új alkalmazásoknál"</string>
+    <string msgid="8222286205987725611" name="auto_add_shortcuts_label">"Ikon hozzáadása a kezdőképernyőhöz"</string>
+    <string msgid="2818107472360579152" name="bottom_work_tab_user_education_body">"A munkahelyi alkalmazásoknál jelvény található, és biztonságukról az Ön szervezete gondoskodik. A könnyebb hozzáférés érdekében helyezze át az alkalmazásokat a kezdőképernyőre."</string>
+    <string msgid="4224492243977802135" name="bottom_work_tab_user_education_close_button">"Bezárás"</string>
+    <string msgid="1098340939861869465" name="bottom_work_tab_user_education_closed">"Bezárva"</string>
+    <string msgid="5785851780786322825" name="bottom_work_tab_user_education_title">"Itt kereshet munkahelyi alkalmazásokat"</string>
+    <string msgid="4050141361160214248" name="create_folder_with">"Mappa létrehozása a következővel: <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="3747508247759093328" name="custom_actions">"Egyéni műveletek"</string>
+    <string msgid="7475544710230993317" name="default_scroll_format">"%2$d/%1$d. oldal"</string>
+    <string msgid="6673129024321402780" name="disabled_app_label">"A(z) <ns1:g id="APP_NAME">%1$s</ns1:g> letiltva"</string>
+    <string msgid="4100806530910930934" name="folder_closed">"Mappa lezárva"</string>
+    <string msgid="6409794597405184510" name="folder_created">"Mappa létrehozva"</string>
+    <string msgid="6617836969016293992" name="folder_hint_text">"Névtelen mappa"</string>
+    <string msgid="7371454440695724752" name="folder_name"/>
+    <string msgid="6629239338071103179" name="folder_name_format">"Mappa: <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="94695026776264709" name="folder_opened">"Mappa megnyitva – szélesség: <ns1:g id="WIDTH">%1$d</ns1:g>; magasság: <ns1:g id="HEIGHT">%2$d</ns1:g>"</string>
+    <string msgid="1794088362165669656" name="folder_renamed">"A mappa új neve: <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="4625795376335528256" name="folder_tap_to_close">"Érintse meg a mappa bezárásához"</string>
+    <string msgid="4017685068016979677" name="folder_tap_to_rename">"Koppintson ide az átnevezés mentéséhez"</string>
+    <string msgid="6081085226050792095" name="gadget_error_text">"Probléma történt a modul betöltésekor"</string>
+    <string msgid="8274003207686040488" name="gadget_setup_text">"Beállítás"</string>
+    <string msgid="806512411299847073" name="home_screen">"Kezdőképernyő"</string>
+    <string msgid="7448809638125333693" name="hotseat_out_of_space">"Nincs több hely a Kedvencek tálcán"</string>
+    <string msgid="5503319969924580241" name="icon_badging_desc_off">"Kikapcsolva"</string>
+    <string msgid="2627952638544674079" name="icon_badging_desc_on">"Bekapcsolva"</string>
+    <string msgid="2309733118428242174" name="icon_badging_service_title">"Értesítési pöttyök megjelenítése"</string>
+    <string msgid="874121399231955394" name="icon_badging_title">"Értesítési pöttyök"</string>
+    <string msgid="6550072265930144217" name="icon_shape_circle">"Kör"</string>
+    <string msgid="2977264953998281004" name="icon_shape_override_label">"Ikon formájának módosítása"</string>
+    <string msgid="3841607380657692863" name="icon_shape_override_label_location">"a kezdőképernyőn"</string>
+    <string msgid="3461735694970239908" name="icon_shape_override_progress">"Ikonforma módosításainak alkalmazása…"</string>
+    <string msgid="633575066111622774" name="icon_shape_square">"Négyzet"</string>
+    <string msgid="5658049910802669495" name="icon_shape_squircle">"Squircle"</string>
+    <string msgid="1709762974822753030" name="icon_shape_system_default">"Alapértelmezett érték használata"</string>
+    <string msgid="4525869388200835463" name="icon_shape_teardrop">"Könnycsepp"</string>
+    <string msgid="2539096853673231757" name="install_drop_target_label">"Telepítés"</string>
+    <string msgid="4211073925752213539" name="item_added_to_workspace">"Elem hozzáadva a kezdőképernyőhöz"</string>
+    <string msgid="4606538322571412879" name="item_moved">"Elem áthelyezve"</string>
+    <string msgid="851119963877842327" name="item_removed">"Elem eltávolítva"</string>
+    <string msgid="2725225828389948328" name="long_accessible_way_to_add">"Parancsikon felvételéhez koppintson rá duplán és tartsa nyomva, vagy használjon egyéni műveleteket."</string>
+    <string msgid="3327314059613154633" name="long_accessible_way_to_add_shortcut">"Parancsikon felvételéhez koppintson rá duplán és tartsa nyomva, vagy használjon egyéni műveleteket."</string>
+    <string msgid="4524750017792716791" name="long_press_shortcut_to_add">"Felvételhez tartsa nyomva a parancsikont."</string>
+    <string msgid="4001616142797446267" name="long_press_widget_to_add">"Felvételhez tartsa nyomva a parancsikont."</string>
+    <string msgid="2833711483015685619" name="move_to_empty_cell">"Áthelyezés ide: <ns1:g id="NUMBER_0">%1$s</ns1:g>. sor, <ns1:g id="NUMBER_1">%2$s</ns1:g>. oszlop"</string>
+    <string msgid="6295412897075147808" name="move_to_hotseat_position">"Áthelyezés a kedvencek <ns1:g id="NUMBER">%1$s</ns1:g>. pozíciójába"</string>
+    <string msgid="6750008980455459790" name="move_to_position">"Áthelyezés a(z) <ns1:g id="NUMBER">%1$s</ns1:g>. pozícióba"</string>
+    <string msgid="6898038085516271325" name="msg_disabled_by_admin">"A rendszergazda letiltotta"</string>
+    <string msgid="281113995110910548" name="msg_missing_notification_access">"Az értesítési pöttyök megjelenítéséhez kapcsolja be a(z) <ns1:g id="NAME">%1$s</ns1:g> alkalmazás értesítéseit"</string>
+    <string msgid="9208659281529857371" name="msg_no_phone_permission">"A(z) <ns1:g id="APP_NAME">%1$s</ns1:g> nem kezdeményezhet telefonhívásokat"</string>
+    <string msgid="6002233469409822874" name="notification_dismissed">"Értesítés elvetve"</string>
+    <string msgid="1404149926117359025" name="notifications_header">"Értesítések"</string>
+    <string msgid="4691004494942118364" name="out_of_space">"Nincs több hely ezen a kezdőképernyőn."</string>
+    <string msgid="7592128424511031410" name="package_state_unknown">"Ismeretlen"</string>
+    <string msgid="923466509822011139" name="permdesc_install_shortcut">"Lehetővé teszi egy alkalmazás számára, hogy felhasználói beavatkozás nélkül adjon hozzá parancsikonokat."</string>
+    <string msgid="5833423719057558387" name="permdesc_read_settings">"Lehetővé teszi az alkalmazás számára, hogy beolvassa a kezdőképernyő beállításait és parancsikonjait."</string>
+    <string msgid="5440712911516509985" name="permdesc_write_settings">"Lehetővé teszi az alkalmazás számára, hogy módosítsa a kezdőképernyő beállításait és parancsikonjait."</string>
+    <string msgid="5632423390354674437" name="permlab_install_shortcut">"parancsikonok telepítése"</string>
+    <string msgid="1941457408239617576" name="permlab_read_settings">"Főoldal beállításainak és parancsikonjainak beolvasása"</string>
+    <string msgid="3574213698004620587" name="permlab_write_settings">"Főoldal beállításainak és parancsikonjainak írása"</string>
+    <string msgid="8064208734425456485" name="place_automatically">"Automatikus hozzáadás"</string>
+    <string msgid="7812859488053230776" name="remove_drop_target_label">"Törlés"</string>
+    <string msgid="9160126848219158407" name="safemode_shortcut_error">"A letöltött alkalmazás Csökkentett módban ki van kapcsolva"</string>
+    <string msgid="4863470563535682004" name="safemode_widget_error">"A modulok ki vannak kapcsolva Csökkentett módban"</string>
+    <string msgid="8873672322605444408" name="settings_button_text">"Kezdőoldal beállításai"</string>
+    <string msgid="2536503539825726397" name="shortcut_not_available">"A gyorsparancs nem áll rendelkezésre"</string>
+    <string msgid="2676582286544232849" name="shortcuts_menu_with_notifications_description">"Parancsikonok és értesítések"</string>
+    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="1376365968844349552" name="title_change_settings">"Beállítások módosítása"</string>
+    <string msgid="7503287056163941064" name="title_missing_notification_access">"Értesítésekhez való hozzáférésre van szükség"</string>
+    <string msgid="4722034217958379417" name="uninstall_drop_target_label">"Eltávolítás"</string>
+    <string msgid="4172046090762920660" name="uninstall_system_app_text">"Ez egy rendszeralkalmazás, és nem lehet eltávolítani."</string>
+    <string msgid="8404103075899945851" name="wallpaper_button_text">"Háttérképek"</string>
+    <string msgid="3640149169885301790" name="widget_accessible_dims_format">"%1$d széles és %2$d magas"</string>
+    <string msgid="4221900832360456858" name="widget_button_text">"Parancsikonok"</string>
+    <string msgid="2370757736025621599" name="widget_dims_format">"%1$d × %2$d"</string>
+    <string msgid="9130327887929620" name="widget_resized">"Modul átméretezve <ns1:g id="NUMBER_0">%1$s</ns1:g> szélességre és <ns1:g id="NUMBER_1">%2$s</ns1:g> magasságra"</string>
+    <string msgid="3949835990909395998" name="widgets_bottom_sheet_title">"<ns1:g id="NAME">%1$s</ns1:g>-parancsikonok"</string>
+    <string msgid="796804551140113767" name="widgets_list">"Widgetlista"</string>
+    <string msgid="6141506579418771922" name="widgets_list_closed">"Widgetlista bezárva"</string>
+    <string msgid="3753320833950115786" name="work_folder_name">"Munka"</string>
+    <string msgid="3194894777601421047" name="work_mode_off_label">"Az értesítések és az alkalmazások ki vannak kapcsolva"</string>
+    <string msgid="4781128097185272916" name="work_mode_on_label">"Az Ön szervezete kezeli"</string>
+    <string msgid="3081029915775481146" name="work_profile_toggle_label">"Munkaprofil"</string>
+    <string msgid="257366611030256142" name="workspace_new_page">"Új kezdőképernyő oldal"</string>
+    <string msgid="8458889198184077399" name="workspace_scroll_format">"%2$d/%1$d. kezdőképernyő"</string>
+</resources>

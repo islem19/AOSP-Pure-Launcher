@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/build/intermediates/incremental/mergeQuickstepDebugResources/merged.dir/values-v19/values-v19.xml",
+            "map": [
+                {
+                    "source": "/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/res/values-v19/styles.xml",
+                    "from": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "671",
+                        "endLines": "23",
+                        "endColumns": "12",
+                        "endOffsets": "895"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "279"
+                    }
+                }
+            ]
+        }
+    ]
+}

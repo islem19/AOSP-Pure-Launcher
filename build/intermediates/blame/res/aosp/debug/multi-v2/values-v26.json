@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/build/intermediates/incremental/mergeAospDebugResources/merged.dir/values-v26/values-v26.xml",
+            "map": [
+                {
+                    "source": "/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/res/values-v26/styles.xml",
+                    "from": {
+                        "startLines": "20,23",
+                        "startColumns": "4,4",
+                        "startOffsets": "715,906",
+                        "endLines": "22,26",
+                        "endColumns": "12,12",
+                        "endOffsets": "901,1146"
+                    },
+                    "to": {
+                        "startLines": "4,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "171,362",
+                        "endLines": "6,10",
+                        "endColumns": "12,12",
+                        "endOffsets": "357,602"
+                    }
+                },
+                {
+                    "source": "/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/res/values-v26/bools.xml",
+                    "from": {
+                        "startLines": "21,19",
+                        "startColumns": "4,4",
+                        "startOffsets": "736,677",
+                        "endColumns": "57,57",
+                        "endOffsets": "789,730"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,57",
+                        "endOffsets": "108,166"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="allow_rotation">true</bool>
+    <bool name="is_tablet">true</bool>
+    <dimen name="all_apps_background_canvas_height">525dp</dimen>
+    <dimen name="all_apps_background_canvas_width">850dp</dimen>
+    <dimen name="drag_flingToDeleteMinVelocity">-1000dp</dimen>
+    <dimen name="widget_section_indent">56dp</dimen>
+</resources>

@@ -1,0 +1,66 @@
+{
+    "logs": [
+        {
+            "outputFile": "/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/build/intermediates/incremental/mergeAospDebugResources/merged.dir/values-v21/values-v21.xml",
+            "map": [
+                {
+                    "source": "/home/aosp/.gradle/caches/transforms-2/files-2.1/ae818390094ad92a227eb8c4c7850c76/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "15,18,22,26",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "1026,1194,1483,1779",
+                        "endLines": "17,20,24,28",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "1189,1352,1646,1941"
+                    }
+                },
+                {
+                    "source": "/home/aosp/.gradle/caches/transforms-2/files-2.1/e62daac4fa54a6ba31a31362254aeaf2/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,223,290,354,470,596,722,850,1022",
+                        "endLines": "2,3,4,5,6,7,8,9,12,17",
+                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,13,14,21,25,29,32",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,223,290,784,900,1357,1651,1946,2118",
+                        "endLines": "2,3,4,5,13,14,21,25,31,36",
+                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "154,218,285,349,895,1021,1478,1774,2113,2451"
+                    }
+                },
+                {
+                    "source": "/media/aosp/2D83727159CE9167/My_Android/AOSP-Pure-Launcher/res/values-v21/styles.xml",
+                    "from": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "671",
+                        "endLines": "26",
+                        "endColumns": "12",
+                        "endOffsets": "1096"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "354",
+                        "endLines": "12",
+                        "endColumns": "12",
+                        "endOffsets": "779"
+                    }
+                }
+            ]
+        }
+    ]
+}

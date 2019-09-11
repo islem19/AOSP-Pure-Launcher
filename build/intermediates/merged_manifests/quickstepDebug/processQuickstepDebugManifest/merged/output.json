@@ -1,0 +1,1 @@
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"1.0","enabled":true,"outputFile":"AOSPureLauncher.apk","fullName":"quickstepDebug","baseName":"quickstep-debug"},"path":"AndroidManifest.xml","properties":{"packageId":"dz.aosp.purelauncher","split":"","minSdkVersion":"21"}}]

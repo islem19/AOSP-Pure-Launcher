@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals formatted="false" msgid="7948068486082879291" name="badged_app_label">
+      <item quantity="other"><ns1:g id="APP_NAME_2">%1$s</ns1:g>, ରେ <ns1:g id="NOTIFICATION_COUNT_3">%2$d</ns1:g> ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ଅଛି</item>
+      <item quantity="one"><ns1:g id="APP_NAME_0">%1$s</ns1:g>, ରେ <ns1:g id="NOTIFICATION_COUNT_1">%2$d</ns1:g> ବିଜ୍ଞପ୍ତି ଅଛି</item>
+    </plurals>
+    <string msgid="7610119707847920412" name="abandoned_clean_this">"ବାହାର କରନ୍ତୁ"</string>
+    <string msgid="3990027586878167529" name="abandoned_promise_explanation">"ଏହି ଆଇକନ୍‌ ପାଇଁ ଆପ୍‌ ଇନଷ୍ଟଲ୍‌ ହୋଇନାହିଁ। ଏହାକୁ ଆପଣ ଆପ୍‌ ପାଇଁ ବାହାର କରିପାରିବେ କିମ୍ୱା ସର୍ଚ୍ଚ କରି ପାରିବେ ଏବଂ ଏହାକୁ ମାନୁଆଲ୍‌ ଭାବରେ ଇନଷ୍ଟଲ୍‌ କରିପାରିବେ।"</string>
+    <string msgid="7096178467971716750" name="abandoned_promises_title">"ଏହି ଆପ୍‌ ଇନଷ୍ଟଲ୍‌ ହୋଇନାହିଁ"</string>
+    <string msgid="891119232568284442" name="abandoned_search">"ସର୍ଚ୍ଚ କରନ୍ତୁ"</string>
+    <string msgid="8902165848117513641" name="action_add_to_workspace">"ହୋମ୍‌ ସ୍କ୍ରୀନରେ ଯୋଡ଼ନ୍ତୁ"</string>
+    <string msgid="282377193880900022" name="action_decrease_height">"ଉଚ୍ଚତା କମ୍‌ କରନ୍ତୁ"</string>
+    <string msgid="1374549771083094654" name="action_decrease_width">"ଚଉଡ଼ା କମ୍‌ କରନ୍ତୁ"</string>
+    <string msgid="2864038805849372848" name="action_deep_shortcut">"ଶର୍ଟକଟ୍‍"</string>
+    <string msgid="5909461085055959187" name="action_dismiss_notification">"ଖାରଜ କରନ୍ତୁ"</string>
+    <string msgid="459390020612501122" name="action_increase_height">"ଉଚ୍ଚତା ବଢ଼ାନ୍ତୁ"</string>
+    <string msgid="8773715375078513326" name="action_increase_width">"ଚଉଡ଼ା ବଢ଼ାନ୍ତୁ"</string>
+    <string msgid="4339390619886385032" name="action_move">"ଆଇଟମ୍‌ ଘୁଞ୍ଚାନ୍ତୁ"</string>
+    <string msgid="2170188780612570250" name="action_move_here">"ଆଇଟମ୍‌କୁ ଏଠାକୁ ଘୁଞ୍ଚାନ୍ତୁ"</string>
+    <string msgid="1603837886334246317" name="action_move_to_workspace">"ହାମ୍‌ ସ୍କ୍ରୀନକୁ ଘୁଞ୍ଚାନ୍ତୁ"</string>
+    <string msgid="1802976324781771067" name="action_resize">"ଆକାର ବଦଳାନ୍ତୁ"</string>
+    <string msgid="7456344436509528827" name="activity_not_available">"ଆପ୍‌ ଉପଲବ୍ଧ ନାହିଁ"</string>
+    <string msgid="8071924732094499514" name="activity_not_found">"ଆପ୍‌ ଇନଷ୍ଟଲ୍‌ ହୋଇନାହିଁ"</string>
+    <string msgid="5899764264480397019" name="add_item_request_drag_hint">"ମାନୁଆଲ୍‌ ଭାବରେ ରଖିବାକୁ ସ୍ପର୍ଶ କରନ୍ତୁ ଏବଂ ଧରି ରଖନ୍ତୁ"</string>
+    <string msgid="9040534766770853243" name="add_to_folder">"ଏହି ଫୋଲ୍ଡରରେ ଯୋଡ଼ନ୍ତୁ: <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="4534929978967147231" name="add_to_folder_with_app">"<ns1:g id="NAME">%1$s</ns1:g> ସହିତ ଫୋଲ୍ଡରରେ ଯୋଡ଼ନ୍ତୁ"</string>
+    <string msgid="4793259502305558003" name="added_to_folder">"ଫୋଲ୍ଡରରେ ଆଇଟମ୍‌ ଯୋଡ଼ାଗଲା"</string>
+    <string msgid="8130441508702294465" name="all_apps_button_label">"ଆପ୍‌ ତାଲିକା"</string>
+    <string msgid="1315764287305224468" name="all_apps_button_personal_label">"ବ୍ୟକ୍ତିଗତ ଆପ୍ ତାଲିକା"</string>
+    <string msgid="7270707118948892488" name="all_apps_button_work_label">"କାର୍ଯ୍ୟକାରୀ ଆପ୍‌ ତାଲିକା"</string>
+    <string msgid="252062713717058851" name="all_apps_home_button_label">"ହୋମ୍"</string>
+    <string msgid="5813968043155271636" name="all_apps_loading_message">"ଆପ୍‌ ଲୋଡ୍‌ ହେଉଛି..."</string>
+    <string msgid="3200346862396363786" name="all_apps_no_search_results">"\"<ns1:g id="QUERY">%1$s</ns1:g>\" ସହିତ ମେଳ ହେଉଥିବା କୌଣସି ଆପ୍‌ ମିଳିଲା ନାହିଁ"</string>
+    <string msgid="4190252696685155002" name="all_apps_personal_tab">"ବ୍ୟକ୍ତିଗତ"</string>
+    <string msgid="1390553134053255246" name="all_apps_search_bar_hint">"ଆପ୍‌ ଖୋଜନ୍ତୁ"</string>
+    <string msgid="1366263386197059176" name="all_apps_search_market_message">"ଅଧିକ ଆପ୍‌ ଖୋଜନ୍ତୁ"</string>
+    <string msgid="4884822796154055118" name="all_apps_work_tab">"କାମ"</string>
+    <string msgid="8662546029078692509" name="allow_rotation_desc">"ଯେତେବେଳେ ଫୋନକୁ ବୁଲାଯାଇଥାଏ"</string>
+    <string msgid="7728578836261442095" name="allow_rotation_title">"ହୋମ୍‌ ସ୍କ୍ରୀନ୍ ବୁଲାଇବା ଅନୁମତି ଦିଅନ୍ତୁ"</string>
+    <string msgid="8336702962104482644" name="app_downloading_title">"<ns1:g id="NAME">%1$s</ns1:g> ଡାଉନଲୋଡ୍‌ ହେଉଛି, <ns1:g id="PROGRESS">%2$s</ns1:g> ସମ୍ପୂର୍ଣ୍ଣ"</string>
+    <string msgid="692894985365717661" name="app_info_drop_target_label">"ଆପ୍‌ ସୂଚନା"</string>
+    <string msgid="649227358658669779" name="app_name">"ଲଞ୍ଚର୍3"</string>
+    <string msgid="7053938513995617849" name="app_waiting_download_title">"<ns1:g id="NAME">%1$s</ns1:g> ଇନଷ୍ଟଲ୍‌ ହେବାକୁ ଅପେକ୍ଷା କରିଛି"</string>
+    <string msgid="7117251166066978730" name="auto_add_shortcuts_description">"ନୂଆ ଆପ୍‌ ପାଇଁ"</string>
+    <string msgid="8222286205987725611" name="auto_add_shortcuts_label">"ହୋମ୍‌ ସ୍କ୍ରୀନରେ ଆଇକନ୍‌କୁ ଯୋଡ଼ନ୍ତୁ"</string>
+    <string msgid="2818107472360579152" name="bottom_work_tab_user_education_body">"ପ୍ରତ୍ୟେକ କାଯ୍ୟକାରୀ ଆପ୍‌ର ଗୋଟିଏ ବ୍ୟାଜ୍ (ଚିହ୍ନ) ଅଛି, ଯାହାକୁ ଆପଣଙ୍କ ସଂସ୍ଥା ସୁରକ୍ଷିତ ରଖିଥାଏ। ସହଜରେ ଆକ୍ସେସ୍ କରିବା ପାଇଁ ଆପ୍‌କୁ ହୋମ୍ ସ୍କ୍ରୀନ୍ ଉପରକୁ ଆଣନ୍ତୁ।"</string>
+    <string msgid="4224492243977802135" name="bottom_work_tab_user_education_close_button">"ବନ୍ଦ କରନ୍ତୁ"</string>
+    <string msgid="1098340939861869465" name="bottom_work_tab_user_education_closed">"ବନ୍ଦ ହୋଇଯାଇଛି"</string>
+    <string msgid="5785851780786322825" name="bottom_work_tab_user_education_title">"ଏଠାରେ କାମ ଆପ୍‌ ଖୋଜନ୍ତୁ"</string>
+    <string msgid="4050141361160214248" name="create_folder_with">"ଏହି ନାମରେ ଫୋଲ୍ଡର ତିଆରି କରନ୍ତୁ: <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="3747508247759093328" name="custom_actions">"କାର୍ଯ୍ୟ କଷ୍ଟମ୍ କରନ୍ତୁ"</string>
+    <string msgid="7475544710230993317" name="default_scroll_format">"ମୋଟ %2$dରୁ %1$d ନମ୍ବର ପୃଷ୍ଠା"</string>
+    <string msgid="6673129024321402780" name="disabled_app_label">"<ns1:g id="APP_NAME">%1$s</ns1:g> ଅକ୍ଷମ କରାଗଲା"</string>
+    <string msgid="4100806530910930934" name="folder_closed">"ଫୋଲ୍ଡର ବନ୍ଦ କରାଗଲା"</string>
+    <string msgid="6409794597405184510" name="folder_created">"ଫୋଲ୍ଡର ତିଆରି କରାଗଲା"</string>
+    <string msgid="6617836969016293992" name="folder_hint_text">"ବେନାମୀ ଫୋଲ୍ଡର୍‌"</string>
+    <string msgid="7371454440695724752" name="folder_name"/>
+    <string msgid="6629239338071103179" name="folder_name_format">"ଫୋଲ୍ଡର: <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="94695026776264709" name="folder_opened">"<ns1:g id="HEIGHT">%2$d</ns1:g> / <ns1:g id="WIDTH">%1$d</ns1:g>ର ଫୋଲ୍ଡର ଖୋଲାଗଲା"</string>
+    <string msgid="1794088362165669656" name="folder_renamed">"ଫୋଲ୍ଡରର ନାମ <ns1:g id="NAME">%1$s</ns1:g>କୁ ବଦଳାଗଲା"</string>
+    <string msgid="4625795376335528256" name="folder_tap_to_close">"ଫୋଲ୍ଡର୍‌ ବନ୍ଦ କରିବାକୁ ଟାପ୍‌ କରନ୍ତୁ"</string>
+    <string msgid="4017685068016979677" name="folder_tap_to_rename">"ନାମ ବଦଳାଇବା ସେଭ୍ କରିବାକୁ ଟାପ୍‌ କରନ୍ତୁ"</string>
+    <string msgid="6081085226050792095" name="gadget_error_text">"ୱିଜେଟ୍‌ ଲୋଡ୍‌ ହେବାରେ ସମସ୍ୟା ଅଛି"</string>
+    <string msgid="8274003207686040488" name="gadget_setup_text">"ସେଟ୍ ଅପ୍ କରନ୍ତୁ"</string>
+    <string msgid="806512411299847073" name="home_screen">"ହୋମ୍‌ ସ୍କ୍ରୀନ୍‌"</string>
+    <string msgid="7448809638125333693" name="hotseat_out_of_space">"ମନପସନ୍ଦ ଟ୍ରେରେ ଆଉ କୋଠରୀ ନାହିଁ"</string>
+    <string msgid="5503319969924580241" name="icon_badging_desc_off">"ଅଫ୍‌"</string>
+    <string msgid="2627952638544674079" name="icon_badging_desc_on">"ଅନ୍"</string>
+    <string msgid="2309733118428242174" name="icon_badging_service_title">"ବିଜ୍ଞପ୍ତି ଡଟ୍‌ଗୁଡ଼ିକୁ ଦେଖାନ୍ତୁ"</string>
+    <string msgid="874121399231955394" name="icon_badging_title">"ବିଜ୍ଞପ୍ତି ବିନ୍ଦୁଗୁଡ଼ିକ"</string>
+    <string msgid="6550072265930144217" name="icon_shape_circle">"ବୃତ୍ତ"</string>
+    <string msgid="2977264953998281004" name="icon_shape_override_label">"ଆଇକନ୍‌ର ଆକାର ପରିବର୍ତ୍ତନ କରନ୍ତୁ"</string>
+    <string msgid="3841607380657692863" name="icon_shape_override_label_location">"ହୋମ୍ ସ୍କ୍ରୀନ୍ ଉପରେ"</string>
+    <string msgid="3461735694970239908" name="icon_shape_override_progress">"ଆଇକନ୍‌ ଆକାର ପରିବର୍ତ୍ତନ ଲାଗୁ କରୁଛି"</string>
+    <string msgid="633575066111622774" name="icon_shape_square">"ବର୍ଗାକାର"</string>
+    <string msgid="5658049910802669495" name="icon_shape_squircle">"ବର୍ଗାକାରର ବୃତ୍ତ"</string>
+    <string msgid="1709762974822753030" name="icon_shape_system_default">"ସିଷ୍ଟମ ଡିଫଲ୍ଟ ବ୍ୟବହାର କରନ୍ତୁ"</string>
+    <string msgid="4525869388200835463" name="icon_shape_teardrop">"ଟିଅରଡ୍ରପ୍‌"</string>
+    <string msgid="2539096853673231757" name="install_drop_target_label">"ଇନଷ୍ଟଲ୍‌ କରନ୍ତୁ"</string>
+    <string msgid="4211073925752213539" name="item_added_to_workspace">"ହୋମ୍‌ ସ୍କ୍ରୀନରେ ଆଇଟମ୍‌ ଯୋଡ଼ାଗଲା"</string>
+    <string msgid="4606538322571412879" name="item_moved">"ଆଇଟମ୍‌ ଘୁଞ୍ଚେଇ ଦିଆଗଲା"</string>
+    <string msgid="851119963877842327" name="item_removed">"ଆଇଟମ୍‌ ବାହାର କରାଗଲା"</string>
+    <string msgid="2725225828389948328" name="long_accessible_way_to_add">"ଡବଲ୍‌-ଟାପ୍‌ କରନ୍ତୁ ଏବଂ ଏକ ଶର୍ଟକଟ୍ ଚୟନ କରିବାକୁ ଧରି ରଖନ୍ତୁ କିମ୍ୱା କଷ୍ଟମ୍ ପ୍ରକ୍ରିୟା ବ୍ୟବହାର କରନ୍ତୁ।"</string>
+    <string msgid="3327314059613154633" name="long_accessible_way_to_add_shortcut">"ଡବଲ୍‌-ଟାପ୍‌ କରନ୍ତୁ ଏବଂ ଏକ ଶର୍ଟକଟ୍ ଚୟନ କରିବାକୁ ଧରି ରଖନ୍ତୁ କିମ୍ୱା କଷ୍ଟମ୍ ପ୍ରକ୍ରିୟା ବ୍ୟବହାର କରନ୍ତୁ।"</string>
+    <string msgid="4524750017792716791" name="long_press_shortcut_to_add">"ଏକ ଶର୍ଟକଟ୍ ଚୟନ କରିବାକୁ ସ୍ପର୍ଶ କରି ଧରି ରଖନ୍ତୁ।"</string>
+    <string msgid="4001616142797446267" name="long_press_widget_to_add">"ଏକ ଶର୍ଟକଟ୍ ଚୟନ କରିବାକୁ ଦାବି ଧରନ୍ତୁ।"</string>
+    <string msgid="2833711483015685619" name="move_to_empty_cell">"ଧାଡ଼ି <ns1:g id="NUMBER_0">%1$s</ns1:g> ସ୍ତମ୍ଭ <ns1:g id="NUMBER_1">%2$s</ns1:g>କୁ ନିଅନ୍ତୁ"</string>
+    <string msgid="6295412897075147808" name="move_to_hotseat_position">"ପସନ୍ଦର ସ୍ଥିତି <ns1:g id="NUMBER">%1$s</ns1:g>କୁ ନିଅନ୍ତୁ"</string>
+    <string msgid="6750008980455459790" name="move_to_position">"<ns1:g id="NUMBER">%1$s</ns1:g> ସ୍ଥିତିକୁ ନିଅନ୍ତୁ"</string>
+    <string msgid="6898038085516271325" name="msg_disabled_by_admin">"ଆପଣଙ୍କ ଆଡମିନଙ୍କ ଦ୍ୱାରା ଅକ୍ଷମ କରାଯାଇଛି"</string>
+    <string msgid="281113995110910548" name="msg_missing_notification_access">"ବିଜ୍ଞପ୍ତି ବିନ୍ଦୁ ଦେଖାଇବାକୁ, <ns1:g id="NAME">%1$s</ns1:g> ପାଇଁ ଆପ୍‌ ବିଜ୍ଞପ୍ତି ଅନ୍‌ କରନ୍ତୁ"</string>
+    <string msgid="9208659281529857371" name="msg_no_phone_permission">"ଫୋନ୍‌ କଲ୍‌ କରିବାକୁ <ns1:g id="APP_NAME">%1$s</ns1:g>କୁ ଅନୁମତି ଦିଆଯାଇ ନାହିଁ"</string>
+    <string msgid="6002233469409822874" name="notification_dismissed">"ବିଜ୍ଞପ୍ତି ଖାରଜ କରାଗଲା"</string>
+    <string msgid="1404149926117359025" name="notifications_header">"ବିଜ୍ଞପ୍ତି"</string>
+    <string msgid="4691004494942118364" name="out_of_space">"ହୋମ୍‌ ସ୍କ୍ରୀନ ପାଇଁ ଆଉ କୋଠରୀ ନାହିଁ"</string>
+    <string msgid="7592128424511031410" name="package_state_unknown">"ଅଜଣା"</string>
+    <string msgid="923466509822011139" name="permdesc_install_shortcut">"ୟୁଜରଙ୍କ ବିନା ହସ୍ତକ୍ଷେପରେ ଶର୍ଟକଟ୍‌ ଯୋଡ଼ିବାକୁ ଆପକୁ ଅନୁମତି ଦିଏ।"</string>
+    <string msgid="5833423719057558387" name="permdesc_read_settings">"ହୋମରେ ସେଟିଙ୍ଗ ପଢ଼ିବାକୁ ଆପ ଏବଂ ଶର୍ଟକଟକୁ ଅନୁମତି ଦିଏ।"</string>
+    <string msgid="5440712911516509985" name="permdesc_write_settings">"ହୋମରେ ସେଟିଙ୍ଗ ଏବଂ ଶର୍ଟକଟ୍‌ ପରିବର୍ତ୍ତନ କରିବାକୁ ଆପକୁ ଅନୁମତି ଦିଏ।"</string>
+    <string msgid="5632423390354674437" name="permlab_install_shortcut">"ଶର୍ଟକଟ୍‍ ଇନଷ୍ଟଲ୍‌ କରନ୍ତୁ"</string>
+    <string msgid="1941457408239617576" name="permlab_read_settings">"ହୋମ୍‌ ସେଟିଙ୍ଗ ଏବଂ ଶର୍ଟକଟ୍‌ ପଢ଼ନ୍ତୁ"</string>
+    <string msgid="3574213698004620587" name="permlab_write_settings">"ହୋମ୍‌ ସେଟିଙ୍ଗ ଏବଂ ଶର୍ଟକଟ୍‌ ଲେଖନ୍ତୁ"</string>
+    <string msgid="8064208734425456485" name="place_automatically">"ସ୍ୱଚାଳିତ ଭାବେ ଯୋଡ଼ନ୍ତୁ"</string>
+    <string msgid="7812859488053230776" name="remove_drop_target_label">"ବାହାର କରନ୍ତୁ"</string>
+    <string msgid="9160126848219158407" name="safemode_shortcut_error">"ନିରାପଦ ମୋଡରେ ଡାଉନଲୋଡ୍‌ ହେଇଥିବା ଆପ୍‌ ଅକ୍ଷମ କରାଗଲା"</string>
+    <string msgid="4863470563535682004" name="safemode_widget_error">"ନିରାପଦ ମୋଡରେ ୱିଜେଟ୍‌ ଅକ୍ଷମ କରାଗଲା"</string>
+    <string msgid="8873672322605444408" name="settings_button_text">"ହୋମ୍‌ ସେଟିଙ୍ଗ"</string>
+    <string msgid="2536503539825726397" name="shortcut_not_available">"ଶର୍ଟକଟ୍‌ ଉପଲବ୍ଧ ନାହିଁ"</string>
+    <string msgid="2676582286544232849" name="shortcuts_menu_with_notifications_description">"ଶର୍ଟକଟ୍ ଓ ବିଜ୍ଞପ୍ତି"</string>
+    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="1376365968844349552" name="title_change_settings">"ସେଟିଙ୍ଗ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"</string>
+    <string msgid="7503287056163941064" name="title_missing_notification_access">"ବିଜ୍ଞପ୍ତି ଆକ୍ସେସ୍‌ ଆବଶ୍ୟକ ଅଟେ"</string>
+    <string msgid="4722034217958379417" name="uninstall_drop_target_label">"ଅନଇନଷ୍ଟଲ୍‌ କରନ୍ତୁ"</string>
+    <string msgid="4172046090762920660" name="uninstall_system_app_text">"ଏହା ଏକ ସିଷ୍ଟମ୍‌ ଆପ୍‌ ଅଟେ ଏବଂ ଏହା ଅନଇନଷ୍ଟଲ୍‌ କରାଯାଇ ପାରିବ ନାହିଁ।"</string>
+    <string msgid="8404103075899945851" name="wallpaper_button_text">"ୱାଲପେପର୍‌"</string>
+    <string msgid="3640149169885301790" name="widget_accessible_dims_format">"%1$d ଓସାର ଓ %2$d ଉଚ୍ଚ"</string>
+    <string msgid="4221900832360456858" name="widget_button_text">"ଶର୍ଟକଟ୍‍"</string>
+    <string msgid="2370757736025621599" name="widget_dims_format">"%1$d × %2$d"</string>
+    <string msgid="9130327887929620" name="widget_resized">"ୱିଜେଟକୁ <ns1:g id="NUMBER_0">%1$s</ns1:g> ଓସାର ଓ <ns1:g id="NUMBER_1">%2$s</ns1:g> ଉଚ୍ଚରେ ପୁନଃଆକାର ଦିଆଗଲା"</string>
+    <string msgid="3949835990909395998" name="widgets_bottom_sheet_title">"<ns1:g id="NAME">%1$s</ns1:g>ର ଶର୍ଟକଟ୍"</string>
+    <string msgid="3753320833950115786" name="work_folder_name">"କାମ"</string>
+    <string msgid="3194894777601421047" name="work_mode_off_label">"ବିଜ୍ଞପ୍ତି ଓ ଆପ୍‌ଗୁଡ଼ିକ ବନ୍ଦ ଅଛି"</string>
+    <string msgid="4781128097185272916" name="work_mode_on_label">"ଆପଣଙ୍କ ସଂସ୍ଥା ଦ୍ୱାରା ପରିଚାଳିତ"</string>
+    <string msgid="3081029915775481146" name="work_profile_toggle_label">"ୱର୍କ ପ୍ରୋଫାଇଲ୍‌"</string>
+    <string msgid="257366611030256142" name="workspace_new_page">"ନୂଆ ହୋମ୍‌ ସ୍କ୍ରୀନ୍‌ ପୃଷ୍ଠା"</string>
+    <string msgid="8458889198184077399" name="workspace_scroll_format">"%2$dରୁ %1$d ହୋମ୍‌ ସ୍କ୍ରୀନ୍"</string>
+</resources>

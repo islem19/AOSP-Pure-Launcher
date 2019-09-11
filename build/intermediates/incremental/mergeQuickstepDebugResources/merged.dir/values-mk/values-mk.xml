@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals formatted="false" msgid="7948068486082879291" name="badged_app_label">
+      <item quantity="one"><ns1:g id="APP_NAME_2">%1$s</ns1:g> има <ns1:g id="NOTIFICATION_COUNT_3">%2$d</ns1:g> известување</item>
+      <item quantity="other"><ns1:g id="APP_NAME_2">%1$s</ns1:g> има <ns1:g id="NOTIFICATION_COUNT_3">%2$d</ns1:g> известувања</item>
+    </plurals>
+    <string msgid="7610119707847920412" name="abandoned_clean_this">"Отстрани"</string>
+    <string msgid="3990027586878167529" name="abandoned_promise_explanation">"Апликацијата за оваа икона не е инсталирана. Може да ја отстраните или да се обидете да ја најдете апликацијата и да ја инсталирате рачно."</string>
+    <string msgid="7096178467971716750" name="abandoned_promises_title">"Апликацијата не е инсталирана"</string>
+    <string msgid="891119232568284442" name="abandoned_search">"Барај"</string>
+    <string msgid="5354563209433803643" name="accessibility_close_task">"Затвори"</string>
+    <string msgid="1444379410873162882" name="accessibility_desc_recent_apps">"Преглед"</string>
+    <string msgid="4058661986695117371" name="accessibility_recent_apps">"Неодамнешни апликации"</string>
+    <string msgid="8902165848117513641" name="action_add_to_workspace">"Додај на Почетен екран"</string>
+    <string msgid="282377193880900022" name="action_decrease_height">"Намали висина"</string>
+    <string msgid="1374549771083094654" name="action_decrease_width">"Намали ширина"</string>
+    <string msgid="2864038805849372848" name="action_deep_shortcut">"Кратенки"</string>
+    <string msgid="5909461085055959187" name="action_dismiss_notification">"Отфрли"</string>
+    <string msgid="459390020612501122" name="action_increase_height">"Зголеми висина"</string>
+    <string msgid="8773715375078513326" name="action_increase_width">"Зголеми ширина"</string>
+    <string msgid="4339390619886385032" name="action_move">"Премести ја ставката"</string>
+    <string msgid="2170188780612570250" name="action_move_here">"Премести ја ставката овде"</string>
+    <string msgid="1603837886334246317" name="action_move_to_workspace">"Премести на Почетен екран"</string>
+    <string msgid="1802976324781771067" name="action_resize">"Промени големина"</string>
+    <string msgid="7456344436509528827" name="activity_not_available">"Апликацијата не е достапна"</string>
+    <string msgid="8071924732094499514" name="activity_not_found">"Апликацијата не е инсталирана."</string>
+    <string msgid="5899764264480397019" name="add_item_request_drag_hint">"Допрете и задржете за рачно поставување"</string>
+    <string msgid="9040534766770853243" name="add_to_folder">"Додај во папката: <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="4534929978967147231" name="add_to_folder_with_app">"Додај во папка со <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="4793259502305558003" name="added_to_folder">"Ставката е додадена во папката"</string>
+    <string msgid="8130441508702294465" name="all_apps_button_label">"Список со апликации"</string>
+    <string msgid="1315764287305224468" name="all_apps_button_personal_label">"Список со лични апликации"</string>
+    <string msgid="7270707118948892488" name="all_apps_button_work_label">"Список со апликации за работа"</string>
+    <string msgid="252062713717058851" name="all_apps_home_button_label">"Почетна страница"</string>
+    <string msgid="5813968043155271636" name="all_apps_loading_message">"Се вчитуваат апликации…"</string>
+    <string msgid="3200346862396363786" name="all_apps_no_search_results">"Не се најдени апликации што одговараат на „<ns1:g id="QUERY">%1$s</ns1:g>“"</string>
+    <string msgid="4190252696685155002" name="all_apps_personal_tab">"Лично"</string>
+    <string msgid="1390553134053255246" name="all_apps_search_bar_hint">"Пребарувајте апликации"</string>
+    <string msgid="1366263386197059176" name="all_apps_search_market_message">"Пребарај други апликации"</string>
+    <string msgid="4884822796154055118" name="all_apps_work_tab">"За работа"</string>
+    <string msgid="8662546029078692509" name="allow_rotation_desc">"Кога телефонот се ротира"</string>
+    <string msgid="7728578836261442095" name="allow_rotation_title">"Дозволете ротација на Почетниот екран"</string>
+    <string msgid="8336702962104482644" name="app_downloading_title">"Се презема <ns1:g id="NAME">%1$s</ns1:g>, <ns1:g id="PROGRESS">%2$s</ns1:g> завршено"</string>
+    <string msgid="692894985365717661" name="app_info_drop_target_label">"Инф. за апликација"</string>
+    <string msgid="649227358658669779" name="app_name">"Стартер3"</string>
+    <string msgid="7053938513995617849" name="app_waiting_download_title">"<ns1:g id="NAME">%1$s</ns1:g> чека да се инсталира"</string>
+    <string msgid="7117251166066978730" name="auto_add_shortcuts_description">"За нови апликации"</string>
+    <string msgid="8222286205987725611" name="auto_add_shortcuts_label">"Додај икона на почетниот екран"</string>
+    <string msgid="2818107472360579152" name="bottom_work_tab_user_education_body">"Секоја апликација за работа има значка, а организацијата се грижи за нејзината безбедност. За полесен пристап, преместете ги апликациите на почетниот екран."</string>
+    <string msgid="4224492243977802135" name="bottom_work_tab_user_education_close_button">"Затвори"</string>
+    <string msgid="1098340939861869465" name="bottom_work_tab_user_education_closed">"Затворено"</string>
+    <string msgid="5785851780786322825" name="bottom_work_tab_user_education_title">"Најдете апликации за работа тука"</string>
+    <string msgid="4050141361160214248" name="create_folder_with">"Создај папка со: <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="3747508247759093328" name="custom_actions">"Приспособени дејства"</string>
+    <string msgid="7475544710230993317" name="default_scroll_format">"Страница %1$d од %2$d"</string>
+    <string msgid="6673129024321402780" name="disabled_app_label">"<ns1:g id="APP_NAME">%1$s</ns1:g> е оневозможена"</string>
+    <string msgid="4100806530910930934" name="folder_closed">"Папката е затворена"</string>
+    <string msgid="6409794597405184510" name="folder_created">"Папката е создадена"</string>
+    <string msgid="6617836969016293992" name="folder_hint_text">"Неименувана папка"</string>
+    <string msgid="7371454440695724752" name="folder_name"/>
+    <string msgid="6629239338071103179" name="folder_name_format">"Папка: <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="94695026776264709" name="folder_opened">"Отворена е папка, <ns1:g id="WIDTH">%1$d</ns1:g> на <ns1:g id="HEIGHT">%2$d</ns1:g>"</string>
+    <string msgid="1794088362165669656" name="folder_renamed">"Папката е преименувана во <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="4625795376335528256" name="folder_tap_to_close">"Допрете за да ја затворите папката"</string>
+    <string msgid="4017685068016979677" name="folder_tap_to_rename">"Допрете за да го зачувате преименувањето"</string>
+    <string msgid="6081085226050792095" name="gadget_error_text">"Проблем при вчитувањето на виџетот"</string>
+    <string msgid="8274003207686040488" name="gadget_setup_text">"Поставување"</string>
+    <string msgid="806512411299847073" name="home_screen">"Почетен екран"</string>
+    <string msgid="7448809638125333693" name="hotseat_out_of_space">"Нема повеќе простор на лентата „Омилени“"</string>
+    <string msgid="5503319969924580241" name="icon_badging_desc_off">"Исклучено"</string>
+    <string msgid="2627952638544674079" name="icon_badging_desc_on">"Вклучено"</string>
+    <string msgid="2309733118428242174" name="icon_badging_service_title">"Прикажи точки за известување"</string>
+    <string msgid="874121399231955394" name="icon_badging_title">"Точки за известување"</string>
+    <string msgid="6550072265930144217" name="icon_shape_circle">"Круг"</string>
+    <string msgid="2977264953998281004" name="icon_shape_override_label">"Променете ја формата на иконата"</string>
+    <string msgid="3841607380657692863" name="icon_shape_override_label_location">"на „Почетен екран“"</string>
+    <string msgid="3461735694970239908" name="icon_shape_override_progress">"Се применуваат промените на формата на иконата"</string>
+    <string msgid="633575066111622774" name="icon_shape_square">"Квадрат"</string>
+    <string msgid="5658049910802669495" name="icon_shape_squircle">"Заоблен квадрат"</string>
+    <string msgid="1709762974822753030" name="icon_shape_system_default">"Користи ја стандардната поставка на системот"</string>
+    <string msgid="4525869388200835463" name="icon_shape_teardrop">"Солза"</string>
+    <string msgid="2539096853673231757" name="install_drop_target_label">"Инсталирај"</string>
+    <string msgid="4211073925752213539" name="item_added_to_workspace">"Ставката е додадена на почетниот екран"</string>
+    <string msgid="4606538322571412879" name="item_moved">"Ставката е преместена"</string>
+    <string msgid="851119963877842327" name="item_removed">"Ставката е отстранета"</string>
+    <string msgid="4289502106628154155" name="long_accessible_way_to_add">"Допрете двапати и задржете за да изберете додаток или да користите приспособени дејства."</string>
+    <string msgid="3327314059613154633" name="long_accessible_way_to_add_shortcut">"Допрете двапати и задржете за избор на кратенка или користете приспособени дејства."</string>
+    <string msgid="4524750017792716791" name="long_press_shortcut_to_add">"Допрете двапати и задржете за избор на кратенка."</string>
+    <string msgid="7699152356777458215" name="long_press_widget_to_add">"Допри и задржи за да се избере виџетот."</string>
+    <string msgid="2833711483015685619" name="move_to_empty_cell">"Премести во ред <ns1:g id="NUMBER_0">%1$s</ns1:g> колона <ns1:g id="NUMBER_1">%2$s</ns1:g>"</string>
+    <string msgid="6295412897075147808" name="move_to_hotseat_position">"Премести на место <ns1:g id="NUMBER">%1$s</ns1:g> во омилени"</string>
+    <string msgid="6750008980455459790" name="move_to_position">"Премести на место <ns1:g id="NUMBER">%1$s</ns1:g>"</string>
+    <string msgid="6898038085516271325" name="msg_disabled_by_admin">"Оневозможено од администраторот"</string>
+    <string msgid="281113995110910548" name="msg_missing_notification_access">"За да се прикажуваат „Точки за известување“, вклучете ги известувањата за апликацијата <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="9208659281529857371" name="msg_no_phone_permission">"<ns1:g id="APP_NAME">%1$s</ns1:g> нема дозвола за телефонски повици"</string>
+    <string msgid="6002233469409822874" name="notification_dismissed">"Известувањето е отфрлено"</string>
+    <string msgid="1404149926117359025" name="notifications_header">"Известувања"</string>
+    <string msgid="4691004494942118364" name="out_of_space">"Нема повеќе простор на овој екран на почетната страница."</string>
+    <string msgid="7592128424511031410" name="package_state_unknown">"Непознато"</string>
+    <string msgid="923466509822011139" name="permdesc_install_shortcut">"Овозможува апликацијата да додава кратенки без интервенција на корисникот."</string>
+    <string msgid="5833423719057558387" name="permdesc_read_settings">"Овозможува апликацијата да ги менува подесувањата и кратенките на почетната страница."</string>
+    <string msgid="5440712911516509985" name="permdesc_write_settings">"Овозможува апликацијата да ги менува подесувањата и кратенките на почетната страница."</string>
+    <string msgid="5632423390354674437" name="permlab_install_shortcut">"инсталирај кратенки"</string>
+    <string msgid="1941457408239617576" name="permlab_read_settings">"чита поставки и кратенки на почетна страница"</string>
+    <string msgid="3574213698004620587" name="permlab_write_settings">"пишува поставки и кратенки на почетна страница"</string>
+    <string msgid="8064208734425456485" name="place_automatically">"Додај автоматски"</string>
+    <string msgid="7929860679018978258" name="recent_task_option_pin">"Прикачување"</string>
+    <string msgid="5353188922202653570" name="recent_task_option_split_screen">"Поделен екран"</string>
+    <string msgid="5328176793634888831" name="recents_clear_all">"Исчисти ги сите"</string>
+    <string msgid="7040467240571714191" name="recents_empty_message">"Нема неодамнешни ставки"</string>
+    <string msgid="7812859488053230776" name="remove_drop_target_label">"Отстрани"</string>
+    <string msgid="9160126848219158407" name="safemode_shortcut_error">"Преземената апликација е оневозможена во безбеден режим"</string>
+    <string msgid="4863470563535682004" name="safemode_widget_error">"Додатоците се оневозможени во безбеден режим"</string>
+    <string msgid="8873672322605444408" name="settings_button_text">"Поставки за Home"</string>
+    <string msgid="2536503539825726397" name="shortcut_not_available">"Кратенката не е достапна"</string>
+    <string msgid="2676582286544232849" name="shortcuts_menu_with_notifications_description">"Кратенки и известувања"</string>
+    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="1376365968844349552" name="title_change_settings">"Промени ги поставките"</string>
+    <string msgid="7503287056163941064" name="title_missing_notification_access">"Потребен е пристап до известувањата"</string>
+    <string msgid="4722034217958379417" name="uninstall_drop_target_label">"Деинсталирај"</string>
+    <string msgid="4172046090762920660" name="uninstall_system_app_text">"Ова е системска апликација и не може да се деинсталира."</string>
+    <string msgid="8404103075899945851" name="wallpaper_button_text">"Тапети"</string>
+    <string msgid="3640149169885301790" name="widget_accessible_dims_format">"%1$d широк на %2$d висок"</string>
+    <string msgid="2880537293434387943" name="widget_button_text">"Виџети"</string>
+    <string msgid="2370757736025621599" name="widget_dims_format">"%1$d × %2$d"</string>
+    <string msgid="9130327887929620" name="widget_resized">"Големината на виџетот е променета на ширина <ns1:g id="NUMBER_0">%1$s</ns1:g> висина <ns1:g id="NUMBER_1">%2$s</ns1:g>"</string>
+    <string msgid="2904559530954183366" name="widgets_bottom_sheet_title">"Виџети за <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="796804551140113767" name="widgets_list">"Список со виџети"</string>
+    <string msgid="6141506579418771922" name="widgets_list_closed">"Списокот со виџети е затворен"</string>
+    <string msgid="3753320833950115786" name="work_folder_name">"Работа"</string>
+    <string msgid="3194894777601421047" name="work_mode_off_label">"Известувањата и апликациите се исклучени"</string>
+    <string msgid="4781128097185272916" name="work_mode_on_label">"Управувано од вашата организација"</string>
+    <string msgid="3081029915775481146" name="work_profile_toggle_label">"Работен профил"</string>
+    <string msgid="257366611030256142" name="workspace_new_page">"Нова страница на почетен екран"</string>
+    <string msgid="8458889198184077399" name="workspace_scroll_format">"Екран на почетна страница %1$d од %2$d"</string>
+</resources>
